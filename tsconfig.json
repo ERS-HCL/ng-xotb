@@ -33,7 +33,9 @@
       "ng-xotb/common": ["dist/common"],
       "ng-xotb/common/*": ["dist/common/*"],
       "ng-xotb/checkbox": ["dist/checkbox"],
-      "ng-xotb/checkbox/*": ["dist/checkbox/*"]
+      "ng-xotb/checkbox/*": ["dist/checkbox/*"],
+      "ng-xotb/toast": ["dist/toast"],
+      "ng-xotb/toast/*": ["dist/toast/*"]
     }
   },
   "angularCompilerOptions": {

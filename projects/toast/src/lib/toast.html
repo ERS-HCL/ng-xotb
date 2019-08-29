@@ -1,0 +1,16 @@
+<span class="xotb-assistive-text">{{assistiveText || variant}}</span>
+<div class="xotb-notify__content">
+  <ng-content></ng-content>
+</div>
+<button
+  class="xotb-button xotb-button_icon xotb-notify__close xotb-button_icon-inverse"
+  *ngIf="dismissible"
+  type="button"
+  (click)="close('button', $event)"
+>
+  <svg class="xotb-button__icon">
+    (xotbIconName="utility:close")&attributes(attributes)</svg
+  ><span class="xotb-assistive-text" *ngIf="closeButtonAssistiveText"
+    >{{closeButtonAssistiveText}}</span
+  >
+</button>
