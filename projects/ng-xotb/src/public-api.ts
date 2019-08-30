@@ -15,4 +15,5 @@ export { XotbRadioGroupModule } from 'ng-xotb/radio-group';
 export { XotbFileUploadModule } from 'ng-xotb/file-upload';
 export { XotbSliderModule } from 'ng-xotb/slider';
 export { XotbProgressbarModule } from 'ng-xotb/progressbar';
-//export { XotbSectionsModule } from 'ng-xotb/sections';
+export { XotbSpinnerModule } from 'ng-xotb/spinner';
+export { XotbSectionsModule } from 'ng-xotb/sections';

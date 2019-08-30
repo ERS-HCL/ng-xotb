@@ -33,7 +33,8 @@
       "ng-xotb/popovers": ["dist/popovers"],
       "ng-xotb/tabs": ["dist/tabs"],
       "ng-xotb/progressbar": ["dist/progressbar"],
-      "ng-xotb/sections": ["dist/sections"]
+      "ng-xotb/sections": ["dist/sections"],
+      "ng-xotb/spinner": ["dist/spinner"]
     }
   },
   "angularCompilerOptions": {

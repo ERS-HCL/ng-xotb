@@ -19,6 +19,7 @@ const LIBRARIES = [
   'accordion',
   'popovers',
   'progressbar',
-  'sections'
+  'sections',
+  'spinner'
 ];
 module.exports = LIBRARIES;
