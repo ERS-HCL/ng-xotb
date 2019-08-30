@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'popover', component: DemoPopoverComponent },
   { path: 'icons', component: DemoIconsComponent },
   { path: 'progressbar', component: DemoProgressbarComponent },
-  { path: 'sections', component: DemoSectionsComponent }
+  { path: 'sections', component: DemoSectionsComponent },
   { path: 'spinner', component: DemoSpinnerComponent }
 ];
 
