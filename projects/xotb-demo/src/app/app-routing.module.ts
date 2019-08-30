@@ -14,6 +14,7 @@ import { DemoTabsComponent } from './examples/tabs/tabs.component';
 import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 import { DemoIconsComponent } from './examples/icons/icons.component';
 import { DemoProgressbarComponent } from './examples/progressbar/progressbar.component';
+import { DemoSectionsComponent } from './examples/sections/sections.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path: 'tabs', component: DemoTabsComponent },
   { path: 'popover', component: DemoPopoverComponent },
   { path: 'icons', component: DemoIconsComponent },
-  { path: 'progressbar', component: DemoProgressbarComponent }
+  { path: 'progressbar', component: DemoProgressbarComponent },
+  { path: 'sections', component: DemoSectionsComponent }
 ];
 
 @NgModule({

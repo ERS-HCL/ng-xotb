@@ -1,0 +1,31 @@
+<xotb-styled-component>
+  <h3 class="xotb-section__title" [class.xotb-theme_shade]="!collapsable">
+    <button
+      class="xotb-button xotb-section__title-action"
+      *ngIf="collapsable; else simple_title"
+      [attr.aria-controls]="uid"
+      [attr.aria-expanded]="expanded"
+      type="button"
+      (click)="toggle($event)"
+    >
+      <svg
+        class="xotb-section__title-action-icon xotb-button__icon xotb-button__icon_left"
+      >
+        (xotbIconName="switch")
+      </svg>
+      <span class="xotb-truncate" [title]="title">{{ title }}</span>
+    </button>
+    <!-- <ng-template #simple_title="#simple_title">
+      <span class="xotb-truncate xotb-p-horizontal_small" [title]="title">{{
+        title
+      }}</span>
+    </ng-template> -->
+  </h3>
+  <div
+    class="xotb-section__content"
+    [attr.aria-hidden]="!expanded"
+    [attr.id]="uid"
+  >
+    <ng-content></ng-content>
+  </div>
+</xotb-styled-component>
