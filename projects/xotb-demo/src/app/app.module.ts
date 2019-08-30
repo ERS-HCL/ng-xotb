@@ -22,6 +22,7 @@ import { XotbSliderModule } from 'projects/slider/src/public-api';
 import { XotbIconsModule } from 'projects/icons/src/public-api';
 import { XotbTabsModule } from 'projects/tabs/src/public-api';
 import { XotbPopoversModule } from 'projects/popovers/src/public-api';
+import { XotbProgressbarModule } from 'projects/progressbar/src/public-api';
 
 /**
  * Examples Component
@@ -39,6 +40,7 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
 import { DemoTabsComponent } from './examples/tabs/tabs.component';
 import { DemoIconsComponent } from './examples/icons/icons.component';
 import { DemoPopoverComponent } from './examples/popovers/popovers.component';
+import { DemoProgressbarComponent } from './examples/progressbar/progressbar.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { DemoPopoverComponent } from './examples/popovers/popovers.component';
     DemoSliderComponent,
     DemoTabsComponent,
     DemoPopoverComponent,
-    DemoIconsComponent
+    DemoIconsComponent,
+    DemoProgressbarComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +78,8 @@ import { DemoPopoverComponent } from './examples/popovers/popovers.component';
     XotbSliderModule,
     XotbTabsModule,
     XotbPopoversModule,
-    XotbIconsModule
+    XotbIconsModule,
+    XotbProgressbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

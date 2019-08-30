@@ -13,6 +13,7 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
 import { DemoTabsComponent } from './examples/tabs/tabs.component';
 import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 import { DemoIconsComponent } from './examples/icons/icons.component';
+import { DemoProgressbarComponent } from './examples/progressbar/progressbar.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'slider', component: DemoSliderComponent },
   { path: 'tabs', component: DemoTabsComponent },
   { path: 'popover', component: DemoPopoverComponent },
-  { path: 'icons', component: DemoIconsComponent }
+  { path: 'icons', component: DemoIconsComponent },
+  { path: 'progressbar', component: DemoProgressbarComponent }
 ];
 
 @NgModule({

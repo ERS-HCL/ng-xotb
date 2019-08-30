@@ -736,7 +736,41 @@
           }
         }
       }
+    },
+    "progressbar": {
+      "projectType": "library",
+      "root": "projects/progressbar",
+      "sourceRoot": "projects/progressbar/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/progressbar/tsconfig.lib.json",
+            "project": "projects/progressbar/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/progressbar/src/test.ts",
+            "tsConfig": "projects/progressbar/tsconfig.spec.json",
+            "karmaConfig": "projects/progressbar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/progressbar/tsconfig.lib.json",
+              "projects/progressbar/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
+
   "defaultProject": "xotb-demo"
 }
