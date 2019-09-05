@@ -22,7 +22,7 @@ import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'xotb-carousel',
-  template: './carousel.html',
+  templateUrl: './carousel.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb-carousel]': 'true'
@@ -83,7 +83,6 @@ export class XotbCarousel implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.active) {
-      // Focus correct indicator if one is already focused
       if (
         this.document &&
         this.indicatorsEl.nativeElement.contains(document.activeElement)
@@ -91,9 +90,7 @@ export class XotbCarousel implements OnChanges {
         this.indicators.toArray()[this.active].focus();
       }
     }
-
     if (changes.active || changes.autoScroll || changes.scrollDuration) {
-      // Reset timer when active changes
       this.setTimer();
     }
   }

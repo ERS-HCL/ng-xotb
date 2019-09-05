@@ -1,4 +1,4 @@
-<xotb-styled-component>
+<xotb-styled-components>
   <div class="xotb-carousel__stage">
     <span class="xotb-carousel__autoplay" *ngIf="autoScroll">
       <button
@@ -7,35 +7,44 @@
         [title]="playLabel()"
         (click)="togglePlay()"
       >
-        <svg
-          class="xotb-button__icon"
-          [xotbIconName]="playing ? 'utility:pause' : 'utility:right'"
-        ></svg
-        ><span class="xotb-assistive-text">{{ playLabel() }}</span>
-      </button>
-    </span>
-    <div  class="xotb-carousel__panels"
+        <xotb-icon
+          [iconName]="playing ? 'pause-circle' : 'play-circle'"
+          [alternativeText]="playLabel()"
+        >
+        </xotb-icon></button
+    ></span>
+
+    <div
+      class="xotb-carousel__panels"
       [style.transform]="'translateX(' + -active * 100 + '%)'"
     >
       <ng-content></ng-content>
     </div>
+
     <ul
       class="xotb-carousel__indicators"
-      #indicatorsEl="#indicatorsEl"
+      #indicatorsEl
       role="tablist"
       (keydown)="onKeyboard($event)"
     >
       <li
         class="xotb-carousel__indicator"
         *ngFor="let image of images; let i = index"
-        role="presentation">
-        <a class="xotb-carousel__indicator-action" xotbCarouselIndicator, 
-        role="tab" [isActive]="isActive(i)", [image]="getImage(i)"
-        [attr.aria-controls]="image.uid",
-        [title]="image.header",(click)="onIndicatorClick(i)"></a>
-        <span class="xotb-assistive-text">{{ image.header }}</span>
-        </a>
+        role="presentation"
+      >
+        <a
+          class="xotb-carousel__indicator-action"
+          xotbCarouselIndicator
+          href="javascript:void(0);"
+          role="tab"
+          [isActive]="isActive(i)"
+          [image]="getImage(i)"
+          [attr.aria-controls]="image.uid"
+          [title]="image.header"
+          (click)="onIndicatorClick(i)"
+          ><span class="xotb-assistive-text">{{ image.header }}</span></a
+        >
       </li>
     </ul>
   </div>
-</xotb-styled-component>
+</xotb-styled-components>
