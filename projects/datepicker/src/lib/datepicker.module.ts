@@ -16,7 +16,6 @@ import { XotbDatepickerMonth } from './month';
 
 import { XotbDateAdapter } from './adapters/date-fns-adapter';
 import { XotbOverlayModule } from 'ng-xotb/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const EXPORTS = [XotbDatepickerInput, XotbDatepicker];
 
@@ -36,8 +35,7 @@ const EXPORTS = [XotbDatepickerInput, XotbDatepicker];
     XotbInternalOutletModule,
     OverlayModule,
     XotbClickOutsideModule,
-    XotbOverlayModule,
-    FontAwesomeModule
+    XotbOverlayModule
   ],
   providers: [XotbDateAdapter]
 })
