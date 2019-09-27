@@ -16,7 +16,7 @@
     "build": "npm run sass && node scripts/build",
     "publish_lib": "rimraf dist && npm run build && ng build ng-xotb && node scripts/prepare_ng-xotb && cd dist/ng-xotb && npm pack",
     "storybook": "npm run generateReadme && start-storybook -p 6006",
-    "build-storybook": "npm run sass && npm run build && npm run generateReadme && build-storybook -o docs",
+    "build-storybook": "npm run sass && npm run build && build-storybook -o docs",
     "sass": "sass projects/xotb-theme/src/styles/styles.scss dist/xotb-theme/css/styles.min.css --style compressed",
     "generateReadme": "node scripts/generateReadme"
   },
