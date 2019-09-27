@@ -16,7 +16,8 @@ storiesOf('The KNOWLEDGE|Accessbility', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );

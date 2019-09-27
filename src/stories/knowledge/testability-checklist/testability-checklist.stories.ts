@@ -16,7 +16,8 @@ storiesOf('The KNOWLEDGE|Testability Checklist', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );

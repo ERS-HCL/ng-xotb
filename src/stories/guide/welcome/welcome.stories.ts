@@ -14,7 +14,8 @@ storiesOf('The GUIDE|Welcome', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );

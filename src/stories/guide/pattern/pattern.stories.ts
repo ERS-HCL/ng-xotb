@@ -16,7 +16,8 @@ storiesOf('The GUIDE|Pattern', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   )
@@ -27,7 +28,8 @@ storiesOf('The GUIDE|Pattern', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );
