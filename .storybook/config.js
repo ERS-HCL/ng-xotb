@@ -1,6 +1,6 @@
 import { configure, addParameters, addDecorator } from '@storybook/angular';
 import theme from './theme';
-import { withA11y } from '@storybook/addon-a11y';
+// import { withA11y } from '@storybook/addon-a11y';
 
 // automatically import all files ending in *.stories.ts
 const components = require.context(
