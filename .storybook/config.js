@@ -1,6 +1,6 @@
 import { configure, addParameters, addDecorator } from '@storybook/angular';
 import theme from './theme';
-// import { withA11y } from '@storybook/addon-a11y';
+import { withA11y } from '@storybook/addon-a11y';
 
 // automatically import all files ending in *.stories.ts
 const components = require.context(
@@ -35,7 +35,9 @@ addParameters({
   options: {
     theme,
     isToolshown: true,
-    showPanel: false
+    showPanel: true,
+    panelPosition: 'bottom'
   }
 });
+addDecorator(withA11y);
 configure(loadStories, module);

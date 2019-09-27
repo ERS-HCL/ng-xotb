@@ -18,7 +18,8 @@ storiesOf('The GUIDE|Brand', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   )
@@ -30,7 +31,8 @@ storiesOf('The GUIDE|Brand', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   )
@@ -41,7 +43,8 @@ storiesOf('The GUIDE|Brand', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );
@@ -59,7 +62,8 @@ storiesOf('The GUIDE|Brand', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   )
@@ -70,7 +74,8 @@ storiesOf('The GUIDE|Brand', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );

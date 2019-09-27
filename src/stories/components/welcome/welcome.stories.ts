@@ -23,7 +23,8 @@ storiesOf('The Components|Welcome', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   )
@@ -58,7 +59,8 @@ storiesOf('The Components|Welcome', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );

@@ -19,7 +19,8 @@ storiesOf('The KNOWLEDGE|Welcome', module)
     }),
     {
       options: {
-        isToolshown: false
+        isToolshown: false,
+        showPanel: false
       }
     }
   );
