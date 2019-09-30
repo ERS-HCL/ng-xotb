@@ -8,6 +8,37 @@ import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
 storiesOf('The GUIDE|Brand', module)
   .addDecorator(
     moduleMetadata({
+      imports: [XotbPanelModule, XotbSpinnerModule]
+    })
+  )
+  .add(
+    'Colours',
+    () => ({
+      component: ColorComponent
+    }),
+    {
+      options: {
+        isToolshown: false,
+        showPanel: false
+      }
+    }
+  )
+  .add(
+    'Iconography',
+    () => ({
+      component: IconographyComponent
+    }),
+    {
+      options: {
+        isToolshown: false,
+        showPanel: false
+      }
+    }
+  );
+
+storiesOf('The GUIDE|Brand', module)
+  .addDecorator(
+    moduleMetadata({
       imports: [XotbPanelModule]
     })
   )
@@ -29,37 +60,6 @@ storiesOf('The GUIDE|Brand', module)
     'Typography',
     () => ({
       template: '<p>...to be constructed</p>'
-    }),
-    {
-      options: {
-        isToolshown: false,
-        showPanel: false
-      }
-    }
-  );
-
-storiesOf('The GUIDE|Brand', module)
-  .addDecorator(
-    moduleMetadata({
-      imports: [XotbPanelModule, XotbSpinnerModule]
-    })
-  )
-  .add(
-    'Colours',
-    () => ({
-      component: ColorComponent
-    }),
-    {
-      options: {
-        isToolshown: false,
-        showPanel: false
-      }
-    }
-  )
-  .add(
-    'Iconography',
-    () => ({
-      component: IconographyComponent
     }),
     {
       options: {
