@@ -17,5 +17,5 @@ export class XotbRatingConfig<D = any> {
   /**
    * The color of the icon when status is "off"
    */
-  colorOff = '54698D';
+  colorOff = '#54698D';
 }
