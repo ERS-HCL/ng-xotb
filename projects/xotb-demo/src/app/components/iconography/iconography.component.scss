@@ -4,12 +4,31 @@ iframe {
   overflow: auto;
 }
 
-h2 {
-  font-size: 1.3rem;
-  padding: 0.5rem;
+h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
 }
 
 p {
-  margin: 0.5rem;
-  font-size: 14px;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.icon-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.frame_wrapper {
+  position: relative;
+}
+.loading-content {
+  text-align: center;
+}
+.loader {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
 }

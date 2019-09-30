@@ -1,6 +1,49 @@
 <div class="xotb-view-container">
-  <h1 class="heading">Cyan</h1>
+  <h1 class="main-heading">Introduction</h1>
+  <p>
+    The colour system for a product has many essentials and restraints. There is
+    a need to be intentional and functional with colour use. While xOTB provides
+    the reference colours, you may, customize it at extreme levels to suite your
+    product needs but respecting design values is the core of any design system.
+  </p>
+  <h1 class="main-heading">Design Values</h1>
+  <ul>
+    <li>
+      <strong>Purposeful:</strong> use colours in a functional way to show
+      intent when needed.
+    </li>
+    <li>
+      <strong>Accessible:</strong> use colours with as much contrast as possible
+      while still being beautiful. Avoid muddy neutral colours.
+    </li>
+    <li>
+      <strong>High Dynamic Range:</strong> use very light neutral colours for
+      background colours. Allow for a wide range of the colour spectrum.
+    </li>
+  </ul>
+  <h1 class="main-heading">Implementation Details</h1>
+  The colour system in xOTB is located in the theme and is used throughout the
+  theme. There is no real dependency on any of the colours directly within
+  components. Components always access a theme colour or property through
+  `variable`. For example, <code>$text-color</code> is a variable name for
+  default text color in the <em>Verve</em> theme.
+  <h1 class="main-heading">Examples</h1>
+  <pre>
+    <code>
+      {{
+        'body {
+            background-color:$background-color
+            color: $text-color
+        }'
+      }}
+    </code>
+  </pre>
 
+  <h1 class="main-heading">Palette (Verve theme)</h1>
+  <p>
+    The xOTB v2 currently supports one default theme: the "Verve" theme -
+    stylish and aesthetically accomplished, visually eloquent and very seamless!
+  </p>
   <div class="row">
     <div class="col">
       <div class="color_item">
@@ -237,4 +280,6 @@
       </div>
     </div>
   </div>
+
+  <p>Our new theme, "Electric", is on its way and will be shipped very soon.</p>
 </div>
