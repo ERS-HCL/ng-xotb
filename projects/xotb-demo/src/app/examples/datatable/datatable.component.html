@@ -1,0 +1,95 @@
+<div class="xotb-view-container">
+  <h1 class="heading">Datatable</h1>
+  <p class="description">
+    A Data Table displays sets of data in a grid-like format of rows and
+    columns. It organizes information in a way that’s easy to scan, so that
+    users can look for patterns and insights
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div class="xotb-m-bottom_large">
+          <button
+            type="button"
+            variant="outline-brand"
+            xotbButton
+            (click)="hideName = !hideName"
+          >
+            Toggle "Name" column
+          </button>
+          <button
+            type="button"
+            variant="outline-brand"
+            xotbButton
+            (click)="toggleLoading()"
+          >
+            Toggle Loading
+          </button>
+          <button
+            type="button"
+            variant="outline-brand"
+            xotbButton
+            (click)="toggleData()"
+          >
+            Clear/Set data
+          </button>
+        </div>
+        <hr />
+        <table
+          class="xotb-table_bordered xotb-max-medium-table_stacked-horizontal xotb-table_fixed-layout"
+          xotb-datatable
+          [data]="data"
+          trackByKey="rank"
+          [loading]="loading"
+          [(sort)]="sort"
+          (sortChange)="onSort($event)"
+          (rowClick)="onRowClick($event)"
+        >
+          <xotb-datatable-column
+            heading="Rank"
+            key="rank"
+            sortable
+          ></xotb-datatable-column>
+          <xotb-datatable-column
+            heading="Name"
+            key="name"
+            *ngIf="!hideName"
+            truncate
+            sortable
+          ></xotb-datatable-column>
+          <xotb-datatable-column
+            heading="Surname"
+            key="surname"
+            truncate="true"
+            sortable
+          >
+            <ng-template xotbDatatableCell let-row="row"
+              ><b>{{ row.surname }}</b></ng-template
+            >
+          </xotb-datatable-column>
+          <xotb-datatable-column heading="Points" key="points">
+            <ng-template xotbDatatableHeading
+              ><strong>Points</strong></ng-template
+            >
+            <ng-template xotbDatatableCell let-value>
+              <!-- <xotb-badge>{{ value | number }}</xotb-badge> -->
+              <span>{{ value | number }}</span>
+            </ng-template>
+          </xotb-datatable-column>
+          <!-- Loading overlay-->
+          <ng-template xotbLoadingOverlay>
+            <div
+              class="xotb-box xotb-box_small xotb-theme_shade xotb-text-align_center"
+            >
+              Loading...
+            </div>
+          </ng-template>
+          <!-- No rows overlay-->
+          <ng-template xotbNoRowsOverlay
+            >No data available in table!</ng-template
+          >
+        </table>
+      </div></xotb-panel
+    >
+  </div>
+</div>

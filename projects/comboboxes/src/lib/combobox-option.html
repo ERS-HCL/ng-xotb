@@ -1,0 +1,24 @@
+<div
+  class="xotb-media xotb-listbox__option xotb-listbox__option_plain xotb-media_small xotb-media_center"
+  role="option"
+  [attr.id]="uid"
+  [class.xotb-has-focus]="active"
+  [class.xotb-is-selected]="selected"
+  [attr.aria-selected]="selected || null"
+  [attr.aria-disabled]="disabled || null"
+  [style.cursor]="disabled ? 'default' : null"
+>
+  <span class="xotb-media__figure xotb-listbox__option-icon"
+    ><span
+      class="xotb-icon_container xotb-icon-utility-check xotb-current-color"
+      *ngIf="selected"
+    >
+      <xotb-icon size="x-small" iconName="check"> </xotb-icon> </span></span
+  ><span class="xotb-media__body"
+    ><span class="xotb-truncate" [class.xotb-disabled-text]="disabled"
+      ><span class="xotb-assistive-text" *ngIf="selected"
+        >Current Selection:</span
+      >{{ label }}</span
+    ></span
+  >
+</div>

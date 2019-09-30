@@ -1,0 +1,30 @@
+<div class="xotb-view-container">
+  <h1 class="heading">RadioGroup</h1>
+  <p class="description">
+    Radio buttons allow the user to select one option from a set while being
+    able to view all the available options.
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div>
+          <ng-template #lbl><i>Male</i></ng-template>
+          <fieldset
+            xotb-radio-group
+            label="Gender"
+            [error]="hasError ? error : null"
+            [required]="required"
+          >
+            <xotb-radio-option [label]="lbl">
+              <input xotb type="radio" [disabled]="disabled" />
+            </xotb-radio-option>
+
+            <xotb-radio-option class="xotb-radio" label="Female">
+              <input xotb type="radio" [disabled]="disabled" />
+            </xotb-radio-option>
+          </fieldset>
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+.xotb-popover {
+  position: relative;
+  border-radius: 0.25rem;
+  width: 20rem;
+  min-height: 2rem;
+  z-index: 6000;
+  background-color: $background-color;
+  display: inline-block;
+  box-shadow: 0 2px 3px 0 $box-shadow;
+  border: 1px solid;
+  border-color: $border-color;
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.xotb-popover_tooltip {
+  width: auto;
+  max-width: 20rem;
+  background: $tooltip-background-color;
+  border: 0;
+  .xotb-popover__body {
+    font-size: 0.75rem;
+    color: $background-color;
+  }
+}
+.xotb-popover__body {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  word-wrap: break-word;
+}
+.xotb-nubbin--left:after,
+.xotb-nubbin--left:before,
+.xotb-nubbin_left:after,
+.xotb-nubbin_left:before {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: '';
+  background-color: inherit;
+  top: 50%;
+  left: -0.5rem;
+  margin-top: -0.5rem;
+}
+
+.xotb-nubbin--left:after,
+.xotb-nubbin_left:after {
+  box-shadow: -1px 1px 2px 0 $box-shadow;
+  z-index: -1;
+}
+
+.xotb-nubbin--top:after,
+.xotb-nubbin--top:before,
+.xotb-nubbin_top:after,
+.xotb-nubbin_top:before {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: '';
+  background-color: inherit;
+  left: 50%;
+  top: -0.5rem;
+  margin-left: -0.5rem;
+}
+.xotb-nubbin--top:after,
+.xotb-nubbin_top:after {
+  box-shadow: -1px -1px 0 0 $box-shadow;
+  z-index: -1;
+}
+
+.xotb-nubbin--right:after,
+.xotb-nubbin--right:before,
+.xotb-nubbin_right:after,
+.xotb-nubbin_right:before {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: '';
+  background-color: inherit;
+  top: 50%;
+  right: -0.5rem;
+  margin-top: -0.5rem;
+}
+
+.xotb-nubbin--right:after,
+.xotb-nubbin_right:after {
+  box-shadow: 1px -1px 2px 0 $box-shadow;
+  z-index: -1;
+}
+
+.xotb-nubbin--bottom:after,
+.xotb-nubbin--bottom:before,
+.xotb-nubbin_bottom:after,
+.xotb-nubbin_bottom:before {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: '';
+  background-color: inherit;
+  left: 50%;
+  bottom: -0.5rem;
+  margin-left: -0.5rem;
+}
+.xotb-nubbin--bottom:after,
+.xotb-nubbin_bottom:after {
+  box-shadow: 2px 2px 4px 0 $box-shadow;
+  z-index: -1;
+}

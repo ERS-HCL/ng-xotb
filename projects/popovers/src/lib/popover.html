@@ -1,0 +1,31 @@
+<button
+  class="xotb-button xotb-button_icon xotb-button_icon-small xotb-float_right xotb-popover__close"
+  *ngIf="canClose &amp;&amp; closeVisible"
+  [title]="closeTitle"
+  [class.xotb-button_icon-inverse]="inverseCloseButton"
+  (click)="onClose()"
+>
+  <xotb-icon
+    iconName="x"
+    size="xx-small"
+    [alternativeText]="closeTitle"
+  ></xotb-icon>
+</button>
+<header class="xotb-popover__header" *ngIf="header">
+  <div *ngIf="isTemplateRef(header); else defaultTpl" [id]="labelledby">
+    <ng-container [ngTemplateOutlet]="header"></ng-container>
+  </div>
+  <ng-template #defaultTpl>
+    <h2 class="xotb-text-heading_small" [id]="labelledby">{{ header }}</h2>
+  </ng-template>
+</header>
+<div
+  class="xotb-popover__body"
+  [id]="uid"
+  [xotbInternalOutlet]="template"
+></div>
+<footer
+  class="xotb-popover__footer"
+  *ngIf="footer"
+  [xotbInternalOutlet]="footer"
+></footer>

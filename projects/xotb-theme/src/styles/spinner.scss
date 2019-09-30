@@ -1,0 +1,34 @@
+.xotb-spinner {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.xotb-spinner_xx-small {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  width: 16px;
+  height: 16px;
+}
+.xotb-spinner_x-small {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  width: 24px;
+  height: 24px;
+}
+.xotb-spinner_small {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  width: 32px;
+  height: 32px;
+}
+.xotb-spinner_large {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  width: 48px;
+  height: 48px;
+}

@@ -1,0 +1,47 @@
+.xotb-notify_toast {
+  color: $toast-color;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background: map-get($theme-colors, 'info');
+  font-weight: 300;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  padding: 0.75rem 3rem 0.75rem 1.5rem;
+  min-width: 30rem;
+  text-align: left;
+  justify-content: flex-start;
+  .xotb-notify__close {
+    float: right;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    margin-left: 0.25rem;
+    -webkit-transform: translateY(-0.125rem);
+    transform: translateY(-0.125rem);
+  }
+}
+.xotb-theme_info {
+  color: $toast-color;
+  background-color: map-get($theme-colors, 'info');
+}
+.xotb-theme_success {
+  color: $toast-color;
+  background-color: map-get($theme-colors, 'success');
+}
+.xotb-theme_warning {
+  background-color: map-get($theme-colors, 'warning');
+  color: $toast-warning-color;
+}
+.xotb-theme_error {
+  color: $toast-color;
+  background-color: $danger-color;
+}
+.xotb-notify_container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  text-align: center;
+}

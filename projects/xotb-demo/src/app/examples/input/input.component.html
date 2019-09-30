@@ -1,0 +1,32 @@
+<div class="xotb-view-container">
+  <h1 class="heading"><strong>Input</strong></h1>
+  <p class="description">
+    The Input field allows a user to enter or edit a text into a UI (value or
+    description), typically in a single line. These fields generally appear in
+    forms and dialogs.
+  </p>
+
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div class="form-group">
+          <xotb-input
+            label="Enter your name"
+            class="control-label"
+            fieldLevelHelpTooltip="Some helpful information"
+            [error]="hasError ? error : null"
+          >
+            <input
+              xotb
+              class="form-control"
+              type="input"
+              [required]="required"
+              [disabled]="disabled"
+              placeholder="Placeholder"
+            />
+          </xotb-input>
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
+</div>

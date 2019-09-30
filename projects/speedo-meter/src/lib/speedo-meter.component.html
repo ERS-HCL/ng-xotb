@@ -1,0 +1,52 @@
+<style>
+  @keyframes movement {
+    from {
+      transform: rotate(-45deg);
+    }
+    to {
+      transform: rotate('{{readingSpeed}}' + deg);
+    }
+  }
+
+  @keyframes niddle {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate('{{niddleSpeed}}' + deg);
+    }
+  }
+</style>
+
+<div class="xOTB-speedometerWrap">
+  <h1>{{ title }}</h1>
+  <div class="xOTB-speedometer">
+    <div
+      class="xOTB-speedometerReading"
+      [style.transform]="'rotate(' + readingSpeed + 'deg)'"
+      #xotbSpeedometer
+    ></div>
+    <div class="xOTB-speedometerReadingBase"></div>
+    <div class="xOTB-speedometerCentreCircle" #xotbSpeedometerWheelColorDiv>
+      <span
+        [style.transform]="'rotate(' + niddleSpeed + 'deg)'"
+        #xotbSpeedometerWheelColor
+      ></span>
+    </div>
+    <div class="xOTB-speedometerBase"></div>
+  </div>
+  <div class="xOTB-meterRead">
+    <span> {{ labelText }}</span>
+    <input
+      type="number"
+      min="0"
+      [max]="max"
+      [(ngModel)]="speedScore"
+      class="xOTB-form-control"
+      (keyup)="getSpeed(speedScore); onTextInputChaange(speedScore)"
+      (click)="getSpeed(speedScore); onTextInputChaange(speedScore)"
+    />
+    <br />
+    <span class="xOTB-range">(Min: 0 | Max: {{ max }})</span>
+  </div>
+</div>

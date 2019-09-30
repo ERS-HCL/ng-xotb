@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.examples {
+  border: 1px solid #dddddd;
+  padding: 50px 50px;
+  width: 100%;
+}
+li {
+  border-bottom: 1px solid #dddddd;
+  padding: 2px;
+  border-left: 1px solid #dddddd;
+}

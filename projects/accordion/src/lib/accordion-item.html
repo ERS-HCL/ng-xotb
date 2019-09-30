@@ -1,0 +1,31 @@
+<section class="xotb-accordion__section" [class.xotb-is-open]="isActive">
+  <div class="xotb-accordion__summary">
+    <h3 class="xotb-accordion__summary-heading" (click)="onToggle()">
+      <button
+        class="xotb-button xotb-button_reset xotb-accordion__summary-action"
+        [attr.aria-controls]="uid"
+        [attr.aria-expanded]="isActive"
+      >
+        <span
+          class="xotb-truncate"
+          [xotbInternalOutlet]="section.label"
+          [xotbInternalOutletContext]="{ $implicit: section.labelContext }"
+        ></span>
+        <xotb-icon
+          svgClass="xotb-accordion__summary-action_icon"
+          [iconName]="isActive ? 'minus' : 'plus'"
+          size="xx-small"
+        ></xotb-icon>
+      </button>
+    </h3>
+  </div>
+  <div
+    class="xotb-accordion__content"
+    [attr.aria-hidden]="!isActive"
+    [id]="uid"
+  >
+    <ng-container *ngIf="isActive">
+      <ng-template [ngTemplateOutlet]="section.templateRef"></ng-template>
+    </ng-container>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<div class="xotb-view-container">
+  <h1 class="heading">Menus</h1>
+  <p class="description">
+    A Menu displays the list of choices available on a temporary surface. It
+    appears when the user interacts with a button or other control.
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <span xotbDropdown [(open)]="open">
+          <button class="xotb-button xotb-button_neutral" xotbDropdownTrigger>
+            <span class="xotb-truncate">Select an item</span>
+            <xotb-icon
+              iconName="chevron-down"
+              variant="default"
+              size="x-small"
+            ></xotb-icon>
+          </button>
+          <div class="xotb-dropdown xotb-dropdown_left">
+            <ul class="dropdown__list" role="menu">
+              <li class="xotb-dropdown__item" *ngFor="let item of items">
+                <a
+                  role="menuitem"
+                  xotbDropdownItem
+                  (click)="selected = item.value; open = false"
+                >
+                  <p class="xotb-truncate">{{ item.value }}</p>
+                  <xotb-icon
+                    [iconName]="item.icon"
+                    variant="default"
+                    size="x-small"
+                  ></xotb-icon
+                ></a>
+              </li>
+            </ul></div
+        ></span>
+        <br />
+        <br />
+        <div class="xotb-m-top_large" *ngIf="selected">
+          You selected: <code>{{ selected }}</code>
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
+</div>

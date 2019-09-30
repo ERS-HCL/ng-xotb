@@ -1,0 +1,28 @@
+.xotb-popover__close {
+  position: relative;
+  margin: 0.25rem;
+  z-index: 6001;
+}
+
+.xotb-float--right,
+.xotb-float_right {
+  float: right;
+}
+.xotb-popover__body,
+.xotb-popover__footer,
+.xotb-popover__header {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  word-wrap: break-word;
+}
+.xotb-popover__header {
+  border-bottom: 1px solid $border-color;
+}
+.xotb-text-heading--small,
+.xotb-text-heading_small {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.xotb-popover__footer {
+  border-top: 1px solid $border-color;
+}

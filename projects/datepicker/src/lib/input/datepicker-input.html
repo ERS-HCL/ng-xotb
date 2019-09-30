@@ -1,0 +1,68 @@
+<label
+  class="xotb-form-element__label"
+  *ngIf="label"
+  [attr.for]="uid"
+  [xotbInternalOutlet]="label"
+></label>
+<div
+  class="xotb-form-element__control xotb-input-has-icon xotb-input-has-icon_right"
+  #formEl
+>
+  <input
+    class="xotb-input"
+    #inputEl
+    cdkOverlayOrigin
+    #overlayOrigin="cdkOverlayOrigin"
+    [id]="uid"
+    type="text"
+    autocomplete="off"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [readOnly]="readonlyInput"
+    (click)="onTriggerClick('input')"
+    (keydown)="onKeyboardInput($event)"
+    (input)="onInputChange($event.target.value)"
+    (blur)="onBlur()"
+  />
+  <button
+    class="xotb-button xotb-button_icon xotb-input__icon xotb-input__icon_right"
+    type="button"
+    [title]="selectDateLabel"
+    [disabled]="disabled"
+    (click)="onTriggerClick('button')"
+  >
+    <xotb-icon iconName="calendar" size="x-small"></xotb-icon>
+  </button>
+</div>
+<ng-template
+  cdkConnectedOverlay
+  #cdkOverlay="cdkConnectedOverlay"
+  [cdkConnectedOverlayPositions]="overlayPositions"
+  [cdkConnectedOverlayOrigin]="overlayOrigin"
+  [cdkConnectedOverlayOpen]="open"
+  (xotbOverlayScrolledOutsideView)="closeCalendar(false)"
+  (attach)="onAttach()"
+  (detach)="onDetach()"
+>
+  <xotb-datepicker
+    class="xotb-dropdown"
+    [attr.aria-hidden]="!open"
+    [date]="date"
+    [monthNames]="monthNames"
+    [dayNamesShort]="dayNamesShort"
+    [dayNamesLong]="dayNamesLong"
+    [firstDayOfWeek]="firstDayOfWeek"
+    [showToday]="showToday"
+    [min]="min"
+    [max]="max"
+    [relativeYearFrom]="relativeYearFrom"
+    [relativeYearTo]="relativeYearTo"
+    [todayLabel]="todayLabel"
+    [previousMonthLabel]="previousMonthLabel"
+    [nextMonthLabel]="nextMonthLabel"
+    [dateDisabled]="dateDisabled"
+    (dateChange)="pickerSelection($event)"
+    (xotbClickOutside)="closeCalendar(false)"
+    [xotbClickOutsideIgnore]="formEl"
+  ></xotb-datepicker>
+</ng-template>

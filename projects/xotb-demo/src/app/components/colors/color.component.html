@@ -1,0 +1,435 @@
+<div class="xotb-view-container">
+  <h1 class="main-heading">Introduction</h1>
+  <p>
+    The colour system for a product has many essentials and restraints. There is
+    a need to be intentional and functional with colour use. While xOTB provides
+    the reference colours, you may, customize it at extreme levels to suite your
+    product needs but respecting design values is the core of any design system.
+  </p>
+  <h1 class="main-heading">Design Values</h1>
+  <ul>
+    <li>
+      <strong>Purposeful:</strong> use colours in a functional way to show
+      intent when needed.
+    </li>
+    <li>
+      <strong>Accessible:</strong> use colours with as much contrast as possible
+      while still being beautiful. Avoid muddy neutral colours.
+    </li>
+    <li>
+      <strong>High Dynamic Range:</strong> use very light neutral colours for
+      background colours. Allow for a wide range of the colour spectrum.
+    </li>
+  </ul>
+  <h1 class="main-heading">Implementation Details</h1>
+  The colour system in xOTB is located in the theme and is used throughout the
+  theme. There is no real dependency on any of the colours directly within
+  components. Components always access a theme colour or property through
+  `variable`. For example, <code>$text-color</code> is a variable name for
+  default text color in the <em>Verve</em> theme.
+  <h1 class="main-heading">Examples</h1>
+  <pre>
+    <code>
+      {{
+        'body {
+            background-color:$background-color
+            color: $text-color
+        }'
+      }}
+    </code>
+  </pre>
+
+  <h1 class="main-heading">Palette (Verve theme)</h1>
+  <p>
+    The xOTB v2 currently supports one default theme: the "Verve" theme -
+    stylish and aesthetically accomplished, visually eloquent and very seamless!
+  </p>
+  <h1 class="heading">Blue</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #00BCD4"></div>
+        <div class="col-text">
+          <p>base</p>
+          <p>
+            <span><small>RGBA: </small> rgba(0, 188, 212, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#00BCD4</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #0097A7"></div>
+        <div class="col-text">
+          <p>dark</p>
+          <p>
+            <span><small>RGBA: </small> rgba(0, 131, 143, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#0097A7</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #26C6DA"></div>
+        <div class="col-text">
+          <p>light</p>
+          <p>
+            <span><small>RGBA: </small> rgba(38, 198, 218, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#26C6DA</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #B2EBF2"></div>
+        <div class="col-text">
+          <p>lightest</p>
+          <p>
+            <span><small>RGBA: </small> rgba(178, 235, 242, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#B2EBF2</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="heading">Red</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #EC4C47"></div>
+        <div class="col-text">
+          <p>base</p>
+          <p>
+            <span><small>RGBA: </small> rgb(236,76,71)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#EC4C47</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #BF0E08"></div>
+        <div class="col-text">
+          <p>dark</p>
+          <p>
+            <span><small>RGBA: </small> rgba(191,14,8)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#BF0E08</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #FAE2E2"></div>
+        <div class="col-text">
+          <p>light</p>
+          <p>
+            <span><small>RGBA: </small> rgb(250,226,226)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#FAE2E2</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #FEF6F6"></div>
+        <div class="col-text">
+          <p>lightest</p>
+          <p>
+            <span><small>RGBA: </small> rgb(254,246,246)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#FEF6F6</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="heading">Yellow</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #F7D154"></div>
+        <div class="col-text">
+          <p>base</p>
+          <p>
+            <span><small>RGBA: </small>rgb(247,209,84)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#F7D154</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #7E6514"></div>
+        <div class="col-text">
+          <p>dark</p>
+          <p>
+            <span><small>RGBA: </small>rgb(126,101,20)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#7E6514</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #FBE6A2"></div>
+        <div class="col-text">
+          <p>light</p>
+          <p>
+            <span><small>RGBA: </small> rgb(251,230,162)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#FBE6A2</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #FEF8E7"></div>
+        <div class="col-text">
+          <p>lightest</p>
+          <p>
+            <span><small>RGBA: </small>rgb(254,248,231)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#FEF8E7</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="heading">Green</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #47B881"></div>
+        <div class="col-text">
+          <p>base</p>
+          <p>
+            <span><small>RGBA: </small>rgb(71,184,129)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#47B881</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #00783E"></div>
+        <div class="col-text">
+          <p>dark</p>
+          <p>
+            <span><small>RGBA: </small>rgb(0,120,62)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#00783E</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #D4EEE2"></div>
+        <div class="col-text">
+          <p>light</p>
+          <p>
+            <span><small>RGBA: </small>rgb(212,238,226)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#D4EEE2</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #F1FAF5"></div>
+        <div class="col-text">
+          <p>lightest</p>
+          <p>
+            <span><small>RGBA: </small>rgb(241,250,245)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#F1FAF5</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="heading">Purple</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #735DD0"></div>
+        <div class="col-text">
+          <p>base</p>
+          <p>
+            <span><small>RGBA: </small>rgb(115,93,208)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#735DD0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #37248F"></div>
+        <div class="col-text">
+          <p>dark</p>
+          <p>
+            <span><small>RGBA: </small>rgb(55,36,143)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#37248F</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #EAE7F8"></div>
+        <div class="col-text">
+          <p>light</p>
+          <p>
+            <span><small>RGBA: </small>rgb(234,231,248)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#EAE7F8</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #F8F7FC"></div>
+        <div class="col-text">
+          <p>lightest</p>
+          <p>
+            <span><small>RGBA: </small>rgb(248,247,252)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#F8F7FC</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="heading">Border</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #D8D8D8"></div>
+        <div class="col-text">
+          <p>default</p>
+          <p>
+            <span><small>RGBA: </small> rgba(216, 216, 216)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#D8D8D8</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #C0C0C0"></div>
+        <div class="col-text">
+          <p>muted</p>
+          <p>
+            <span><small>RGBA: </small> rgba(192, 192, 192)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#C0C0C0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="heading">Intent</h1>
+  <div class="row">
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #C62827"></div>
+        <div class="col-text">
+          <p>danger</p>
+          <p>
+            <span><small>RGBA: </small> rgba(198, 40, 39, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#C62827</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #FFD950"></div>
+        <div class="col-text">
+          <p>warning</p>
+          <p>
+            <span><small>RGBA: </small> rgba(255, 217, 80, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#FFD950</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #30DCFC"></div>
+        <div class="col-text">
+          <p>none</p>
+          <p>
+            <span><small>RGBA: </small> rgba(48, 220, 252)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#30DCFC</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="color_item">
+        <div class="col-box" style="background-color: #14E98D"></div>
+        <div class="col-text">
+          <p>success</p>
+          <p>
+            <span><small>RGBA: </small> rgba(20, 233, 141, 1)</span>
+          </p>
+          <p>
+            <span><small>HEX: </small>#14E98D</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>Our new theme, "Electric", is on its way and will be shipped very soon.</p>
+</div>

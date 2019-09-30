@@ -1,0 +1,40 @@
+// colors
+$white: #ffffff;
+$green: #4bca81;
+$blue: #00bcd4;
+$red: hsl(2, 58%, 48%);
+$yellow: #ffc107;
+
+$primary-color: #00bcd4;
+$danger-color: $red;
+
+$text-color: #3e3e3c;
+$text-inverse-color: #ffffff;
+
+$border-color: #d2d2d2;
+$background-color: $white;
+
+$border-darken-amount: 5;
+
+$box-shadow: rgba(0, 0, 0, 0.24);
+
+$disabled-border-color: #c9c7c5;
+$disabled-background-color: #ecebea;
+
+$anchor-color: $primary-color;
+
+$theme-colors: (
+  'success': $green,
+  'info': #706e6b,
+  'warning': #ffc107
+);
+
+$select-container-border-color: #061c3f;
+$tooltip-background-color: #16325c;
+$button-destructive-color: $white;
+$button-success-border-color: #4bca81;
+$button-success-color: #080707;
+$progressbar-value-background-color: #5eb4ff;
+$toast-color: $white;
+$toast-warning-color: #080707;
+$icon-fill: $white;

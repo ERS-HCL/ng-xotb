@@ -1,0 +1,37 @@
+<p class="xotb-assistive-text" [attr.id]="uid + '-instructions'">
+  Use arrow keys to select a saturation and brightness, on an x and y axis.
+</p>
+<div
+  class="xotb-color-picker__custom-range"
+  #rangeIndicatorContainer
+  [style.background]="'hsl(' + hsv.hue + ', 100%, 50%)'"
+>
+  <a
+    class="xotb-color-picker__range-indicator"
+    #rangeIndicator
+    href="javascript:void(0);"
+    aria-live="assertive"
+    aria-atomic="true"
+    [attr.aria-describedby]="uid + '-instructions'"
+    [ngStyle]="indicatorStyle()"
+    (keydown)="rangeIndicatorKeyboard($event)"
+    ><span class="xotb-assistive-text"
+      >Saturation: {{ hsv.saturation }}%. Brightness: {{ hsv.value }}%.</span
+    ></a
+  >
+</div>
+<div class="xotb-color-picker__hue-and-preview">
+  <label class="xotb-assistive-text" [attr.for]="uid + '-hue'"
+    >Select Hue</label
+  >
+  <input
+    class="xotb-color-picker__hue-slider"
+    #hueSlider
+    type="range"
+    min="0"
+    max="360"
+    [id]="uid + '-hue'"
+    [value]="hsv.hue"
+    (input)="hueSliderChange($event.target.value)"
+  /><span xotbColorpickerSwatch [color]="hex"></span>
+</div>

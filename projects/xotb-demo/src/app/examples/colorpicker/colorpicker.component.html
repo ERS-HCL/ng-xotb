@@ -1,0 +1,39 @@
+<div class="xotb-view-container">
+  <h1 class="heading"><strong>Colorpicker</strong></h1>
+  <p class="description">
+    The Color Picker tool allows a user to create, share and apply color
+    palettes to your UI, as well as measure the accessibility level of a given
+    color combination.
+  </p>
+
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <xotb-colorpicker
+          [(ngModel)]="color"
+          fieldLevelHelpTooltip="This is some useful info"
+        ></xotb-colorpicker>
+
+        <pre>Selected: {{ color }}</pre>
+
+        <button
+          type="button"
+          variant="outline-brand"
+          xotbButton
+          (click)="color = '#FF0000'"
+        >
+          Select Red
+        </button>
+
+        <button
+          type="button"
+          variant="outline-brand"
+          xotbButton
+          (click)="color = null"
+        >
+          Clear
+        </button>
+      </div>
+    </xotb-panel>
+  </div>
+</div>

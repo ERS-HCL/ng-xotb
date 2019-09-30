@@ -1,0 +1,61 @@
+.xotb-select_container {
+  position: relative;
+  .xotb-select {
+    -webkit-appearance: none;
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.xotb-select {
+  background-color: $background-color;
+  border: 1px solid;
+  border-color: $border-color;
+  border-radius: 0.25rem;
+  width: 100%;
+  transition: border 0.1s linear, background-color 0.1s linear;
+  height: calc(1.875rem + (1px * 2));
+}
+
+.xotb-select[disabled] {
+  background-color: $disabled-background-color;
+  border-color: $disabled-border-color;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.xotb-select_container:before {
+  border-bottom: 5px solid;
+  border-bottom-color: $select-container-border-color;
+  top: calc((1.75rem / 2) - 6px);
+}
+.xotb-select_container:after {
+  border-top: 5px solid;
+  border-top-color: $select-container-border-color;
+  bottom: calc((1.75rem / 2) - 6px);
+}
+.xotb-select_container:before {
+  position: absolute;
+  content: '';
+  display: block;
+  right: 0.5rem;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  pointer-events: none;
+}
+.xotb-select_container::after {
+  position: absolute;
+  content: '';
+  display: block;
+  right: 0.5rem;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  pointer-events: none;
+}

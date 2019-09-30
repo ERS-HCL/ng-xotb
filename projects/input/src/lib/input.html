@@ -1,0 +1,14 @@
+<label [xotbFormLabel]="label" [attr.for]="_uid" [required]="required"></label>
+<xotb-form-help
+  *ngIf="fieldLevelHelpTooltip"
+  [content]="fieldLevelHelpTooltip"
+></xotb-form-help>
+<div class="xotb-form-element__control">
+  <ng-content></ng-content>
+</div>
+<div
+  class="xotb-form-element__help"
+  *ngIf="hasError"
+  [id]="errorId"
+  [xotbInternalOutlet]="error"
+></div>

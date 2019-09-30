@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.xotb-view-container {
+  padding: 20px;
+}
+
+.xotb-view-container h1.heading {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.xotb-view-container h2.heading {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.xotb-view-container h3.heading {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.xotb-view-container p.description {
+  margin-bottom: 20px;
+}
+
+.xotb-view-container .xotb-panel-container {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+}
+
+.xotb-view-container .xotb-panel-container .panel-view {
+  padding: 20px 0;
+}

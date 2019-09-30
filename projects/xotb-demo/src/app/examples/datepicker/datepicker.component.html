@@ -1,0 +1,20 @@
+<div class="xotb-view-container">
+  <h1 class="heading">Datepicker</h1>
+  <p class="description">
+    A Datepicker lets the users select a date from calendar, or a range of
+    dates, it also allows users to enter a date through text input.
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <xotb-datepicker-input
+          label="StartDate"
+          name="fieldName"
+          ngDefaultControl
+          [(ngModel)]="value"
+          #dt="ngModel"
+          [class.xotb-has-error]="!dt.valid"
+        ></xotb-datepicker-input></div
+    ></xotb-panel>
+  </div>
+</div>

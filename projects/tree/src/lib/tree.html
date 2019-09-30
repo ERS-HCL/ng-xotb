@@ -1,0 +1,30 @@
+<ul *ngIf="treeData">
+  <li
+    class="xotb-tree-node"
+    *ngFor="let node of treeData"
+    [ngClass]="node.active ? 'xotb-tree-node-active' : ''"
+  >
+    <span *ngIf="node.hasChildren"
+      ><xotb-icon
+        iconName="folder"
+        size="xx-small"
+        svgClass="xotb-tree_icon__folder_fill"
+      ></xotb-icon>
+    </span>
+    <span *ngIf="!node.hasChildren"
+      ><xotb-icon
+        iconName="file"
+        size="xx-small"
+        svgClass="xotb-tree_icon__file_fill"
+      ></xotb-icon>
+    </span>
+    <span (click)="toggleChild(node)" class="xotb-node-label">
+      {{ node.name }}
+    </span>
+    <xotb-tree
+      *ngIf="node.showChildren"
+      [treeData]="node.children"
+      (onSelect)="handleSelect($event)"
+    ></xotb-tree>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+.xotb-vbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.xotb-hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.xotb-card {
+  border: 1px solid $border-color;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+}

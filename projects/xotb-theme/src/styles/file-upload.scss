@@ -1,0 +1,33 @@
+.xotb-file-selector {
+  display: inline-flex;
+}
+.xotb-file-selector__dropzone {
+  padding: 0.125rem;
+  border: 1px dashed
+    darken($color: $primary-color, $amount: $border-darken-amount);
+}
+
+.xotb-file-selector_files {
+  .xotb-file-selector__body {
+    display: flex;
+    align-items: center;
+    .xotb-button_outline-brand {
+      border: 0;
+    }
+  }
+  .xotb-file-selector__button {
+    max-height: 1.625rem;
+    line-height: 1.625rem;
+  }
+  .xotb-file-selector__text {
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+  }
+}
+.xotb-file-selector__button {
+  display: inline-flex;
+  align-items: center;
+}
+.xotb-medium-show {
+  display: none;
+}

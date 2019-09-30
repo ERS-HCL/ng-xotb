@@ -1,0 +1,177 @@
+@import '@angular/cdk/overlay-prebuilt.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 100;
+}
+
+abbr[title] {
+  border: 0;
+  text-decoration: none;
+  cursor: help;
+}
+select {
+  margin: 0;
+}
+a {
+  background-color: transparent;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+dl,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.xotb-show_inline-block {
+  display: inline;
+}
+
+.xotb-wrap {
+  flex-wrap: wrap;
+}
+.xotb-list_horizontal {
+  display: flex;
+}
+
+.xotb-truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.xotb-text-heading_small {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: 1em;
+}
+td,
+th {
+  padding: 0;
+}
+caption,
+td,
+th {
+  text-align: left;
+}
+.xotb-line-height_reset {
+  line-height: 1;
+}
+
+.xotb-text-link {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.xotb-text-link:focus,
+.xotb-text-link:hover {
+  text-decoration: underline;
+  color: $primary-color;
+}
+
+.xotb-text-link:active {
+  color: $primary-color;
+}
+
+.xotb-text-link_reset,
+.xotb-text-link_reset:active,
+.xotb-text-link_reset:focus,
+.xotb-text-link_reset:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.xotb-hide {
+  display: none !important;
+}
+
+.xotb-show {
+  display: block;
+}

@@ -1,0 +1,14 @@
+<li
+  class="xotb-color-picker__swatch"
+  *ngFor="let color of swatchColors; let i = index"
+  role="presentation"
+>
+  <a
+    xotbColorpickerSwatchTrigger
+    href="javascript:void(0);"
+    [selected]="isSelected(color)"
+    [attr.tabindex]="activeIndex === i ? 0 : -1"
+    (selectedChange)="onSelect(color)"
+    ><span xotbColorpickerSwatch [color]="color"></span
+  ></a>
+</li>

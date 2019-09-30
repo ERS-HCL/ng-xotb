@@ -1,0 +1,78 @@
+<div class="xotb-datepicker__filter xotb-grid">
+  <div
+    class="xotb-datepicker__filter_month xotb-grid xotb-grid_align-spread xotb-grow"
+  >
+    <div class="xotb-align-middle">
+      <button
+        class="xotb-button xotb-button_icon-container"
+        type="button"
+        (click)="moveMonth(-1)"
+        [disabled]="previousDisabled()"
+        [title]="previousMonthLabel"
+      >
+        <xotb-icon iconName="chevron-left" size="x-small"></xotb-icon>
+      </button>
+    </div>
+    <h2
+      class="xotb-align-middle"
+      [id]="uid + '_month'"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      {{ monthLabel }}
+    </h2>
+    <div class="xotb-align-middle">
+      <button
+        class="xotb-button xotb-button_icon-container"
+        type="button"
+        (click)="moveMonth(1)"
+        [disabled]="nextDisabled()"
+        [title]="nextMonthLabel"
+      >
+        <xotb-icon iconName="chevron-right" size="x-small"></xotb-icon>
+      </button>
+    </div>
+  </div>
+  <xotb-date-year
+    class="xotb-shrink-none"
+    [year]="current.year"
+    [from]="minDate"
+    [to]="maxDate"
+    (yearChange)="moveYear($event)"
+  ></xotb-date-year>
+</div>
+<table
+  class="datepicker__month"
+  role="grid"
+  [attr.aria-labelledby]="uid + '_month'"
+  (keydown)="keyboardHandler($event)"
+>
+  <thead>
+    <tr
+      xotbWeekdays
+      [firstDayOfWeek]="firstDayOfWeek"
+      [dayNamesShort]="dayNamesShort"
+      [dayNamesLong]="dayNamesLong"
+    ></tr>
+  </thead>
+  <tbody
+    *ngIf="current"
+    xotbDatepickerMonth
+    [year]="current.year"
+    [month]="current.month"
+    [day]="current.day"
+    [selected]="_date"
+    [firstDayOfWeek]="firstDayOfWeek"
+    [minDate]="minDate"
+    [maxDate]="maxDate"
+    [dateDisabled]="dateDisabled"
+    (selectDate)="select($event)"
+  ></tbody>
+</table>
+<button
+  class="xotb-button xotb-align_absolute-center xotb-text-link"
+  *ngIf="showToday"
+  (click)="selectToday()"
+>
+  {{ todayLabel }}
+</button>

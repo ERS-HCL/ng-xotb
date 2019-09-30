@@ -1,0 +1,33 @@
+<label class="xotb-form-element__label" [attr.for]="uid">
+  <span class="xotb-slider-label">
+    <span
+      class="xotb-slider-label__label"
+      *ngIf="label"
+      [xotbInternalOutlet]="label"
+    ></span>
+    <span class="xotb-slider-label__range">{{ min }} - {{ max }}</span>
+  </span>
+</label>
+<div class="xotb-form-element__control">
+  <div class="xotb-slider" [ngClass]="sliderClass()">
+    <input
+      class="xotb-slider__range"
+      [id]="uid"
+      type="range"
+      [value]="value"
+      [min]="min"
+      [max]="max"
+      [step]="step"
+      [disabled]="disabled"
+      [attr.aria-describedby]="hasError ? uid + '-error' : null"
+      (input)="onInput($event.target.value)"
+    />
+    <span class="xotb-slider__value" aria-hidden="true">{{ value }}</span>
+  </div>
+  <div
+    class="xotb-form-element__help"
+    *ngIf="hasError"
+    [id]="uid + '-error'"
+    [xotbInternalOutlet]="error"
+  ></div>
+</div>

@@ -1,0 +1,12 @@
+<a
+  class="xotb-carousel__panel-action xotb-text-link_reset"
+  href="javascript:void(0);"
+  [attr.tabindex]="active ? 0 : -1"
+>
+  <div class="xotb-carousel__image">
+    <img [src]="src" [attr.alt]="alternativeText || null" />
+  </div>
+  <div class="xotb-carousel__content">
+    <h2 class="xotb-carousel__content-title" [xotbInternalOutlet]="header"></h2>
+    <p [xotbInternalOutlet]="description"></p></div
+></a>

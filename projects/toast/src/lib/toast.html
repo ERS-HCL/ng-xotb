@@ -1,0 +1,25 @@
+<!-- Temporary fix for aligning items -->
+<div style="display: inline-flex">
+  <xotb-icon
+    class="xotb-m-right_small xotb-no-flex xotb-align-top"
+    *ngIf="iconName"
+    [iconName]="iconName"
+    size="small"
+    variant=""
+    [alternativeText]="assistiveText"
+  ></xotb-icon>
+  <div class="xotb-notify__content">
+    <ng-content></ng-content>
+  </div>
+  <button
+    class="xotb-button xotb-button_icon xotb-notify__close"
+    *ngIf="dismissible"
+    type="button"
+    (click)="close('button', $event)"
+  >
+    <xotb-icon
+      iconName="x"
+      [alternativeText]="closeButtonAssistiveText"
+    ></xotb-icon>
+  </button>
+</div>

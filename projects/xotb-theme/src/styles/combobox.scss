@@ -1,0 +1,17 @@
+// prettier-ignore
+[role=combobox] input[readonly] {
+  padding-left: 0.75rem;
+  border-color: $border-color;
+  
+  font-size: inherit;
+  font-weight: 400;
+}
+.xotb-combobox {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.xotb-combobox__form-element {
+  flex: 1 1 auto;
+}

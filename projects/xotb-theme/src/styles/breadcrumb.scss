@@ -1,0 +1,31 @@
+.xotb-breadcrumb .xotb-list__item,
+.xotb-breadcrumb__item {
+  position: relative;
+}
+.xotb-breadcrumb .xotb-list__item:before,
+.xotb-breadcrumb__item:before {
+  content: '\003E';
+  position: absolute;
+  color: darken($color: $border-color, $amount: 40);
+  left: -0.25rem;
+}
+.xotb-breadcrumb .xotb-list__item:first-child:before,
+.xotb-breadcrumb__item:first-child:before {
+  content: '';
+}
+
+.xotb-breadcrumb .xotb-list__item:first-child > a,
+.xotb-breadcrumb__item:first-child > a {
+  padding-left: 0;
+}
+.xotb-breadcrumb .xotb-list__item > a,
+.xotb-breadcrumb__item > a {
+  display: block;
+  padding: 0 0.5rem;
+  color: darken($color: $primary-color, $amount: 10);
+}
+.xotb-breadcrumb .xotb-list__item :last-child > a,
+.xotb-breadcrumb__item:last-child > a {
+  color: darken($color: $border-color, $amount: 40);
+  cursor: default;
+}

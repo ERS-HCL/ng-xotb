@@ -1,0 +1,11 @@
+<label class="xotb-assistive-text" [attr.for]="uid">Pick a Year</label>
+<div class="xotb-select_container">
+  <select
+    class="xotb-select"
+    [id]="uid"
+    [ngModel]="year"
+    (ngModelChange)="change($event)"
+  >
+    <option *ngFor="let yr of range" [value]="yr">{{yr}}</option>
+  </select>
+</div>

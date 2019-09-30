@@ -1,0 +1,14 @@
+<tr *ngFor="let week of weeks; trackBy:indexTrackBy">
+  <td
+    *ngFor="let date of week; trackBy:dateTrackBy"
+    [class.xotb-is-today]="date.today"
+    [isActive]="date.active"
+    [xotbDay]="date"
+    [xotbDaySelected]="date.selected"
+    [xotbDayDisabled]="date.disabled"
+    (click)="onSelect(date)"
+    role="gridcell"
+  >
+    <span class="xotb-day">{{ date.day }}</span>
+  </td>
+</tr>

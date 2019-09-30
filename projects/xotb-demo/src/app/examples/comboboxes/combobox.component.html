@@ -1,0 +1,27 @@
+<div class="xotb-view-container">
+  <h1 class="heading"><strong>Combobox</strong></h1>
+  <p class="description">
+    A Combobox is a commonly used GUI widget (or control). Traditionally, it is
+    a combination of a drop-down list or list box and a single-line editable
+    text box that allows a user to either type a value directly or select a
+    value from the list. The term "combo box" is sometimes used to mean a
+    "drop-down list".
+  </p>
+
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div style="max-width: 300px">
+          <xotb-combobox
+            label="Make a choice"
+            [options]="options"
+            [(open)]="open"
+            [(selection)]="selection"
+          >
+            <input xotbCombobox placeholder="Select an Option" />
+          </xotb-combobox>
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
+</div>

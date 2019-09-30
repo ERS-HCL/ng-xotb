@@ -1,0 +1,47 @@
+<thead>
+  <tr class="xotb-line-height_reset">
+    <th
+      *ngFor="let col of columns; trackBy: columnTrackBy"
+      xotbDatatableHead
+      scope="col"
+      [heading]="col.heading"
+      [headingTpl]="col.headingTpl?.templateRef"
+      [sortable]="col.sortable"
+      [sortOrder]="getColumnSortOrder(col)"
+      (sort)="onColumnSort(col, $event)"
+      [ngClass]="col.headClass"
+    ></th>
+  </tr>
+</thead>
+<tbody>
+  <ng-template #noData>
+    <tr>
+      <td [attr.colspan]="columns.length">
+        <ng-template
+          [ngTemplateOutlet]="noRowsOverlay?.templateRef"
+        ></ng-template>
+      </td>
+    </tr>
+  </ng-template>
+  <ng-container *ngIf="data &amp;&amp; data.length &gt; 0; else noData">
+    <tr
+      *ngFor="let d of data; let i = index; trackBy: dataTrackBy"
+      (click)="onRowClick($event, d)"
+    >
+      <td
+        *ngFor="let col of columns; trackBy: columnTrackBy"
+        [ngClass]="col.cellClass"
+        xotbDatatatableCell_
+        [row]="d"
+        [column]="col"
+        [index]="i"
+      ></td>
+    </tr>
+  </ng-container>
+</tbody>
+<div
+  class="xotb-datatable-loading xotb-align_absolute-center"
+  *ngIf="showLoading"
+>
+  <ng-template [ngTemplateOutlet]="loadingOverlay.templateRef"></ng-template>
+</div>

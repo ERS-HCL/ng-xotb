@@ -1,0 +1,11 @@
+<div
+  [class.slds-truncate]="column.truncate"
+  [attr.title]="column.truncate ? value : null"
+>
+  <ng-container
+    *ngIf="column.cellTpl; else stringTpl"
+    [ngTemplateOutlet]="column.cellTpl.templateRef"
+    [ngTemplateOutletContext]="context"
+  ></ng-container>
+  <ng-template #stringTpl>{{ value }}</ng-template>
+</div>

@@ -1,0 +1,48 @@
+<div class="xotb-carousel__stage">
+  <span class="xotb-carousel__autoplay" *ngIf="autoScroll">
+    <button
+      class="xotb-button xotb-button_icon xotb-button_icon-x-small"
+      [attr.aria-pressed]="!playing"
+      [title]="playLabel()"
+      (click)="togglePlay()"
+    >
+      <xotb-icon
+        size="x-small"
+        svgClass="xotb-carousel_icon"
+        [iconName]="playing ? 'pause' : 'play'"
+      ></xotb-icon
+      ><span class="xotb-assistive-text">{{ playLabel() }}</span>
+    </button></span
+  >
+  <div
+    class="xotb-carousel__panels"
+    [style.transform]="'translateX(' + -active * 100 + '%)'"
+  >
+    <ng-content></ng-content>
+  </div>
+  <ul
+    class="xotb-carousel__indicators"
+    #indicatorsEl
+    role="tablist"
+    (keydown)="onKeyboard($event)"
+  >
+    <li
+      class="xotb-carousel__indicator"
+      *ngFor="let image of images; let i = index"
+      role="presentation"
+    >
+      <a
+        class="xotb-carousel__indicator-action"
+        xotbCarouselIndicator
+        href="javascript:void(0);"
+        role="tab"
+        [isActive]="isActive(i)"
+        [image]="getImage(i)"
+        [attr.aria-controls]="image.uid"
+        [title]="image.header"
+        (click)="onIndicatorClick(i)"
+        ><span class="xotb-assistive-text">{{ image.header }}</span></a
+      >
+    </li>
+  </ul>
+</div>

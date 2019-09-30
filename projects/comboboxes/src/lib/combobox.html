@@ -1,0 +1,116 @@
+<label [xotbFormLabel]="label" [attr.for]="inputEl.id"></label>
+<div class="xotb-form-element__control">
+  <div
+    class="xotb-combobox_container"
+    [class.xotb-has-selection]="hasLookupSingleSelection"
+  >
+    <div
+      class="xotb-combobox xotb-dropdown-trigger xotb-dropdown-trigger_click"
+      [attr.aria-expanded]="open"
+      aria-haspopup="listbox"
+      role="combobox"
+      [class.xotb-is-open]="open"
+      [attr.aria-owns]="uid"
+    >
+      <div
+        class="xotb-combobox__form-element xotb-input-has-icon"
+        role="none"
+        cdkOverlayOrigin
+        #overlayOrigin="cdkOverlayOrigin"
+        [class.xotb-input-has-icon_group-right]="loading"
+        [class.xotb-input-has-icon_right]="!loading"
+      >
+        <ng-content select="input"></ng-content>
+        <div
+          class="xotb-input__icon-group xotb-input__icon-group_right"
+          *ngIf="loading; else iconRight"
+        >
+          <div
+            class="xotb-spinner xotb-spinner_brand xotb-spinner_x-small xotb-input__spinner"
+            role="status"
+          >
+            <span class="xotb-assistive-text">Loading</span>
+            <div class="xotb-spinner__dot-a"></div>
+            <div class="xotb-spinner__dot-b"></div>
+          </div>
+          <ng-template [ngTemplateOutlet]="iconRight"></ng-template>
+        </div>
+        <ng-template #iconRight>
+          <button
+            class="xotb-button xotb-button_icon xotb-input__icon xotb-input__icon_right"
+            *ngIf="hasLookupSingleSelection; else iconTpl"
+            type="button"
+            (click)="onClearSelection()"
+            title="Remove selected option"
+          >
+            <xotb-icon
+              size="x-small"
+              iconName="x"
+              alternativeText="Remove selected option"
+            >
+            </xotb-icon>
+          </button>
+        </ng-template>
+        <ng-template #iconTpl
+          ><span
+            class="xotb-icon_container xotb-input__icon xotb-input__icon_right"
+          >
+            <xotb-icon size="x-small" [iconName]="inputIconRight()">
+            </xotb-icon> </span
+        ></ng-template>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template
+  cdkConnectedOverlay
+  #cdkOverlay="cdkConnectedOverlay"
+  [cdkConnectedOverlayPositions]="overlayPositions"
+  [cdkConnectedOverlayOrigin]="overlayOrigin"
+  [cdkConnectedOverlayMinWidth]="overlayWidth"
+  [cdkConnectedOverlayOpen]="open"
+  (attach)="onAttach()"
+  (detach)="onDetach()"
+>
+  <div
+    class="xotb-dropdown xotb-dropdown_fluid"
+    #dropdown
+    [attr.id]="uid"
+    role="listbox"
+    [ngClass]="dropdownClass()"
+    (mousedown)="$event.preventDefault()"
+  >
+    <ul class="xotb-listbox xotb-listbox_vertical" role="presentation">
+      <li
+        *ngFor="let d of data; trackBy: trackByOption"
+        xotbComboboxOption
+        [value]="d.value"
+        [label]="d.label"
+        [disabled]="d.disabled"
+        [selected]="isSelected(d.value)"
+      ></li>
+      <li class="xotb-listbox__item" *ngIf="loadingMore" role="presentation">
+        <div class="xotb-align_absolute-center xotb-p-top_medium">
+          <div
+            class="xotb-spinner xotb-spinner_x-small xotb-spinner_inline"
+            role="status"
+          >
+            <div class="xotb-assistive-text">Loading</div>
+            <div class="xotb-spinner__dot-a"></div>
+            <div class="xotb-spinner__dot-b"></div>
+          </div>
+        </div>
+      </li>
+      <li
+        class="xotb-listbox__item"
+        *ngIf="hasNoMatches()"
+        role="presentation"
+        aria-live="polite"
+      >
+        <div class="xotb-align_absolute-center">
+          <span role="status">No matches found.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</ng-template>

@@ -1,0 +1,90 @@
+.xotb-datepicker__filter {
+  padding: 0.25rem;
+}
+
+.xotb-datepicker__filter_month {
+  padding: 0 0.25rem 0 0;
+}
+
+.xotb-grid {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.xotb-grid_align-spread {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.xotb-grow {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.xotb-align-middle {
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.xotb-shrink-none {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.xotb-datepicker th {
+  padding: 0.5rem;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.xotb-datepicker td,
+.xotb-datepicker th {
+  text-align: center;
+}
+
+.xotb-datepicker td {
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.xotb-datepicker td > .xotb-day {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: relative;
+  min-width: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.xotb-datepicker td.xotb-is-today > .xotb-day,
+.xotb-datepicker td:focus:not(.xotb-disabled-text) > .xotb-day,
+.xotb-datepicker td:hover:not(.xotb-disabled-text) > .xotb-day {
+  cursor: pointer;
+}
+
+.xotb-datepicker td.xotb-is-today > .xotb-day {
+  background-color: $disabled-background-color;
+}
+
+.xotb-datepicker td.xotb-is-selected > .xotb-day {
+  background: $primary-color;
+  color: $text-inverse-color;
+}
+
+.xotb-align_absolute-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+}

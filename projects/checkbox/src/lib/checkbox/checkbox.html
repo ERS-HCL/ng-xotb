@@ -1,0 +1,19 @@
+<div class="xotb-form-element__control">
+  <div class="xotb-checkbox" [class.xotb-checkbox_stacked]="stacked">
+    <abbr class="xotb-required" *ngIf="required" title="required">*</abbr>
+    <ng-content></ng-content
+    ><label class="xotb-checkbox__label" [attr.for]="_uid"
+      ><span class="xotb-checkbox_faux"></span
+      ><span
+        class="xotb-form-element__label"
+        [xotbInternalOutlet]="label"
+      ></span
+    ></label>
+  </div>
+</div>
+<div
+  class="xotb-form-element__help"
+  *ngIf="hasError"
+  [id]="errorId"
+  [xotbInternalOutlet]="error"
+></div>

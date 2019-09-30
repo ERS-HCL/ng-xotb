@@ -1,0 +1,11 @@
+<xotb-icon
+  class="xotb-button__icon xotb-button__icon_left"
+  *ngIf="hasLeftIcon()"
+  [iconName]="iconName"
+></xotb-icon>
+<ng-content></ng-content
+><xotb-icon
+  class="xotb-button__icon xotb-button__icon_right"
+  *ngIf="hasRightIcon()"
+  [iconName]="iconName"
+></xotb-icon>

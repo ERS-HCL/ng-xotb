@@ -1,0 +1,27 @@
+<ng-template #t let-fill="fill">
+  <xotb-icon
+    [iconName]="icon"
+    [svgClass]="size ? 'xotb-icon_' + size : ''"
+    [svgStyle]="{ fill: fill === 100 ? colorOn : colorOff }"
+  ></xotb-icon>
+  <xotb-icon
+    [iconName]="icon"
+    [svgClass]="size ? 'xotb-icon_' + size : ''"
+    [svgStyle]="{ fill: colorOn }"
+    *ngIf="fill &gt; 0 &amp;&amp; fill &lt; 100"
+    style="position:absolute; bottom:0;"
+    [svgStyle]="{ left: fill - 100 }"
+  ></xotb-icon>
+</ng-template>
+<div
+  class="xotb-show_inline-block"
+  *ngFor="let r of range; let i = index"
+  (click)="update(r)"
+  (mouseenter)="enter(r)"
+  style="position: relative;"
+>
+  <ng-template
+    [ngTemplateOutlet]="_template"
+    [ngTemplateOutletContext]="{$implicit: r &lt;= currentRate, index: i, fill: getFill(r)}"
+  ></ng-template>
+</div>

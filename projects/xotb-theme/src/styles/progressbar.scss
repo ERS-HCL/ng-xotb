@@ -1,0 +1,36 @@
+.xotb-progress-bar {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: $background-color;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+.xotb-progress-bar_medium {
+  height: 0.5rem;
+}
+.xotb-progress-bar_large {
+  height: 0.75rem;
+}
+.xotb-progress-bar_x-small {
+  height: 0.125rem;
+}
+.xotb-progress-bar_small {
+  height: 0.25rem;
+}
+.xotb-progress-bar_circular,
+.xotb-progress-bar_circular .xotb-progress-bar__value {
+  border-radius: 0.5rem;
+}
+.xotb-progress-bar_circular,
+.xotb-progress-bar_circular .xotb-progress-bar__value {
+  border-radius: 0.5rem;
+}
+.xotb-progress-bar__value {
+  display: block;
+  background: $progressbar-value-background-color;
+  height: 100%;
+}

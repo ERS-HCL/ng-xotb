@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div>
+    <ul>
+      <li *ngFor="let lib of libraries; let i = index">
+        <a [routerLink]="lib">{{ lib }}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="examples">
+    <router-outlet></router-outlet>
+  </div>
+</div>

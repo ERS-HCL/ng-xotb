@@ -1,0 +1,62 @@
+<div class="xotb-view-container">
+  <h1 class="heading">Toast</h1>
+  <p class="description">
+    A Toast provides a simple feedback about an operation in a small popup. It
+    is a non-modal, unobtrusive window element used to display brief information
+    to a user, and remains visible only for a short time period
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <xotb-toast iconName="info">
+          <h2 class="xotb-text-heading_small">
+            This is a toast with an icon next to its
+            <a href="javascript:void(0);">message</a>.
+          </h2>
+          <p>Here's some detail of what happened...</p>
+        </xotb-toast>
+
+        <xotb-toast variant="success" iconName="check-circle">
+          <h2 class="xotb-text-heading_small">
+            Last operation was successful
+          </h2>
+        </xotb-toast>
+
+        <xotb-toast
+          variant="warning"
+          iconName="alert-triangle"
+          (close)="onClose('click')"
+        >
+          <h2 class="xotb-text-heading_small">
+            Can’t send “report.pdf” to the
+            <a href="javascript:void(0);">selected user</a>.
+          </h2>
+        </xotb-toast>
+
+        <button
+          class="show-toast"
+          type="button"
+          [disabled]="showTopToast"
+          xotbButton
+          (click)="showTopToast = true"
+        >
+          Show toast in container
+        </button>
+
+        <div class="xotb-notify_container">
+          <xotb-toast
+            *ngIf="showTopToast"
+            variant="error"
+            (close)="onClose($event); showTopToast = false"
+            duration="500000"
+          >
+            <h2 class="xotb-text-heading_small">
+              This error will automatically hide after 5 seconds if you don't
+              click on the close button
+            </h2>
+          </xotb-toast>
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
+</div>

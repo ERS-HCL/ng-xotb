@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  flex: 1 auto;
+}
+.card-header h4 {
+  font-size: 1.2rem;
+}
+
+.card {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.card-header,
+.card-body {
+  padding: 0.5rem 0.7rem;
+}
+
+.card-header,
+.card-body {
+  border-bottom: 1px solid #e0e0e0;
+}

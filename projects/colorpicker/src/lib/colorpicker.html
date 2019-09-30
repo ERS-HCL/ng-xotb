@@ -1,0 +1,127 @@
+<div class="xotb-color-picker__summary">
+  <label
+    [xotbFormLabel]="label"
+    xotbFormLabelClass="xotb-color-picker__summary-label"
+    [attr.for]="uid + '-summary-input'"
+    [required]="required"
+  >
+    <xotb-form-help
+      class="xotb-m-horizontal_xx-small"
+      *ngIf="fieldLevelHelpTooltip"
+      [content]="fieldLevelHelpTooltip"
+    ></xotb-form-help>
+  </label>
+
+  <button
+    class="xotb-button xotb-color-picker__summary-button xotb-button_icon xotb-button_icon-more"
+    [title]="label"
+    [xotbPopover]="tip"
+    xotbPopoverPlacement="bottom-left"
+    [xotbPopoverOpen]="open"
+    (xotbPopoverOpenChange)="openChange($event)"
+    xotbPopoverClass="xotb-color-picker__selector"
+    [xotbPopoverFooter]="footer"
+    xotbPopoverCloseVisible="false"
+    [disabled]="disabled"
+  >
+    <span
+      class="xotb-swatch"
+      xotbColorpickerSwatch
+      [color]="isValidInput ? color : hexCurrent"
+    ></span>
+
+    <svg
+      class="xotb-button__icon xotb-button__icon_small xotb-m-left_xx-small"
+      *ngIf="!disabled"
+      xotbIconName="utility:down"
+    ></svg
+    ><span class="xotb-assistive-text">{{ label }}: {{ color }}</span>
+  </button>
+
+  <div class="xotb-form-element xotb-color-picker__summary-input">
+    <div
+      class="xotb-form-element__control"
+      [class.xotb-has-error]="!isValidInput"
+    >
+      <input
+        class="xotb-input"
+        [id]="uid + '-summary-input'"
+        type="text"
+        [value]="color"
+        (input)="onInput($event.target.value)"
+        [disabled]="disabled"
+        [readOnly]="readonlyInput"
+        maxlength="7"
+        [placeholder]="placeholder || ''"
+      />
+    </div>
+  </div>
+
+  <p
+    class="xotb-form-error"
+    *ngIf="!isValidInput"
+    [xotbInternalOutlet]="invalidColorLabel"
+  ></p>
+</div>
+
+<ng-template #tip>
+  <ng-container [ngSwitch]="variant">
+    <ng-container *ngSwitchCase="'swatches'">
+      <ng-template [ngTemplateOutlet]="swatches"></ng-template>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'custom'">
+      <ng-template [ngTemplateOutlet]="custom"></ng-template>
+    </ng-container>
+
+    <xotb-tabset
+      *ngSwitchDefault
+      [selected]="defaultSelectedTab"
+      (selectedChange)="defaultSelectedTab = $event.id"
+    >
+      <ng-template xotb-tab id="swatches" [label]="swatchTabLabel">
+        <ng-template [ngTemplateOutlet]="swatches"></ng-template>
+      </ng-template>
+
+      <ng-template xotb-tab id="custom" [label]="customTabLabel">
+        <ng-template [ngTemplateOutlet]="custom"></ng-template>
+      </ng-template>
+    </xotb-tabset>
+  </ng-container>
+</ng-template>
+
+<ng-template #swatches>
+  <xotb-colorpicker-swatches
+    [hex]="hexCurrent"
+    (hexChange)="onSwatchSelection($event)"
+    [swatchColors]="swatchColors"
+  ></xotb-colorpicker-swatches>
+</ng-template>
+
+<ng-template #custom>
+  <xotb-colorpicker-custom
+    [hsv]="hsvCurrent"
+    (hsvChange)="onCustomSelection($event)"
+  ></xotb-colorpicker-custom>
+</ng-template>
+
+<ng-template #footer>
+  <div class="xotb-color-picker__selector-footer">
+    <button
+      class="xotb-button xotb-button_neutral"
+      type="button"
+      (click)="cancel()"
+    >
+      {{ cancelButtonLabel }}
+    </button>
+
+    <button
+      class="xotb-button xotb-button_brand"
+      type="button"
+      (click)="done()"
+      [disabled]="!canApply()"
+    >
+      {{ submitButtonLabel }}
+    </button>
+  </div>
+</ng-template>

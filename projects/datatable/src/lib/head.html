@@ -1,0 +1,30 @@
+<a
+  class="xotb-th__action xotb-text-link_reset"
+  *ngIf="sortable; else baseTpl"
+  (click)="sortChange()"
+  role="button"
+  tabindex="0"
+  ><span class="xotb-assistive-text">Sort by:</span>
+  <div
+    class="xotb-grid xotb-grid_vertical-align-center xotb-has-flexi-truncate"
+  >
+    <span
+      class="xotb-truncate"
+      [attr.title]="attrTitle"
+      [xotbInternalOutlet]="header"
+    ></span
+    ><span class="xotb-icon_container xotb-icon-utility-arrowdown">
+      <xotb-icon
+        class="xotb-icon xotb-icon-text-default xotb-is-sortable__icon"
+        iconName="chevron-down"
+        size="xx-small"
+      ></xotb-icon
+    ></span></div
+></a>
+<ng-template #baseTpl>
+  <div
+    class="xotb-truncate"
+    [attr.title]="attrTitle"
+    [xotbInternalOutlet]="header"
+  ></div>
+</ng-template>

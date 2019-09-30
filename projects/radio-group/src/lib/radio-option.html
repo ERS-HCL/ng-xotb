@@ -1,0 +1,13 @@
+<ng-content></ng-content
+><label class="xotb-radio__label" *ngIf="type === 'list'" [attr.for]="input.id"
+  ><span class="xotb-radio_faux"></span
+  ><span
+    class="xotb-form-element__label"
+    [xotbInternalOutlet]="label"
+  ></span></label
+><label
+  class="xotb-radio_button__label"
+  *ngIf="type === 'button'"
+  [attr.for]="input.id"
+  ><span class="xotb-radio_faux" [xotbInternalOutlet]="label"></span
+></label>

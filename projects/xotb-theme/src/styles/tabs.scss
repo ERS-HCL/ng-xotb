@@ -1,0 +1,110 @@
+.xotb-tabs_scoped {
+  display: block;
+  width: 100%;
+}
+.xotb-tabs_default {
+  display: block;
+  width: 100%;
+  background-color: $background-color;
+}
+.xotb-tabs_default__nav {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid $border-color;
+}
+
+.xotb-tabs_scoped__nav {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fafaf9;
+  border: 1px solid $border-color;
+}
+
+.xotb-tabs_default__item {
+  color: $text-color;
+  position: relative;
+  padding: 0 0.75rem;
+  margin-bottom: -1px;
+}
+.xotb-tabs_scoped__item {
+  position: relative;
+  margin-bottom: -1px;
+}
+.xotb-tabs_default__link {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: currentColor;
+  border: 0;
+  text-transform: inherit;
+  z-index: 1;
+}
+.xotb-tabs_scoped__link {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  color: $text-color;
+  background-clip: padding-box;
+  border: 0;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-radius: 0;
+}
+
+.xotb-tabs_scoped__item:first-child .xotb-tabs_scoped__link {
+  border-left: 0;
+}
+
+.xotb-tabs_scoped__item + .xotb-tabs_scoped__item {
+  margin-left: -1px;
+}
+
+.xotb-tabs_default__item:after {
+  display: block;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  position: absolute;
+}
+
+.xotb-tabs_default__item.xotb-is-active {
+  color: $text-color;
+  .xotb-tabs_default__link {
+    font-weight: 700;
+  }
+}
+
+.xotb-is-active .xotb-tabs_scoped__link {
+  background-color: $background-color;
+  border-color: $border-color;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.xotb-tabs_default__item.xotb-active:after,
+.xotb-tabs_default__item.xotb-is-active:after {
+  background-color: $primary-color;
+  height: 0.1875rem;
+}
+
+.xotb-tabs_scoped__content {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-top: 0;
+  padding: 1rem;
+}

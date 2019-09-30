@@ -1,0 +1,32 @@
+.xotb-tree {
+  ul {
+    padding-left: 16px;
+    li.xotb-tree-node {
+      cursor: pointer;
+      > .xotb-node-label {
+        &:hover {
+          background: $primary-color;
+          padding-right: 5px;
+          margin-left: 5px;
+          color: $text-inverse-color;
+        }
+      }
+    }
+    li.xotb-tree-node-active {
+      > .xotb-node-label {
+        background: $primary-color;
+        padding-right: 5px;
+        margin-left: 5px;
+        color: $text-inverse-color;
+      }
+    }
+  }
+  xotb-icon {
+    .xotb-tree_icon__folder_fill {
+      fill: $primary-color !important;
+    }
+    .xotb-tree_icon__file_fill {
+      fill: none;
+    }
+  }
+}
