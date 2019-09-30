@@ -2,7 +2,8 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 import { centered } from '@storybook/addon-centered/angular';
 import { IconographyComponent } from 'projects/xotb-demo/src/app/components/iconography/iconography.component';
 import { XotbPanelModule } from 'projects/panel/src/public-api';
-import { ThemesComponent } from 'projects/xotb-demo/src/app/components/themes/themes.component';
+import { ColorComponent } from 'projects/xotb-demo/src/app/components/colors/color.component';
+import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
 
 storiesOf('The GUIDE|Brand', module)
   .addDecorator(
@@ -12,7 +13,7 @@ storiesOf('The GUIDE|Brand', module)
   )
   .addDecorator(centered)
   .add(
-    'Principle',
+    'Principles',
     () => ({
       template: '<p>...to be constructed</p>'
     }),
@@ -35,30 +36,18 @@ storiesOf('The GUIDE|Brand', module)
         showPanel: false
       }
     }
-  )
-  .add(
-    'Colours',
-    () => ({
-      template: '<p>...to be constructed</p>'
-    }),
-    {
-      options: {
-        isToolshown: false,
-        showPanel: false
-      }
-    }
   );
 
 storiesOf('The GUIDE|Brand', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbPanelModule]
+      imports: [XotbPanelModule, XotbSpinnerModule]
     })
   )
   .add(
-    'Iconography',
+    'Colours',
     () => ({
-      component: IconographyComponent
+      component: ColorComponent
     }),
     {
       options: {
@@ -68,9 +57,9 @@ storiesOf('The GUIDE|Brand', module)
     }
   )
   .add(
-    'Themes',
+    'Iconography',
     () => ({
-      component: ThemesComponent
+      component: IconographyComponent
     }),
     {
       options: {

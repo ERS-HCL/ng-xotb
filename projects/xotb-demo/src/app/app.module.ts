@@ -78,7 +78,7 @@ import { DemoCardComponent } from './examples/card/card.component';
 import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
 import { DemoDatePickerComponent } from './examples/datepicker/datepicker.component';
 import { IconographyComponent } from './components/iconography/iconography.component';
-import { ThemesComponent } from './components/themes/themes.component';
+import { ColorComponent } from './components/colors/color.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +118,7 @@ import { ThemesComponent } from './components/themes/themes.component';
     DemoWelcomeComponent,
     DemoDatePickerComponent,
     IconographyComponent,
-    ThemesComponent
+    ColorComponent
   ],
   imports: [
     BrowserModule,
