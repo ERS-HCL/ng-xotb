@@ -5,6 +5,7 @@ import { XotbInternalDate } from './util';
   selector: 'td[xotbDay]'
 })
 export class XotbDay {
+  // tslint:disable-next-line
   @Input('xotbDay') readonly date: XotbInternalDate;
 
   @HostBinding('class.xotb-disabled-text')

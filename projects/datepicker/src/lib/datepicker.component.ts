@@ -65,7 +65,6 @@ const KEYBOARD_MOVES = {
       }
     `
   ]
-  //styleUrls: ['./datepicker.component.scss']
 })
 export class XotbDatepicker implements OnInit, OnChanges, AfterViewInit {
   @Input() readonly monthNames: string[];
@@ -73,6 +72,7 @@ export class XotbDatepicker implements OnInit, OnChanges, AfterViewInit {
   @Input() readonly dayNamesLong: string[];
   @Input() dateDisabled: (date: Date) => boolean | null = null;
 
+  // tslint:disable-next-line
   _date: XotbInternalDate;
   current: XotbInternalDate;
   @Input() set date(date: Date) {
@@ -182,6 +182,7 @@ export class XotbDatepicker implements OnInit, OnChanges, AfterViewInit {
   }
 
   keyboardHandler(evt: KeyboardEvent) {
+    // tslint:disable-next-line
     const keyCode = evt.keyCode;
 
     if (keyCode === ENTER) {

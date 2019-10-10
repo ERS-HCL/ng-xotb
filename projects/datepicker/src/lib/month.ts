@@ -69,7 +69,9 @@ export class XotbDatepickerMonth implements OnChanges {
   }
 
   onSelect(date: XotbInternalDate) {
-    if (date.disabled) return;
+    if (date.disabled) {
+      return;
+    }
 
     this.selectDate.emit(date);
   }
