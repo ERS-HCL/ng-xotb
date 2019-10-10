@@ -22,7 +22,7 @@ export class XotbModal implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    let modal = this;
+    const modal = this;
 
     // ensure id attribute exists
     if (!this.id) {
@@ -34,6 +34,7 @@ export class XotbModal implements OnInit, OnDestroy {
     document.body.appendChild(this.element);
 
     // close modal on background click
+    // tslint:disable-next-line
     this.element.addEventListener('click', function(e: any) {
       if (e.target.className === 'xotb-modal') {
         modal.close();

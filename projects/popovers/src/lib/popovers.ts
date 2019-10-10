@@ -24,6 +24,7 @@ import { Variant, Size } from './trigger';
 import { isTemplateRef } from 'ng-xotb/utility';
 
 @Component({
+  // tslint:disable-next-line
   selector: 'section[xotb-popover]',
   templateUrl: './popover.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

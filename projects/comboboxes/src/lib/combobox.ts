@@ -106,7 +106,7 @@ export class XotbCombobox implements OnChanges, OnDestroy {
   overlayWidth = 0;
 
   overlayPositions: ConnectionPositionPair[] = [
-    ...DEFAULT_DROPDOWN_POSITIONS['left']
+    ...DEFAULT_DROPDOWN_POSITIONS.left
   ];
 
   /** Manages active item in option list based on key events. */
@@ -114,6 +114,7 @@ export class XotbCombobox implements OnChanges, OnDestroy {
 
   private optionChangesSubscription: Subscription;
 
+  // tslint:disable-next-line
   private _data: XotbComboboxOptionItem[] | null;
 
   private keyboardSubscription: Subscription;

@@ -38,6 +38,7 @@ export class XotbColorpickerInputs {
 
   uid = uniqueId('colorpicker-inputs');
 
+  // tslint:disable-next-line
   private _hex: string;
 
   updateHex(value) {

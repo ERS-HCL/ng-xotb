@@ -99,7 +99,9 @@ export class XotbCarousel implements OnChanges {
   }
 
   onKeyboard(evt: KeyboardEvent) {
+    // tslint:disable-next-line
     if (evt.keyCode === LEFT_ARROW || evt.keyCode === RIGHT_ARROW) {
+      // tslint:disable-next-line
       this.activateNext(evt.keyCode === LEFT_ARROW);
     }
   }

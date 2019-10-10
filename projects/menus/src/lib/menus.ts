@@ -55,13 +55,20 @@ export class XotbMenus implements OnInit, OnDestroy {
   @ContentChildren(XotbDropdownItem, { descendants: true }) items: QueryList<
     XotbDropdownItem
   >;
+
+  // tslint:disable-next-line
   @Output('openChange') isOpenChange = new EventEmitter<boolean>();
 
   triggerFocusEventEmitter = new EventEmitter();
 
+  // tslint:disable-next-line
   private _isOpen = false;
   private openEventSubscription: any;
+
+  // tslint:disable-next-line
   private globalClickEventUnsubscriber: Function = null;
+
+  // tslint:disable-next-line
   private clickEventUnsubscriber: Function = null;
   private globalClickTimeout: number;
 

@@ -33,7 +33,9 @@ export class XotbOverlayxotbOverlayScrolledOutsideViewDirective
       .getAncestorScrollContainers(elementRef)
       .map(container => container.getElementRef());
 
-    if (!scrollableAncestors || !scrollableAncestors.length) return;
+    if (!scrollableAncestors || !scrollableAncestors.length) {
+      return;
+    }
 
     this.subscription = this.cdkOverlay.positionChange.subscribe(() => {
       const bounds = elementRef.nativeElement.getBoundingClientRect();

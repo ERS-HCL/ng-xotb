@@ -68,7 +68,10 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
    * Position relative to host element.
    */
   @Input('xotbPopoverPlacement')
-  set placement(_placement: Placement) {
+  set placement(
+    // tslint:disable-next-line
+    _placement: Placement
+  ) {
     _placement = _placement || 'top';
     if (_placement === this._placement) {
       return;
@@ -88,7 +91,10 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
    * Whether the floating popover is visible.
    */
   @Input('xotbPopoverOpen')
-  set xotbOpen(_open: any) {
+  set xotbOpen(
+    // tslint:disable-next-line
+    _open: any
+  ) {
     _open =
       toBoolean(_open) && ['backdrop', 'x', 'escape'].indexOf(_open) === -1;
     _open ? this.create() : this.detach();
@@ -101,13 +107,16 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
   /**
    * Close button title (and assistive text).
    */
+  // tslint:disable-next-line
   @Input('xotbPopoverCloseTitle') closeTitle = 'Close dialog';
 
+  // tslint:disable-next-line
   @Input('xotbPopoverClass') popoverClass: any;
 
   /**
    * Whether or not to override the close button's visibility, if `xotbPopoverOpenChange` is set.
    */
+  // tslint:disable-next-line
   @Input('xotbPopoverCloseVisible') @InputBoolean() closeVisible = true;
 
   /** Emit an event when actual popover is shown or hidden */
@@ -128,7 +137,11 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
     'popoverClass',
     'closeVisible'
   ]);
+
+  // tslint:disable-next-line
   private _placement: Placement = 'top';
+
+  // tslint:disable-next-line
   private _open: boolean;
   private portal: ComponentPortal<XotbPopovers>;
   private overlayRef: OverlayRef | null;
@@ -136,7 +149,11 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
   private backdrop = new Subject<void>();
   private closeSubscription: Subscription;
   private positionChangesSubscription: Subscription;
+
+  // tslint:disable-next-line
   private globalClickEventUnsubscriber: Function = null;
+
+  // tslint:disable-next-line
   private clickEventUnsubscriber: Function = null;
   private globalClickTimeout: number;
 
@@ -283,6 +300,7 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
 
   /** Updates the position of the current popover. */
   private updatePosition(): void {
+    // tslint:disable-next-line
     const position = <FlexibleConnectedPositionStrategy>(
       this.overlayRef.getConfig().positionStrategy
     );
@@ -309,6 +327,7 @@ export class XotbPopoverTrigger implements OnChanges, OnDestroy {
     const backdrop = this.backdrop.pipe(mapTo('backdrop'));
     const close = this.popover.close.pipe(mapTo('x'));
     const escape = this.overlayRef.keydownEvents().pipe(
+      // tslint:disable-next-line
       filter(event => event.keyCode === ESCAPE),
       mapTo('escape')
     );

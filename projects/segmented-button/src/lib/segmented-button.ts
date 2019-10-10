@@ -25,6 +25,7 @@ export class XotbSegmentedButton implements AfterContentInit {
   @Output() xotbSegmentedButtonChange = new EventEmitter();
   @Output() xotbOptionDestroyed = new EventEmitter();
 
+  // tslint:disable-next-line
   @Input('xotbSegmentedButtonMultiple') @InputBoolean() isMultiple = false;
 
   ngAfterContentInit() {
