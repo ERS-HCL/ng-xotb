@@ -21,6 +21,7 @@ export class XotbTab {
 
   uid = uniqueId('tab');
 
+  // tslint:disable-next-line
   private _active = false;
 
   constructor(@Optional() public templateRef: TemplateRef<any>) {}

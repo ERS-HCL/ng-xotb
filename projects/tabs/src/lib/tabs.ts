@@ -52,6 +52,7 @@ export class XotbTabs implements AfterContentInit {
    */
   @Input() @InputBoolean() lazy = true;
 
+  // tslint:disable-next-line
   private _variant: 'default' | 'scoped';
 
   constructor(private element: ElementRef, private renderer: Renderer2) {
