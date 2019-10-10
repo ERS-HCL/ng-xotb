@@ -29,8 +29,13 @@ export class XotbSegmentedButtonOption implements OnInit, OnDestroy {
 
   @Input() xotbSegmentedButtonActiveClass: string;
 
+  // tslint:disable-next-line
   private _value: any;
+
+  // tslint:disable-next-line
   private _active = false;
+
+  // tslint:disable-next-line
   private _subscription: Subscription;
 
   constructor(

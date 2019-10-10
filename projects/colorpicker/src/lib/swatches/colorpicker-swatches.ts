@@ -58,6 +58,8 @@ export class XotbColorpickerSwatches implements OnChanges {
   @HostListener('keydown', ['$event'])
   onSelectViaInteraction(evt: KeyboardEvent) {
     let direction = 0;
+
+    // tslint:disable-next-line
     switch (evt.keyCode) {
       case LEFT_ARROW:
       case UP_ARROW:

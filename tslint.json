@@ -39,7 +39,7 @@
     "trailing-comma": false,
     "component-class-suffix": false,
     "contextual-lifecycle": true,
-    "directive-class-suffix": true,
+    "directive-class-suffix": false,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": false,
     "no-input-rename": true,

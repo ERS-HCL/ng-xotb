@@ -14,17 +14,20 @@ import { XotbTab } from './tab';
  *    </ng-template>
  * </xotb-tab>
  */
+// tslint:disable-next-line
 @Directive({ selector: '[xotb-tab-label]' })
 export class XotbTabLabel {
   constructor(public templateRef: TemplateRef<any>) {}
 }
 
+// tslint:disable-next-line
 @Directive({ selector: '[xotb-tab-content]' })
 export class XotbTabContent {
   constructor(public templateRef: TemplateRef<any>) {}
 }
 
 @Directive({
+  // tslint:disable-next-line
   selector: 'xotb-tab',
   providers: [{ provide: XotbTab, useExisting: XotbTabVerbose }]
 })

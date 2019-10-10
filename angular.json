@@ -93,8 +93,7 @@
           "options": {
             "tsConfig": [
               "projects/xotb-demo/tsconfig.app.json",
-              "projects/xotb-demo/tsconfig.spec.json",
-              "projects/xotb-demo/e2e/tsconfig.json"
+              "projects/xotb-demo/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -368,10 +367,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/ng-xotb/tsconfig.lib.json",
-              "projects/ng-xotb/tsconfig.spec.json"
-            ],
+            "tsConfig": ["projects/ng-xotb/tsconfig.lib.json"],
             "exclude": ["**/node_modules/**"]
           }
         }

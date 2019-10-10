@@ -10,6 +10,7 @@ export function OnChange<T = any>(callback = 'xotbOnPropertyChange') {
   const isFirstChangeKey = Symbol();
   return (target: any, key: PropertyKey) => {
     Object.defineProperty(target, key, {
+      // tslint:disable-next-line
       set: function(value) {
         // change status of "isFirstChange"
         if (this[isFirstChangeKey] === undefined) {
@@ -34,6 +35,7 @@ export function OnChange<T = any>(callback = 'xotbOnPropertyChange') {
         this[callback](key, this[cachedValueKey], simpleChange);
       },
 
+      // tslint:disable-next-line
       get: function() {
         return this[cachedValueKey];
       }

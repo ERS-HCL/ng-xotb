@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnChanges,
   Input,
   ElementRef,
   Renderer2,
@@ -10,13 +11,14 @@ import {
 import { HostService } from 'ng-xotb/common';
 
 @Component({
+  // tslint:disable-next-line
   selector: '[xotbButton]',
   templateUrl: './button.html',
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [HostService]
 })
-export class XotbButton implements OnInit {
+export class XotbButton implements OnInit, OnChanges {
   /**
    * Changes the appearance of the button.
    */

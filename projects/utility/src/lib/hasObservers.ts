@@ -22,6 +22,7 @@ export function hasObservers(output: string) {
             `[xotb-components] ${target.constructor.name}: "${output}" is not an EventEmitter`
           );
         }
+        // tslint:disable-next-line
         return (<EventEmitter<any>>this[output]).observers.length > 0;
       },
       set(): void {

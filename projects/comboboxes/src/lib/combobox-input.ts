@@ -66,6 +66,7 @@ export class XotbComboboxInput {
     }
 
     const keyboardEvent$ = fromEvent(nativeElement, 'keypress').pipe(
+      // tslint:disable-next-line
       map((e: KeyboardEvent) => e.keyCode)
     );
     this.keyboardBuffer$ = keyboardEvent$.pipe(
@@ -123,6 +124,7 @@ export class XotbComboboxInput {
 
   @HostListener('keydown', ['$event'])
   onKeyboard(evt: KeyboardEvent) {
+    // tslint:disable-next-line
     const keyCode = evt.keyCode;
 
     if (keyCode === ESCAPE) {

@@ -40,6 +40,7 @@ export class XotbProgressbar implements OnInit, OnChanges {
    */
   @Input() variant: 'circular';
 
+  // tslint:disable-next-line
   private _value: number;
 
   constructor(

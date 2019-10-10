@@ -219,8 +219,7 @@ export function getPlacementName(
     if (
       keyList.every(
         key =>
-          position.connectionPair[key] ===
-          POSITION_MAP[placement]['position'][key]
+          position.connectionPair[key] === POSITION_MAP[placement].position[key]
       )
     ) {
       if (initialPlacement && initialPlacement === `${placement}-corner`) {

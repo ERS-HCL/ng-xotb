@@ -40,7 +40,7 @@ export class XotbCommonNotify implements OnDestroy {
   /**
    * Triggered by close button or duration timeout.
    */
-  // tslint:disable-next-line:no-output-rename
+  // tslint:disable-next-line
   @Output('close') closeEventEmitter = new EventEmitter<string>();
 
   set dismissible(dismissible: boolean) {
@@ -51,10 +51,12 @@ export class XotbCommonNotify implements OnDestroy {
     return this._dismissible;
   }
 
+  // tslint:disable-next-line
   private _dismissible: boolean;
 
   private currentTimeout: any = null;
 
+  // tslint:disable-next-line
   private _variant: 'error' | 'info' | 'success' | 'warning';
 
   constructor(

@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line
   selector: '[xotbInternalOutlet]',
   template: `
     <ng-template [ngIf]="isTemplate()" [ngIfElse]="str">

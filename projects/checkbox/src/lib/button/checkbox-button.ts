@@ -22,6 +22,7 @@ export class XotbCheckboxButton implements AfterContentInit {
 
   @Input() label: string | TemplateRef<any>;
 
+  // tslint:disable-next-line
   _uid: string;
 
   constructor(private cd: ChangeDetectorRef) {}

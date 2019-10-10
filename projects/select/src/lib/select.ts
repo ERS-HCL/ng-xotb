@@ -40,6 +40,7 @@ export class XotbSelect implements OnChanges, AfterContentInit, OnDestroy {
 
   required: boolean;
 
+  // tslint:disable-next-line
   _uid: string;
 
   get errorId() {

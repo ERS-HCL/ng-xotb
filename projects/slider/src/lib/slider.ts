@@ -19,6 +19,7 @@ import { coerceNumberProperty } from '@angular/cdk/coercion';
 
 const XOTB_SLIDER_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
+  // tslint:disable-next-line
   useExisting: forwardRef(() => XotbSlider),
   multi: true
 };
@@ -100,6 +101,7 @@ export class XotbSlider implements ControlValueAccessor {
 
   uid = uniqueId('slider');
 
+  // tslint:disable-next-line
   private _value: number | null = null;
 
   constructor(
@@ -110,6 +112,7 @@ export class XotbSlider implements ControlValueAccessor {
     this.renderer.addClass(this.element.nativeElement, 'xotb-form-element');
   }
 
+  // tslint:disable-next-line
   onChange: Function | null = null;
 
   onTouched = () => {};

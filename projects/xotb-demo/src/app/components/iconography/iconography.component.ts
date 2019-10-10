@@ -1,10 +1,10 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: './iconography.component.html',
   styleUrls: ['./iconography.component.scss']
 })
-export class IconographyComponent {
+export class IconographyComponent implements OnInit {
   @ViewChild('feather', { static: true }) feather: ElementRef;
 
   applyCSSonIframe() {
