@@ -96,7 +96,7 @@ export class XotbFileUpload
     this.renderer.addClass(this.element.nativeElement, 'xotb-form-element');
   }
 
-  onChange: Function | null = null;
+  onChange: (value: any) => any;
 
   onTouched = () => {};
 
@@ -147,7 +147,8 @@ export class XotbFileUpload
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['maxFiles'] || changes['maxFilesize'] || changes['accept']) {
+    const { maxFiles, maxFilesize, accept } = changes;
+    if (maxFiles || maxFilesize || accept) {
       this.validatorChange();
     }
   }
