@@ -7,7 +7,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "precommit": "npm run prettier",
+    "precommit": "npm run prettier && ng lint",
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
     "start": "ng serve",
     "test": "ng test",
