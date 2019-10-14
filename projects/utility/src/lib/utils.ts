@@ -11,9 +11,11 @@ export function isRequired(target: any, prop: string) {
   const NG_ON_INIT_NAME = 'ngOnInit';
 
   /** ngOnInit might not be implemented by this component */
+  // tslint:disable-next-line
   const ngOnInitClone: Function | null = target[NG_ON_INIT_NAME];
 
   Object.defineProperty(target, NG_ON_INIT_NAME, {
+    // tslint:disable-next-line
     value: function() {
       if (!(prop in this)) {
         throw Error(
@@ -46,6 +48,7 @@ export function ngClassCombine(
 
   // Convert array to object
   if (Array.isArray(ngClasses)) {
+    // tslint:disable-next-line
     ngClasses = ngClasses.reduce((o: Object, styleClass: string) => {
       o[styleClass] = true;
       return o;

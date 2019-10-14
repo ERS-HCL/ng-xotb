@@ -25,6 +25,7 @@ import { XOTB_COLORPICKER_CONFIG, XotbColorpickerConfig } from './config';
 
 const XOTB_COLORPICKER_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
+  // tslint:disable-next-line
   useExisting: forwardRef(() => XotbColorpicker),
   multi: true
 };

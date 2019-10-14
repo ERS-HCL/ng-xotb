@@ -55,7 +55,7 @@ export class XotbComboboxOption implements Highlightable, OnDestroy {
   get active() {
     return this._active;
   }
-
+  // tslint:disable-next-line
   private _active = false;
 
   private scrollTimer: any;

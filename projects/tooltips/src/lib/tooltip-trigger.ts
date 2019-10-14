@@ -34,6 +34,7 @@ import {
 import { XOTB_TOOLTIP_CONFIG, XotbTooltipConfig } from './config';
 
 @Directive({
+  // tslint:disable-next-line
   selector: '[xotbTooltip]',
   exportAs: 'xotbTooltip'
 })
@@ -66,7 +67,10 @@ export class XotbTooltipTrigger implements OnChanges, OnDestroy {
    * Delay in milliseconds until it opens/closes.
    */
   @Input('xotbTooltipDelay')
-  set delay(_delay: any | any[]) {
+  set delay(
+    // tslint:disable-next-line
+    _delay: any | any[]
+  ) {
     const delay = Array.isArray(_delay) ? _delay : [_delay, _delay];
     [this.openDelay, this.closeDelay] = delay.map(Number);
   }
@@ -89,6 +93,7 @@ export class XotbTooltipTrigger implements OnChanges, OnDestroy {
   /**
    * Open/close without two-way binding input.
    */
+  // tslint:disable-next-line
   @Input('xotbTooltipOpenAuto') @InputBoolean() openAuto: boolean;
 
   /**
@@ -99,6 +104,7 @@ export class XotbTooltipTrigger implements OnChanges, OnDestroy {
   /**
    * Extra class(es) you want to apply to tooltip host element.
    */
+  // tslint:disable-next-line
   @Input('xotbTooltipClass') tooltipClass: any;
 
   /**
@@ -115,7 +121,11 @@ export class XotbTooltipTrigger implements OnChanges, OnDestroy {
     'uid',
     'tooltipClass'
   ]);
+
+  // tslint:disable-next-line
   private _placement: Placement;
+
+  // tslint:disable-next-line
   private _open: boolean;
   private portal: ComponentPortal<XotbTooltip>;
   private overlayRef: OverlayRef | null;
@@ -304,6 +314,7 @@ export class XotbTooltipTrigger implements OnChanges, OnDestroy {
 
   /** Updates the position of the current tooltip. */
   private updatePosition(): void {
+    // tslint:disable-next-line
     const position = <FlexibleConnectedPositionStrategy>(
       this.overlayRef.getConfig().positionStrategy
     );

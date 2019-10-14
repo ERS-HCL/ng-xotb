@@ -48,6 +48,7 @@ export class XotbColorpickerRange implements AfterViewInit, OnDestroy {
     return getHexFromHsv(this.hsv);
   }
 
+  // tslint:disable-next-line
   private _hsv: IHSV = { hue: 0, saturation: 0, value: 0 };
 
   private dragSubscription: Subscription;
@@ -68,6 +69,7 @@ export class XotbColorpickerRange implements AfterViewInit, OnDestroy {
     let saturation = this.hsv.saturation;
     let value = this.hsv.value;
 
+    // tslint:disable-next-line
     switch (evt.keyCode) {
       case LEFT_ARROW:
         saturation = this.limit(saturation - 1);

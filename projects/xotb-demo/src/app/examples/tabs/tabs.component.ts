@@ -26,6 +26,7 @@ export class DemoTabsComponent {
     console.log('detail', detail, event);
   }
 
+  // tslint:disable-next-line
   protected removeDetail(detail: Object) {
     this.details = this.details.filter(d => d !== detail);
     this.selectedTab = 'sum';

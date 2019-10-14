@@ -15,7 +15,8 @@ import {
   styleUrls: ['./speedo-meter.component.css']
 })
 export class SpeedoMeterComponent implements OnInit {
-  public speedScore: number = 0; //min : 0; max: 100
+  // tslint:disable-next-line
+  public speedScore: number = 0; // min : 0; max: 100
   public readingSpeed: number;
   public niddleSpeed: number;
 
@@ -29,8 +30,8 @@ export class SpeedoMeterComponent implements OnInit {
   styleClass = '.class1{}';
   pseudoStyle = '.xOTB-speedometerCentreCircle:after{background: red;}';
 
-  @Input() title: String;
-  @Input() labelText: String;
+  @Input() title: string;
+  @Input() labelText: string;
 
   @Input() set speedoMeterColor(color: string) {
     this.renderer.setStyle(
@@ -84,6 +85,7 @@ export class SpeedoMeterComponent implements OnInit {
     );
   }
 
+  // tslint:disable-next-line
   @Input() max: number = 100;
 
   @Output() selectedValue = new EventEmitter<number>();
@@ -103,8 +105,6 @@ export class SpeedoMeterComponent implements OnInit {
     this.speedScore = speed;
     this.updateSpeed();
   }
-
-  ngOnChanges() {}
 
   ngOnInit() {
     this.title = this.title || 'Speedometer';

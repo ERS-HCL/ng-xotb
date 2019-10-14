@@ -74,6 +74,7 @@ export class XotbDatatable implements AfterContentInit, OnDestroy {
 
   @Output() rowClick = new EventEmitter<IXotbDatatableRowClick>();
 
+  // tslint:disable-next-line
   private _columnsSubscription: Subscription;
 
   constructor(private detector: ChangeDetectorRef) {}

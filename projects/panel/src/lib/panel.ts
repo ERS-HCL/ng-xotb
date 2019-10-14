@@ -24,6 +24,7 @@ export class XotbPanel {
 
   @Output() openChange = new EventEmitter<boolean>();
 
+  // tslint:disable-next-line
   private _uid = uniqueId('expandable-panel');
 
   @HostBinding('class.xotb-is-open')

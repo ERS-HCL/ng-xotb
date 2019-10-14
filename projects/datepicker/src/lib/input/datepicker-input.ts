@@ -45,12 +45,14 @@ import { parseDate, isDisabled } from '../util';
 
 const XOTB_DATEPICKER_INPUT_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
+  // tslint:disable-next-line
   useExisting: forwardRef(() => XotbDatepickerInput),
   multi: true
 };
 
 const XOTB_DATEPICKER_INPUT_VALIDATOR = {
   provide: NG_VALIDATORS,
+  // tslint:disable-next-line
   useExisting: forwardRef(() => XotbDatepickerInput),
   multi: true
 };
@@ -115,6 +117,7 @@ export class XotbDatepickerInput
       this.date = this.value;
       this.formatInputValue();
     } else {
+      // tslint:disable-next-line
       this.updateInputValue(<string>value || '');
     }
   }
@@ -179,8 +182,10 @@ export class XotbDatepickerInput
     return this._open.value;
   }
 
+  // tslint:disable-next-line
   private _open = new BehaviorSubject(false);
 
+  // tslint:disable-next-line
   private _value: Date | string | null = null;
 
   private pattern: string;
@@ -226,6 +231,7 @@ export class XotbDatepickerInput
     this.nextMonthLabel = this.config.nextMonthLabel;
   }
 
+  // tslint:disable-next-line
   onChange: Function | null = null;
 
   onTouched = () => {};
@@ -315,6 +321,7 @@ export class XotbDatepickerInput
   }
 
   onKeyboardInput(evt: KeyboardEvent) {
+    // tslint:disable-next-line
     const keyCode = evt.keyCode;
 
     if (!this.open && (keyCode === DOWN_ARROW || keyCode === UP_ARROW)) {
@@ -410,6 +417,7 @@ export class XotbDatepickerInput
     }
   }
 
+  // tslint:disable-next-line
   private updateInputValue(value: string = this.dateFormat(<Date>this.value)) {
     this.renderer.setProperty(this.inputEl.nativeElement, 'value', value || '');
   }
