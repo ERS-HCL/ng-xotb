@@ -79,6 +79,7 @@ import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
 import { DemoDatePickerComponent } from './examples/datepicker/datepicker.component';
 import { IconographyComponent } from './components/iconography/iconography.component';
 import { ColorComponent } from './components/colors/color.component';
+import { LoginTemplateComponent } from './templates/login/login.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +119,10 @@ import { ColorComponent } from './components/colors/color.component';
     DemoWelcomeComponent,
     DemoDatePickerComponent,
     IconographyComponent,
-    ColorComponent
+    ColorComponent,
+
+    // Templates
+    LoginTemplateComponent
   ],
   imports: [
     BrowserModule,
