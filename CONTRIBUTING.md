@@ -28,8 +28,8 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 - Steps to reproduce
   - Be specific!
   - Give sample code if you can.
-- What you expected would happen
-- What actually happens
+- What was the expected behaviour
+- What is the actual behaviour
 
 ## Use a Consistent Coding Style
 
