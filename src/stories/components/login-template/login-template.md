@@ -1,6 +1,6 @@
 # Login Template
 
-Login template built with `ng-xotb` library
+Login template built using `ng-xotb` library
 
 ## Usages
 
