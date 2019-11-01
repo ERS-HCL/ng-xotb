@@ -33,6 +33,7 @@ import { DemoTreeComponent } from './examples/tree/tree.component';
 import { DemoVBoxComponent } from './examples/vbox/vbox.component';
 import { DemoCardComponent } from './examples/card/card.component';
 import { DemoDatePickerComponent } from './examples/datepicker/datepicker.component';
+import { LoginTemplateComponent } from './templates/login/login.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -67,7 +68,10 @@ const routes: Routes = [
   { path: 'colorpicker', component: DemoColorpickerComponent },
   { path: 'datatable', component: DemoDatatableComponent },
   { path: 'tree', component: DemoTreeComponent },
-  { path: 'datepicker', component: DemoDatePickerComponent }
+  { path: 'datepicker', component: DemoDatePickerComponent },
+
+  // Templates
+  { path: 'login', component: LoginTemplateComponent }
 ];
 
 @NgModule({

@@ -13,7 +13,17 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  &[disabled] {
+    background-color: $disabled-background-color;
+    border-color: $disabled-border-color;
+    cursor: not-allowed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
+
 .xotb-button_inverse {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -49,6 +59,11 @@
   &:hover {
     background-color: darken($color: $primary-color, $amount: 20);
   }
+  &[disabled] {
+    &:hover {
+      background-color: $disabled-background-color;
+    }
+  }
 }
 
 .xotb-button_outline-brand {
@@ -63,6 +78,11 @@
   &:hover {
     background-color: darken($color: $background-color, $amount: 10);
   }
+  &[disabled] {
+    &:hover {
+      background-color: $disabled-background-color;
+    }
+  }
 }
 
 .xotb-button_destructive {
@@ -76,6 +96,11 @@
   color: $button-destructive-color;
   &:hover {
     background-color: darken($color: $danger-color, $amount: 10);
+  }
+  &[disabled] {
+    &:hover {
+      background-color: $disabled-background-color;
+    }
   }
 }
 
@@ -100,6 +125,11 @@
   background-color: $button-success-border-color;
   &:hover {
     background-color: darken($color: $button-success-border-color, $amount: 10);
+  }
+  &[disabled] {
+    &:hover {
+      background-color: $disabled-background-color;
+    }
   }
 }
 .xotb-button + .xotb-button,
