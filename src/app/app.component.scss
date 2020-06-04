@@ -17,7 +17,7 @@ app-root {
       padding: 0 1rem;
     }
 
-    .example-spacer {
+    .spacer {
       flex: 1 1 auto;
     }
 
@@ -32,6 +32,32 @@ app-root {
       font-size: 16px;
       font-family: "Gotham-Medium";
       color: #747474;
+    }
+
+    .account-icon {
+      color: #747474;
+    }
+
+    .search-field {
+      margin-right: 1rem;
+
+      input {
+        border: none;
+        padding: 4px 8px;
+        height: 1.5rem;
+        text-align: left;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+        font-family: "Gotham-Medium";
+      }
+
+      .mat-icon {
+        font-size: 20px;
+        position: relative;
+        top: 5px;
+        right: 20px;
+      }
     }
 
 
