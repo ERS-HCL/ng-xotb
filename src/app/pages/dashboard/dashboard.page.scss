@@ -1,0 +1,255 @@
+app-dashboard {
+  display: flex;
+
+  .left-nav-section {
+    width: 219px;
+
+    .side-nav-buttons {
+      .mat-button {
+        width: 90%;
+        text-align: left;
+        margin: 0 14px;
+        border-radius: 0;
+        font-size: 14px;
+        color: #747474;
+        height: 38px;
+        display: block;
+        font-family: "Gotham-Medium";
+
+        &.selected {
+          border-left: 2px solid #0578C3;
+        }
+      }
+    }
+  }
+
+  .right-body-section {
+    width: 100%;
+
+    .concept-row {
+      background: #FAFAFA;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 4% 20% 0 20%;
+
+      .arrow-icon {
+        content: url('../../../assets/arrow-tail.png');
+      }
+
+      .concept-text {
+        font-size: 24px;
+        color: #707070;
+      }
+    }
+
+    .concept-desc {
+      background: #FAFAFA;
+      text-align: center;
+      padding: 2rem 0;
+      height: 101px;
+
+      p {
+        font-size: 16px;
+        color: #2D2D2D;
+        font-family: "Gotham-book";
+      }
+
+      h3 {
+        font-size: 24px;
+        color: #0078D7;
+        font-family: "Gotham-Bold";
+
+        span {
+          color: #E70058;
+        }
+      }
+    }
+
+    .get-started-buttons {
+      background: #FAFAFA;
+      text-align: center;
+      padding-bottom: 5%;
+
+      .watch {
+        color: #006BB6;
+        width: 142px;
+        height: 45px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #006BB6;
+        opacity: 1;
+        border-radius: 0;
+        margin: 0 5px;
+        font-size: 13px;
+        font-family: "Gotham-Medium";
+      }
+
+      .started {
+        width: 143px;
+        height: 45px;
+        background: #0578C3 0% 0% no-repeat padding-box;
+        opacity: 1;
+        color: #FFFFFF;
+        border-radius: 0;
+        margin: 0 5px;
+        font-size: 13px;
+        font-family: "Gotham-Medium";
+      }
+    }
+
+    .xotb-help-section {
+      align-items: center;
+      padding-top: 3rem;
+      background: #FFFFFF;
+
+      .help-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2% 10%;
+      }
+
+
+      .item {
+        width: 46%;
+        padding: 1rem 0;
+
+        h4 {
+          font-size: 20px;
+          font-family: "Gotham-Medium";
+
+          &.pink {
+            color: #EB1946;
+          }
+
+          &.orange {
+            color: #F5821E;
+          }
+
+          &.blue {
+            color: #00AFBE;
+          }
+
+          &.green {
+            color: #ADD136;
+          }
+        }
+
+        span {
+          font-size: 14px;
+          color: #747474;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: 26px;
+        letter-spacing: 0px;
+        color: #707070;
+        opacity: 1;
+      }
+    }
+
+    .features-benifits {
+      background: #FAFAFA;
+      text-align: center;
+      padding: 2% 8%;
+
+      p {
+        font-size: 26px;
+        color: #707070;
+        margin: 2rem 0;
+      }
+
+      .features-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+
+
+        .item {
+          min-height: 240px;
+          flex-grow: 1;
+          text-align: center;
+          max-width: 230px;
+
+          img {
+            width: 200px;
+            height: 111px;
+          }
+
+          h4 {
+            font-size: 16px;
+            font-family: "Gotham-Medium";
+            color: #0578C3;
+          }
+
+          span {
+            font-size: 14px;
+            color: #747474;
+            font-family: "Gotham-Book";
+          }
+        }
+      }
+    }
+
+    .user-reviews {
+      text-align: center;
+      background: #FFFFFF;
+      padding: 4%;
+
+      p {
+        font-size: 26px;
+        color: #707070;
+        margin-bottom: 37px;
+        font-family: "Gotham-Light";
+      }
+
+      .reviews-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        .item {
+          padding: 1rem;
+          width: 23%;
+          min-height: 224px;
+          border: 1px solid #E9E9E9;
+          border-radius: 8px;
+          opacity: 1;
+
+          .quotes {
+            font-size: 60px;
+            padding-top: 1rem;
+            text-align: left;
+            color: #0578C3;
+            font-family: sans-serif;
+          }
+
+          .review {
+            color: #707070;
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 5%;
+            font-family: "Gotham-Book";
+          }
+
+          .name,
+          .designation {
+            color: #0578C3;
+            font-size: 14px;
+            text-align: left;
+            font-family: "Gotham-Bold";
+          }
+        }
+      }
+
+    }
+
+
+
+  }
+}

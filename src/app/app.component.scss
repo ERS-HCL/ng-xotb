@@ -1,0 +1,59 @@
+app-root {
+  mat-toolbar {
+    height: 100px;
+    background: #FFFFFF;
+
+    .mat-toolbar-row {
+      height: 100px;
+      background: #FFFFFF;
+    }
+
+    .app-logo {
+      content: url("../assets/logo.png");
+      padding: 0 2rem;
+    }
+
+    .example-icon {
+      padding: 0 1rem;
+    }
+
+    .example-spacer {
+      flex: 1 1 auto;
+    }
+
+    .example-button-row {
+      display: table-cell;
+    }
+
+    .mat-button {
+      padding: 0 3rem;
+      line-height: 100px;
+      border-radius: 0;
+      font-size: 16px;
+      font-family: "Gotham-Medium";
+      color: #747474;
+    }
+
+
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    background: #575757 0% 0% no-repeat padding-box;
+    line-height: 25px;
+    padding: 0 1rem;
+
+    .copy-right-text {
+      font-size: 13px;
+      color: #FFFFFF;
+    }
+
+    .copy-right-logo {
+      color: #FFFFFF;
+      font-style: oblique;
+      font-family: "Gotham-Book";
+    }
+  }
+}

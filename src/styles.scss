@@ -1,0 +1,94 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$xotb-components-primary: mat-palette($mat-indigo);
+$xotb-components-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$xotb-components-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$xotb-components-theme: mat-light-theme($xotb-components-primary, $xotb-components-accent, $xotb-components-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($xotb-components-theme);
+
+
+@font-face {
+  font-family: "Gotham-Light";
+  src: url("./assets/fonts/Gotham-Light.otf");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("./assets/fonts/GothamMedium.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("./assets/fonts/GothamBold.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Bold-Italic";
+  src: url("./assets/fonts/GothamBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Thin";
+  src: url("./assets/fonts/Gotham-Thin.otf");
+}
+
+@font-face {
+  font-family: "Gotham-Thin-Italic";
+  src: url("./assets/fonts/Gotham-ThinItalic.otf");
+}
+
+@font-face {
+  font-family: "Gotham-XLite";
+  src: url("./assets/fonts/Gotham-XLight.otf");
+}
+
+@font-face {
+  font-family: "Gotham-XLite-Italic";
+  src: url("./assets/fonts/Gotham-XLightItalic.otf");
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("./assets/fonts/GothamBook.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Book-Italic";
+  src: url("./assets/fonts/GothamBookItalic.ttf");
+}
+
+.mat-typography {
+  font-family: "Gotham-Light", Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Gotham-Light", Roboto, "Helvetica Neue", sans-serif;
+}

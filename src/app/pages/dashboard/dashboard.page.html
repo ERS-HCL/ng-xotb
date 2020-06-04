@@ -1,0 +1,60 @@
+<div class="left-nav-section">
+  <div class="side-nav-buttons">
+    <button mat-button class="selected">About xOTB</button>
+    <button mat-button>Get Started</button>
+  </div>
+</div>
+
+<div class="right-body-section">
+  <div class="concept-row">
+    <div class="concept-text">From Concept</div>
+    <div class="arrow-icon"></div>
+    <div class="concept-text">to Creation</div>
+  </div>
+  <div class="concept-desc">
+    <p>Give flight to your ideas with our robust, efficient, and adaptable xOTB design system</p>
+    <h3>x<span>OTB</span> Design System</h3>
+  </div>
+  <div class="get-started-buttons">
+    <button mat-button class="watch">Watch Video</button>
+    <button mat-button class="started">Get Started</button>
+  </div>
+
+  <div class="xotb-help-section">
+    <p>How xOTB Helps?</p>
+    <div class="help-grid">
+      <div class="item" *ngFor="let item of xotbHelpTexts">
+        <h4 class="{{item.titleColor}}">{{item.title}}</h4>
+        <span>{{item.description}} </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-benifits">
+    <p>Features & Benefits</p>
+    <div class="features-grid">
+      <div class="item" *ngFor="let item of xotbFeatures">
+        <img src="{{item.image}}">
+        <h4>{{item.tile}}</h4>
+        <span>
+          {{item.content}}
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="user-reviews">
+    <p>Work was never so fun...</p>
+    <div class="reviews-grid">
+      <div class="item" *ngFor="let item of userReviews">
+        <div class="quotes">&#8220;</div>
+        <div class="review">
+          {{item.review}}
+        </div>
+        <div class="name"> {{item.name}}</div>
+        <div class="designation">( {{item.designation}})</div>
+      </div>
+    </div>
+  </div>
+</div>
