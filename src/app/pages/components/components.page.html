@@ -1,1 +1,47 @@
-<p>components works!</p>
+<div class="left-nav-section">
+  <p class="panel-title">Select Theme</p>
+  <mat-radio-group color="primary" aria-label="Select an option">
+    <mat-radio-button value="1">Material</mat-radio-button>
+    <mat-radio-button value="2">Flat</mat-radio-button>
+  </mat-radio-group>
+  <div class="custom-checkbox">
+    <mat-checkbox color="primary">Custom Theme</mat-checkbox>
+  </div>
+  <p class="panel-title">Categories</p>
+  <mat-expansion-panel *ngFor="let category of categories">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{category}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the Containers {{category}} of the panel.</p>
+  </mat-expansion-panel>
+</div>
+<!-- End of the Left section Panel -->
+
+<!-- Start of the Right section Panel -->
+<div class="right-body-section">
+  <p class="component-name">Check box</p>
+  <div class="component-description">Check Boxes allow the user to select one or more items from a given set.</div>
+
+  <div class="tabs-section">
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="CANVAS">
+        <div class="canvas-content">
+          Small content
+        </div>
+      </mat-tab>
+      <mat-tab label="API">
+        <div class="api-content">
+          API content
+        </div>
+      </mat-tab>
+      <mat-tab label="ACCESSIBILITY">
+        <div class="accessibility-content">
+          Small content
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+  </div>
+</div>

@@ -9,7 +9,6 @@ app-root {
     }
 
     .app-logo {
-      content: url("../assets/logo.png");
       width: 66px;
       height: 41px;
     }
@@ -87,6 +86,7 @@ app-root {
       color: #FFFFFF;
       font-style: oblique;
       font-family: "Gotham-Book";
+      font-weight: bold;
     }
   }
 }

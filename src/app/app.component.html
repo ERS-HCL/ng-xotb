@@ -1,7 +1,7 @@
 <mat-toolbar color="dark">
   <mat-toolbar-row>
     <button mat-button [ngClass]="{'active': location.path() === '/dashboard' }" (click)="naviagteToDashboard()">
-      <span class="app-logo"></span>
+      <img class="app-logo" src="../assets/logo.png" />
     </button>
     <div class="s-button-row">
       <button mat-button [ngClass]="{'active': location.path() === '/design'}">Design</button>

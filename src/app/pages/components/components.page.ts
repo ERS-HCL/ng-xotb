@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-components',
   templateUrl: './components.page.html',
-  styleUrls: ['./components.page.scss']
+  styleUrls: ['./components.page.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ComponentsPageComponent implements OnInit {
-
-  constructor() { }
+  public categories: any;
+  constructor() {}
 
   ngOnInit(): void {
+    this.categories = [
+      'Containers',
+      'Controls',
+      'Navigators',
+      'DataTable',
+      'Template',
+    ];
   }
-
 }

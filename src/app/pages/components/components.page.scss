@@ -1,0 +1,105 @@
+app-components {
+  display: flex;
+
+  .left-nav-section {
+    width: 219px;
+    padding: 1rem 1.5rem;
+
+    .panel-title {
+      text-align: left;
+      font-size: 10px;
+      font-family: "Gotham-Medium";
+      letter-spacing: 0px;
+      color: #BFBFBF;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+
+    .mat-radio-button {
+      font-size: 14px;
+      font-family: "Gotham-Medium";
+      letter-spacing: 0px;
+      color: #747474;
+      text-transform: capitalize;
+      opacity: 1;
+
+      ~.mat-radio-button {
+        margin-left: 16px;
+      }
+    }
+
+    .custom-checkbox {
+      margin: 1rem 0;
+
+      .mat-checkbox-label {
+        text-align: left;
+        font-size: 14px;
+        font-family: "Gotham-Medium";
+        letter-spacing: 0px;
+        color: #747474;
+        opacity: 1;
+      }
+    }
+
+    .mat-expansion-panel {
+      box-shadow: none;
+
+      .mat-expansion-panel-header {
+        padding: 0 8px 0 0;
+        text-align: left;
+        font-size: 14px;
+        font-family: "Gotham-Medium";
+        letter-spacing: 0px;
+        text-transform: capitalize;
+
+        .mat-expansion-panel-header-title {
+          color: #747474;
+        }
+      }
+
+      .mat-expansion-panel-body {
+        padding: 0;
+      }
+    }
+
+  }
+
+  .right-body-section {
+    width: 100%;
+    background: #FAFAFA;
+    padding: 2rem;
+    text-align: left;
+
+    .component-name {
+      font-size: 36px;
+      font-family: "Gotham-Light";
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+    }
+
+    .component-description {
+      font-size: 16px;
+      font-family: "Gotham-Book";
+      letter-spacing: 0.16px;
+      color: #000000;
+      margin-top: 14px;
+    }
+
+    .tabs-section {
+      margin-top: 1rem;
+
+      .mat-tab-label-content {
+        text-align: left;
+        font-size: 14px;
+        font-family: "Gotham-Medium";
+        letter-spacing: 0.14px;
+        color: #747474;
+        text-transform: uppercase;
+        opacity: 1;
+      }
+
+
+    }
+  }
+}
