@@ -10,12 +10,8 @@ app-root {
 
     .app-logo {
       content: url("../assets/logo.png");
-      padding: 0 2rem;
     }
 
-    .example-icon {
-      padding: 0 1rem;
-    }
 
     .spacer {
       flex: 1 1 auto;
@@ -26,12 +22,17 @@ app-root {
     }
 
     .mat-button {
-      padding: 0 3rem;
+      padding: 0 2rem;
       line-height: 100px;
       border-radius: 0;
       font-size: 16px;
       font-family: "Gotham-Medium";
       color: #747474;
+      border-top: 4px solid #FFFFFF;
+
+      &.active {
+        border-top: 4px solid #0578C3;
+      }
     }
 
     .account-icon {
@@ -70,6 +71,10 @@ app-root {
     background: #575757 0% 0% no-repeat padding-box;
     line-height: 25px;
     padding: 0 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     .copy-right-text {
       font-size: 13px;

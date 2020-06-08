@@ -1,10 +1,14 @@
 <mat-toolbar color="dark">
   <mat-toolbar-row>
-    <span class="app-logo"></span>
+    <button mat-button [ngClass]="{'active': location.path() === '/dashboard' }" (click)="naviagteToDashboard()">
+      <span class="app-logo"></span>
+    </button>
     <div class="s-button-row">
-      <button mat-button>Design</button>
-      <button mat-button>Components</button>
-      <button mat-button>Content</button>
+      <button mat-button [ngClass]="{'active': location.path() === '/design'}">Design</button>
+      <button mat-button [ngClass]="{'active': location.path() === '/components'}"
+        (click)="naviagteToComponents()">Components</button>
+      <button mat-button [ngClass]="{'active': location.path() === '/content'}"
+        (click)="naviagteToContent()">Content</button>
     </div>
     <span class="spacer"></span>
     <div class="search-field">
