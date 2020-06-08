@@ -13,7 +13,6 @@ export class ComponentsPageComponent implements OnInit {
   ngOnInit(): void {
     this.categories = [
       'Containers',
-      'Controls',
       'Navigators',
       'DataTable',
       'Template',

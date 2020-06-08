@@ -8,6 +8,26 @@
     <mat-checkbox color="primary">Custom Theme</mat-checkbox>
   </div>
   <p class="panel-title">Categories</p>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Controls
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="control-components">
+      <mat-selection-list #controls [multiple]="false">
+        <mat-list-option>
+          AutoComplete
+        </mat-list-option>
+        <mat-list-option>
+          Button
+        </mat-list-option>
+        <mat-list-option selected>
+          Checkbox
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+  </mat-expansion-panel>
   <mat-expansion-panel *ngFor="let category of categories">
     <mat-expansion-panel-header>
       <mat-panel-title>

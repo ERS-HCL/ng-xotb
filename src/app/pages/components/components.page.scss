@@ -96,9 +96,12 @@ app-components {
         letter-spacing: 0.14px;
         color: #747474;
         text-transform: uppercase;
-        opacity: 1;
       }
 
+      .mat-list-base .mat-list-option {
+        font-size: 14px !important;
+        font-family: "Gotham-Medium";
+      }
 
     }
   }
