@@ -12,13 +12,13 @@ app-dashboard {
         border-radius: 0;
         font-size: 14px;
         color: #747474;
-        height: 38px;
+        height: 45px;
         display: block;
         font-family: "Gotham-Medium";
         line-height: 45px;
 
         &.selected {
-          border-left: 2px solid #0578C3;
+          border-left: 4px solid #0578C3;
         }
       }
     }

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +11,7 @@ export class DashboardPageComponent implements OnInit {
   public xotbHelpTexts: any;
   public xotbFeatures: any;
   public userReviews: any;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.xotbHelpTexts = [
@@ -87,5 +88,9 @@ export class DashboardPageComponent implements OnInit {
           'xOTB helped us launch our web app quickly as out time to market was very critical. It helped us provide great user experiance even with a small design and development teams in a record time',
       },
     ];
+  }
+
+  navigateToComponents() {
+    this.router.navigateByUrl('/components');
   }
 }
