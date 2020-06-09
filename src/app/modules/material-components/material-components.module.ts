@@ -11,6 +11,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [],
@@ -26,6 +27,7 @@ import { MatListModule } from '@angular/material/list';
     MatExpansionModule,
     MatTabsModule,
     MatListModule,
+    MatDividerModule,
   ],
   exports: [
     MatToolbarModule,
@@ -39,6 +41,7 @@ import { MatListModule } from '@angular/material/list';
     MatExpansionModule,
     MatTabsModule,
     MatListModule,
+    MatDividerModule,
   ],
 })
 export class MaterialComponentsModule {}

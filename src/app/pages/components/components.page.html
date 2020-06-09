@@ -47,18 +47,42 @@
   <div class="tabs-section">
     <mat-tab-group animationDuration="0ms">
       <mat-tab label="Examples">
-        <div class="canvas-content">
-          Small content
+        <div class="example-content">
+          <p>Usages</p>
+          <mat-divider></mat-divider>
+          <span class="section-title">
+            module.ts
+          </span>
+          <div class="code-section">
+            module
+          </div>
+
+          <span class="section-title">
+            component.html
+          </span>
+          <div class="code-section">
+            component
+          </div>
+
+          <span class="section-title">
+            component.ts
+          </span>
+          <div class="code-section">
+            component
+          </div>
         </div>
       </mat-tab>
-      <mat-tab label="Api">
+      <mat-tab label="API">
         <div class="api-content">
-          API content
+          <span class="title"> &lt;xotb-checkbox&gt; </span>
+          <mat-grid-list cols="4" rowHeight="30px" guttersize="0">
+            <mat-grid-tile *ngFor="let item of apiData">{{item}}</mat-grid-tile>
+          </mat-grid-list>
         </div>
       </mat-tab>
       <mat-tab label="Accessibility">
         <div class="accessibility-content">
-          Small content
+          Coming soon
         </div>
       </mat-tab>
     </mat-tab-group>

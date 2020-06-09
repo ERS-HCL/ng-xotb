@@ -103,5 +103,59 @@ app-components {
         font-family: "Gotham-Medium";
       }
     }
+
+    .api-content {
+      padding: 1rem;
+
+      .title {
+        font-size: 14px;
+        font-family: "Gotham-Medium";
+        letter-spacing: 0.14px;
+        color: #747474;
+      }
+
+      mat-grid-list {
+        width: 50%;
+        margin: 0.5rem 0;
+
+        mat-grid-tile {
+          border: 1px solid #747474;
+        }
+
+        .mat-grid-tile .mat-figure {
+          justify-content: start;
+          padding: 0 0.5rem;
+          white-space: pre;
+          color: #747474;
+        }
+      }
+    }
+
+    .example-content {
+      padding: 1rem;
+
+      p {
+        text-align: left;
+        font-size: 24px;
+        font-family: "Gotham-Book";
+        letter-spacing: 0.24px;
+        color: #707070;
+      }
+
+      .section-title {
+        font-size: 16px;
+        font-family: "Gotham-Light";
+        color: #707070;
+        margin: 1rem 0;
+        display: inline-block;
+      }
+
+      .code-section {
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        min-height: 100px;
+        padding: 1rem;
+        min-width: 60%;
+      }
+    }
   }
 }
