@@ -6,18 +6,46 @@
 </div>
 
 <div class="right-body-section">
-  <div class="concept-row">
-    <div class="concept-text">From Concept</div>
-    <div class="arrow-icon"></div>
-    <div class="concept-text">to Creation</div>
+  <div class="with-video" *ngIf="showVideoSection">
+    <mat-grid-list cols="4" rowHeight="2:1">
+      <mat-grid-tile rowspan="3" colspan="2">
+        <video width="420" height="360" poster="../../../assets/video_thumbnail.png">
+        </video>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="2">
+        <div class="concept-row">
+          <div class="arrow-icon"></div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="2">
+        <div class="concept-desc">
+          <p>Give flight to your ideas with our robust, efficient, and adaptable</p>
+          <h3>x<span>OTB</span> Design System</h3>
+        </div>
+
+      </mat-grid-tile>
+      <mat-grid-tile colspan="2">
+        <div class="get-started-buttons">
+          <button mat-button class="watch">Watch Video</button>
+          <button mat-button class="started" (click)="navigateToComponents()">Get Started</button>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
-  <div class="concept-desc">
-    <p>Give flight to your ideas with our robust, efficient, and adaptable xOTB design system</p>
-    <h3>x<span>OTB</span> Design System</h3>
-  </div>
-  <div class="get-started-buttons">
-    <button mat-button class="watch">Watch Video</button>
-    <button mat-button class="started" (click)="navigateToComponents()">Get Started</button>
+  <div class="with-out-video" *ngIf="!showVideoSection">
+    <div class="concept-row">
+      <div class="concept-text">From Concept</div>
+      <div class="arrow-icon"></div>
+      <div class="concept-text">to Creation</div>
+    </div>
+    <div class="concept-desc">
+      <p>Give flight to your ideas with our robust, efficient, and adaptable xOTB design system</p>
+      <h3>x<span>OTB</span> Design System</h3>
+    </div>
+    <div class="get-started-buttons">
+      <button mat-button class="watch" (click)="showWatchVideoSection()">Watch Video</button>
+      <button mat-button class="started" (click)="navigateToComponents()">Get Started</button>
+    </div>
   </div>
 
   <div class="xotb-help-section">

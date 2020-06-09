@@ -27,6 +27,15 @@ app-dashboard {
   .right-body-section {
     width: 100%;
 
+    .with-video {
+      background: #FAFAFA;
+      padding: 0 8%;
+
+      .mat-grid-tile {
+        background: #FAFAFA;
+      }
+    }
+
     .concept-row {
       background: #FAFAFA;
       display: flex;

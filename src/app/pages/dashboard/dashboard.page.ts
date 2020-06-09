@@ -11,6 +11,7 @@ export class DashboardPageComponent implements OnInit {
   public xotbHelpTexts: any;
   public xotbFeatures: any;
   public userReviews: any;
+  public showVideoSection: boolean = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
@@ -92,5 +93,9 @@ export class DashboardPageComponent implements OnInit {
 
   navigateToComponents() {
     this.router.navigateByUrl('/components');
+  }
+
+  showWatchVideoSection() {
+    this.showVideoSection = true;
   }
 }
