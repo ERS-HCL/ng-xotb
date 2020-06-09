@@ -17,13 +17,33 @@
     <div class="control-components">
       <mat-selection-list #controls [multiple]="false">
         <mat-list-option>
-          AutoComplete
+          <span class="list-label">AutoComplete</span>
         </mat-list-option>
         <mat-list-option>
-          Button
+          <span class="list-label">Button</span>
         </mat-list-option>
         <mat-list-option selected>
-          Checkbox
+          <span class="list-label">Checkbox</span>
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Containers
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="control-components">
+      <mat-selection-list #controls [multiple]="false">
+        <mat-list-option>
+          <span class="list-label">Card</span>
+        </mat-list-option>
+        <mat-list-option>
+          <span class="list-label">HBox</span>
+        </mat-list-option>
+        <mat-list-option selected>
+          <span class="list-label">VBox</span>
         </mat-list-option>
       </mat-selection-list>
     </div>
@@ -54,30 +74,30 @@
             module.ts
           </span>
           <div class="code-section">
-            module
+            <pre><code [highlight]="moduleCode"></code></pre>
           </div>
-
           <span class="section-title">
             component.html
           </span>
           <div class="code-section">
-            component
+            <pre><code [highlight]="templateCode"></code></pre>
           </div>
-
           <span class="section-title">
             component.ts
           </span>
           <div class="code-section">
-            component
+            <pre><code [highlight]="componentCode"></code></pre>
           </div>
         </div>
       </mat-tab>
       <mat-tab label="API">
         <div class="api-content">
-          <span class="title"> &lt;xotb-checkbox&gt; </span>
-          <mat-grid-list cols="4" rowHeight="30px" guttersize="0">
-            <mat-grid-tile *ngFor="let item of apiData">{{item}}</mat-grid-tile>
-          </mat-grid-list>
+          <span class="section-title"> &lt;xotb-checkbox&gt; </span>
+          <div class="code-section">
+            <mat-grid-list cols="4" rowHeight="30px" guttersize="0">
+              <mat-grid-tile *ngFor="let item of apiData">{{item}}</mat-grid-tile>
+            </mat-grid-list>
+          </div>
         </div>
       </mat-tab>
       <mat-tab label="Accessibility">
