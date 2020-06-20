@@ -2,24 +2,17 @@ app-components {
   display: flex;
 
   .left-nav-section {
-    width: 219px;
-    padding: 1rem 1.5rem;
-
-    .panel-title {
-      text-align: left;
-      font-size: 10px;
-      font-family: "Gotham-Medium";
-      letter-spacing: 0px;
-      color: #BFBFBF;
-      text-transform: uppercase;
-      opacity: 1;
-    }
+    width: 270px;
+    padding: 1.5rem 2rem;
+    -webkit-box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
+    box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
 
     .mat-radio-button {
-      font-size: 14px;
-      font-family: "Gotham-Medium";
-      letter-spacing: 0px;
-      color: #747474;
+      font-size: 18px;
+      font-family: "Calibri";
+      letter-spacing: 0.54px;
+      color: #2E2E2E;
       text-transform: capitalize;
       opacity: 1;
 
@@ -33,37 +26,48 @@ app-components {
 
       .mat-checkbox-label {
         text-align: left;
-        font-size: 14px;
-        font-family: "Gotham-Medium";
-        letter-spacing: 0px;
-        color: #747474;
+        font-size: 18px;
+        font-family: "Calibri";
+        color: #2E2E2E;
         opacity: 1;
       }
     }
 
-    .mat-expansion-panel {
-      box-shadow: none;
+    .components-panel {
+      margin-top: 1rem;
 
-      .mat-expansion-panel-header {
-        padding: 0 8px 0 0;
-        text-align: left;
-        font-size: 14px;
-        font-family: "Gotham-Medium";
-        letter-spacing: 0px;
-        text-transform: capitalize;
+      .mat-expansion-panel {
+        box-shadow: none;
 
-        .mat-expansion-panel-header-title {
-          color: #747474;
+        .mat-expansion-panel-header {
+          padding: 0 8px 0 0;
+          text-align: left;
+          font-size: 18px;
+          font-family: "Calibri";
+          letter-spacing: 0.54px;
+          color: #2E2E2E;
+          text-transform: capitalize;
+          font-weight: bold;
+
+          .mat-expansion-panel-header-title {
+            color: #747474;
+          }
         }
-      }
 
-      .mat-expansion-panel-body {
-        padding: 0;
+        .mat-expansion-panel-body {
+          padding: 0;
 
-        .list-label {
-          font-size: 14px;
-          font-family: "Gotham-Medium";
-          color: #747474;
+          .list-label {
+            font-size: 14px;
+            font-family: "Gotham-Medium";
+            color: #747474;
+          }
+
+          .mat-list-option {
+            &.selected span {
+              color: #009FFF
+            }
+          }
         }
       }
     }
@@ -77,36 +81,41 @@ app-components {
     text-align: left;
 
     .component-name {
-      font-size: 36px;
-      font-family: "Gotham-Light";
-      letter-spacing: 0px;
-      color: #707070;
-      opacity: 1;
+      font-size: 55px;
+      font-family: "Calibri";
+      letter-spacing: 1.1px;
+      color: #2E2E2E;
     }
 
     .component-description {
-      font-size: 16px;
-      font-family: "Gotham-Book";
-      letter-spacing: 0.16px;
-      color: #000000;
-      margin-top: 14px;
+      text-align: left;
+      font-size: 20px;
+      font-family: "Calibri";
+      letter-spacing: 0.6px;
+      color: #2E2E2E;
+      margin-top: 23px;
     }
 
     .tabs-section {
       margin-top: 1rem;
 
-      .mat-tab-label-content {
+      .mat-tab-label {
         text-align: left;
-        font-size: 14px;
-        font-family: "Gotham-Medium";
-        letter-spacing: 0.14px;
-        color: #747474;
+        font-size: 20px;
+        font-family: "Calibri";
+        letter-spacing: 0.6px;
+        color: #2E2E2E;
+        opacity: 1;
         text-transform: capitalize;
+      }
+
+      .mat-ink-bar {
+        width: 0 !important;
       }
 
       .mat-list-item-content {
         font-size: 14px !important;
-        font-family: "Gotham-Medium";
+        font-family: "Calibri";
       }
     }
 
@@ -142,10 +151,15 @@ app-components {
 
       p {
         text-align: left;
-        font-size: 24px;
-        font-family: "Gotham-Book";
-        letter-spacing: 0.24px;
-        color: #707070;
+        font-size: 22px;
+        font-family: "Calibri";
+        letter-spacing: 0.6px;
+        color: #2E2E2E;
+        opacity: 1;
+      }
+
+      .example-iframe-content {
+        margin-bottom: 1rem;
       }
 
 

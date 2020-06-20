@@ -1,61 +1,61 @@
 <div class="left-nav-section">
-  <p class="panel-title">Select Theme</p>
   <mat-radio-group color="primary" aria-label="Select an option">
     <mat-radio-button value="1">Material</mat-radio-button>
     <mat-radio-button value="2">Flat</mat-radio-button>
   </mat-radio-group>
   <div class="custom-checkbox">
-    <mat-checkbox color="primary">Custom Theme</mat-checkbox>
+    <mat-checkbox color="primary">Customise Theme</mat-checkbox>
   </div>
-  <p class="panel-title">Categories</p>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Controls
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div class="control-components">
-      <mat-selection-list #controls [multiple]="false">
-        <mat-list-option>
-          <span class="list-label">AutoComplete</span>
-        </mat-list-option>
-        <mat-list-option>
-          <span class="list-label">Button</span>
-        </mat-list-option>
-        <mat-list-option selected>
-          <span class="list-label">Checkbox</span>
-        </mat-list-option>
-      </mat-selection-list>
-    </div>
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Containers
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div class="control-components">
-      <mat-selection-list #controls [multiple]="false">
-        <mat-list-option>
-          <span class="list-label">Card</span>
-        </mat-list-option>
-        <mat-list-option>
-          <span class="list-label">HBox</span>
-        </mat-list-option>
-        <mat-list-option selected>
-          <span class="list-label">VBox</span>
-        </mat-list-option>
-      </mat-selection-list>
-    </div>
-  </mat-expansion-panel>
-  <mat-expansion-panel *ngFor="let category of categories">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{category}}
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>This is the Containers {{category}} of the panel.</p>
-  </mat-expansion-panel>
+  <div class="components-panel">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Controls
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="control-components">
+        <mat-selection-list #controls [multiple]="false">
+          <mat-list-option>
+            <span class="list-label">AutoComplete</span>
+          </mat-list-option>
+          <mat-list-option>
+            <span class="list-label">Button</span>
+          </mat-list-option>
+          <mat-list-option class="selected">
+            <span class="list-label">Checkbox</span>
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Containers
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="control-components">
+        <mat-selection-list #controls [multiple]="false">
+          <mat-list-option>
+            <span class="list-label">Card</span>
+          </mat-list-option>
+          <mat-list-option>
+            <span class="list-label">HBox</span>
+          </mat-list-option>
+          <mat-list-option selected>
+            <span class="list-label">VBox</span>
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel *ngFor="let category of categories">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{category}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>This is the Containers {{category}} of the panel.</p>
+    </mat-expansion-panel>
+  </div>
 </div>
 <!-- End of the Left section Panel -->
 
@@ -66,8 +66,9 @@
 
   <div class="tabs-section">
     <mat-tab-group animationDuration="0ms">
-      <mat-tab label="Examples">
+      <mat-tab label="Canvas">
         <div class="example-content">
+          <p>Examples</p>
           <div class="example-iframe-content">
             <div style="width: 97%; height: 41px; background-color: white; position: absolute"></div> <iframe
               src="https://stackblitz.com/edit/angular-ng-xotb-button?embed=1&file=src/app/app.component.html&hideExplorer=1&hideNavigation=1&view=preview&hidedevtools=1"
