@@ -2,23 +2,27 @@ app-dashboard {
   display: flex;
 
   .left-nav-section {
-    width: 219px;
+    width: 270px;
+    padding: 1.5rem 1rem;
+    -webkit-box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
+    box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
 
     .side-nav-buttons {
       .mat-button {
-        width: 90%;
+        width: 100%;
         text-align: left;
-        margin: 0 14px;
         border-radius: 0;
-        font-size: 14px;
+        font-size: 18px;
         color: #747474;
-        height: 45px;
         display: block;
-        font-family: "Gotham-Medium";
-        line-height: 45px;
+        font-family: "Calibri";
+        padding: 0.5rem;
+        border-bottom: 1px solid #F5F5F5;
 
         &.selected {
-          border-left: 4px solid #0578C3;
+          font-weight: bold;
+          color: #000000;
         }
       }
     }

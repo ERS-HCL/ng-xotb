@@ -1,18 +1,12 @@
 app-root {
   mat-toolbar {
     height: 100px;
-    background: #FFFFFF;
+    background: #363537;
 
     .mat-toolbar-row {
       height: 100px;
-      background: #FFFFFF;
+      background: #363537;
     }
-
-    .app-logo {
-      width: 66px;
-      height: 41px;
-    }
-
 
     .spacer {
       flex: 1 1 auto;
@@ -26,14 +20,35 @@ app-root {
       padding: 0 2rem;
       line-height: 100px;
       border-radius: 0;
-      font-size: 16px;
-      font-family: "Gotham-Medium";
-      color: #747474;
-      border-top: 4px solid #FFFFFF;
+      font-size: 24px;
+      color: #FFFFFF;
+      font-family: Calibri;
+      letter-spacing: 0.72px;
+      text-transform: capitalize;
 
       &.active {
-        border-top: 4px solid #0578C3;
+        color: #009FFF;
       }
+    }
+
+    .search-icon,
+    .user-icon {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      margin: 0 1rem;
+      cursor: pointer;
+      line-height: 100px;
+    }
+
+    .search-icon {
+      background: url("../assets/search_icon.svg");
+      margin-left: 4rem;
+    }
+
+    .user-icon {
+      background: url("../assets/user_icon.svg");
+      width: 26px;
     }
 
     .account-icon {
@@ -69,7 +84,7 @@ app-root {
     display: flex;
     justify-content: space-between;
     height: 25px;
-    background: #575757 0% 0% no-repeat padding-box;
+    background: #363537 0% 0% no-repeat padding-box;
     line-height: 25px;
     padding: 0 1rem;
     position: fixed;
@@ -81,6 +96,8 @@ app-root {
     .copy-right-text {
       font-size: 13px;
       color: #FFFFFF;
+      font-family: "Gotham-Book";
+      opacity: 0.53;
     }
 
     .copy-right-logo {

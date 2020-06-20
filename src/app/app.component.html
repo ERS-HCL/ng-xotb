@@ -1,8 +1,9 @@
-<mat-toolbar color="dark">
+<mat-toolbar>
   <mat-toolbar-row>
     <button mat-button [ngClass]="{'active': location.path() === '/dashboard' }" (click)="naviagteToDashboard()">
       <img class="app-logo" src="../assets/logo.png" />
     </button>
+    <span class="spacer"></span>
     <div class="s-button-row">
       <button mat-button [ngClass]="{'active': location.path() === '/design'}">Design</button>
       <button mat-button [ngClass]="{'active': location.path() === '/components'}"
@@ -10,12 +11,8 @@
       <button mat-button [ngClass]="{'active': location.path() === '/content'}"
         (click)="naviagteToContent()">Content</button>
     </div>
-    <span class="spacer"></span>
-    <div class="search-field">
-      <input type="text" placeholder="Search">
-      <mat-icon>search</mat-icon>
-    </div>
-    <mat-icon class="account-icon" aria-hidden="false" aria-label="user icon">account_circle</mat-icon>
+    <div class="search-icon" aria-hidden="false" aria-label="search icon"></div>
+    <div class="user-icon" aria-hidden="false" aria-label="user icon"></div>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
