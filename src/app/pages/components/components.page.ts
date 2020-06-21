@@ -8,36 +8,42 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ComponentsPageComponent implements OnInit {
   public categories: any;
-  public apiData: any;
   public moduleCode: string;
   public templateCode: string;
   public componentCode: string;
+  public apiTableColums: any;
+  public apiSource: any;
   constructor() {}
 
   ngOnInit(): void {
     this.categories = ['Navigators', 'DataTable', 'Template'];
     // This is dummy structure
-    this.apiData = [
-      'Property',
-      'Description',
-      'Type',
-      'Default',
-      '[label]',
-      'Checkbox Label',
-      'string',
-      '',
-      '[error]',
-      'Error message',
-      'string',
-      '',
-      '[required]',
-      'As required',
-      'boolean',
-      'false',
-      '[disabled]',
-      'Disable control',
-      'boolean',
-      'false',
+    this.apiTableColums = ['Property', 'Description', 'Type', 'Default'];
+    this.apiSource = [
+      {
+        property: '[label]',
+        description: 'Checkbox Label',
+        type: 'string|TemplateRef',
+        default: '',
+      },
+      {
+        property: '[error]',
+        description: 'Error message',
+        type: 'string|TemplateRef',
+        default: '',
+      },
+      {
+        property: '[required]',
+        description: 'Highlightd as required field',
+        type: 'boolean',
+        default: 'false',
+      },
+      {
+        property: '[disabled]',
+        description: 'Disable control',
+        type: 'boolean',
+        default: 'false',
+      },
     ];
 
     this.moduleCode = `

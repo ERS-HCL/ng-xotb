@@ -61,7 +61,7 @@
 
 <!-- Start of the Right section Panel -->
 <div class="right-body-section">
-  <p class="component-name">Check box</p>
+  <div class="component-name">Check box</div>
   <div class="component-description">Check Boxes allow the user to select one or more items from a given set.</div>
 
   <div class="tabs-section">
@@ -100,15 +100,34 @@
         <div class="api-content">
           <span class="section-title"> &lt;xotb-checkbox&gt; </span>
           <div class="code-section">
-            <mat-grid-list cols="4" rowHeight="30px" guttersize="0">
-              <mat-grid-tile *ngFor="let item of apiData">{{item}}</mat-grid-tile>
-            </mat-grid-list>
+            <table mat-table [dataSource]="apiSource">
+              <ng-container matColumnDef="Property">
+                <th mat-header-cell *matHeaderCellDef>Property</th>
+                <td mat-cell *matCellDef="let element">{{element.property}}</td>
+              </ng-container>
+              <ng-container matColumnDef="Description">
+                <th mat-header-cell *matHeaderCellDef>Description</th>
+                <td mat-cell *matCellDef="let element">{{element.description}} </td>
+              </ng-container>
+              <ng-container matColumnDef="Type">
+                <th mat-header-cell *matHeaderCellDef>Type</th>
+                <td mat-cell *matCellDef="let element">
+                  <code [highlight]="element.type"></code>
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="Default">
+                <th mat-header-cell *matHeaderCellDef>Default</th>
+                <td mat-cell *matCellDef="let element">{{element.default}}</td>
+              </ng-container>
+              <tr mat-header-row *matHeaderRowDef="apiTableColums"></tr>
+              <tr mat-row *matRowDef="let row; columns: apiTableColums;"></tr>
+            </table>
           </div>
         </div>
       </mat-tab>
       <mat-tab label="Accessibility">
         <div class="accessibility-content">
-          Coming soon
+          Coming soon..
         </div>
       </mat-tab>
     </mat-tab-group>

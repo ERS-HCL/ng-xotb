@@ -76,7 +76,6 @@ app-components {
 
   .right-body-section {
     width: 100%;
-    background: #FAFAFA;
     padding: 2rem;
     text-align: left;
 
@@ -85,6 +84,7 @@ app-components {
       font-family: "Calibri";
       letter-spacing: 1.1px;
       color: #2E2E2E;
+      line-height: 23px;
     }
 
     .component-description {
@@ -109,6 +109,10 @@ app-components {
         text-transform: capitalize;
       }
 
+      .mat-tab-label-active {
+        background-color: #F8F8F8;
+      }
+
       .mat-ink-bar {
         width: 0 !important;
       }
@@ -127,22 +131,6 @@ app-components {
         font-family: "Gotham-Medium";
         letter-spacing: 0.14px;
         color: #747474;
-      }
-
-      mat-grid-list {
-        width: 50%;
-        margin: 2rem;
-
-        mat-grid-tile {
-          border: 1px solid #747474;
-        }
-
-        .mat-grid-tile .mat-figure {
-          justify-content: start;
-          padding: 0 0.5rem;
-          white-space: pre;
-          color: #747474;
-        }
       }
     }
 
@@ -166,18 +154,47 @@ app-components {
     }
 
     .section-title {
-      font-size: 16px;
-      font-family: "Gotham-Light";
+      font-size: 20px;
+      font-family: "Calibri";
       color: #707070;
       margin: 1rem 0;
       display: inline-block;
     }
 
     .code-section {
-      border: 1px solid rgba(0, 0, 0, 0.12);
-      min-height: 100px;
-      min-width: 60%;
-      background: #FFFFFF;
+      .mat-table {
+        .mat-header-cell {
+          font-size: 14px;
+          font-family: "Calibri";
+          color: #2E2E2E;
+          font-weight: bold;
+        }
+
+        .mat-header-row,
+        .mat-row {
+          height: 40px;
+        }
+
+        code {
+          background: #eeeeee;
+        }
+
+        td,
+        .mat-header-cell {
+          border: 0.5px solid rgba(0, 0, 0, 0.12);
+          padding: 0 1rem;
+        }
+
+        tbody tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+      }
+
+    }
+
+    .accessibility-content {
+      text-align: center;
+      margin: 10% auto;
     }
   }
 }

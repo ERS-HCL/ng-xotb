@@ -67,13 +67,14 @@ app-dashboard {
       p {
         font-size: 16px;
         color: #2D2D2D;
-        font-family: "Gotham-book";
+        font-family: "Calibri";
       }
 
       h3 {
         font-size: 24px;
         color: #0078D7;
-        font-family: "Gotham-Bold";
+        font-family: "Calibri";
+        font-weight: bold;
 
         span {
           color: #E70058;
@@ -96,7 +97,7 @@ app-dashboard {
         border-radius: 0;
         margin: 0 5px;
         font-size: 13px;
-        font-family: "Gotham-Medium";
+        font-family: "Calibri";
       }
 
       .started {
@@ -108,7 +109,7 @@ app-dashboard {
         border-radius: 0;
         margin: 0 5px;
         font-size: 13px;
-        font-family: "Gotham-Medium";
+        font-family: "Calibri";
       }
     }
 
@@ -131,7 +132,7 @@ app-dashboard {
 
         h4 {
           font-size: 20px;
-          font-family: "Gotham-Medium";
+          font-family: "Calibri";
 
           &.pink {
             color: #EB1946;
@@ -151,8 +152,9 @@ app-dashboard {
         }
 
         span {
-          font-size: 14px;
+          font-size: 18px;
           color: #747474;
+          font-family: "Calibri";
         }
       }
 
@@ -196,14 +198,14 @@ app-dashboard {
 
           h4 {
             font-size: 16px;
-            font-family: "Gotham-Medium";
+            font-family: "Calibri";
             color: #0578C3;
           }
 
           span {
-            font-size: 14px;
+            font-size: 16px;
             color: #747474;
-            font-family: "Gotham-Book";
+            font-family: "Calibri";
           }
         }
       }
@@ -245,18 +247,18 @@ app-dashboard {
 
           .review {
             color: #707070;
-            font-size: 14px;
+            font-size: 16px;
             text-align: left;
             margin-bottom: 5%;
-            font-family: "Gotham-Book";
+            font-family: "Calibri";
           }
 
           .name,
           .designation {
             color: #0578C3;
-            font-size: 14px;
+            font-size: 18px;
             text-align: left;
-            font-family: "Gotham-Bold";
+            font-family: "Calibri";
           }
         }
       }
