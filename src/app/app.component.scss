@@ -29,6 +29,10 @@ app-root {
       &.active {
         color: #009FFF;
       }
+
+      &.logo-button {
+        padding: 0;
+      }
     }
 
     .search-icon,
