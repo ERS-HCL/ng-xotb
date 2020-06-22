@@ -2,12 +2,6 @@ app-components {
   display: flex;
 
   .left-nav-section {
-    width: 270px;
-    padding: 2.5rem 2rem;
-    -webkit-box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
-    -moz-box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
-    box-shadow: inset -5px 0px 5px -2px rgba(0, 0, 0, 0.21);
-
     .mat-radio-button {
       font-size: 18px;
       font-family: "Calibri";
@@ -22,7 +16,7 @@ app-components {
     }
 
     .custom-checkbox {
-      margin: 1rem 0;
+      margin: 1.5rem 0;
 
       .mat-checkbox-label {
         text-align: left;
@@ -34,10 +28,12 @@ app-components {
     }
 
     .components-panel {
-      margin-top: 1rem;
+      margin-top: 2.5rem;
 
       .mat-expansion-panel {
         box-shadow: none;
+        border-bottom: 1px solid #F8F8F8;
+        border-radius: 0;
 
         .mat-expansion-panel-header {
           padding: 0 8px 0 0;
@@ -82,7 +78,7 @@ app-components {
 
   .right-body-section {
     width: 100%;
-    padding: 3rem;
+    padding: 3.5rem;
     text-align: left;
 
     .component-name {
@@ -99,11 +95,11 @@ app-components {
       font-family: "Calibri";
       letter-spacing: 0.6px;
       color: #2E2E2E;
-      margin-top: 23px;
+      margin-top: 3rem;
     }
 
     .tabs-section {
-      margin-top: 1rem;
+      margin-top: 3rem;
 
       .mat-tab-label {
         text-align: left;
@@ -141,7 +137,7 @@ app-components {
     }
 
     .example-content {
-      padding: 1rem;
+      padding: 3rem 1rem;
 
       p {
         text-align: left;
@@ -150,6 +146,7 @@ app-components {
         letter-spacing: 0.6px;
         color: #2E2E2E;
         opacity: 1;
+        padding-top: 0.5rem;
       }
 
       .example-iframe-content {

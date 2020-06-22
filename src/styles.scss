@@ -76,6 +76,16 @@ $xotb-components-theme: mat-light-theme($xotb-components-primary, $xotb-componen
   src: url("./assets/fonts/GothamBookItalic.ttf");
 }
 
+@font-face {
+  font-family: "Calibri";
+  src: url("./assets/fonts/calibri.ttf");
+}
+
+@font-face {
+  font-family: "Calibri-bold";
+  src: url("./assets/fonts/calibrib.ttf");
+}
+
 .mat-typography {
   font-family: "Calibri", Roboto, "Helvetica Neue", sans-serif;
 }
@@ -91,4 +101,12 @@ body {
 body {
   margin: 0;
   font-family: "Calibri", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.left-nav-section {
+  width: 270px;
+  padding: 1.5rem 1rem;
+  -webkit-box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
 }

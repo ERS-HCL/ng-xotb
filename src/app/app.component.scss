@@ -6,6 +6,7 @@ app-root {
     .mat-toolbar-row {
       height: 100px;
       background: #363537;
+      padding: 0 20px;
     }
 
     .spacer {
@@ -17,7 +18,7 @@ app-root {
     }
 
     .mat-button {
-      padding: 0 2rem;
+      padding: 0 42px;
       line-height: 100px;
       border-radius: 0;
       font-size: 24px;
@@ -28,6 +29,7 @@ app-root {
 
       &.active {
         color: #009FFF;
+        font-family: "Calibri-bold";
       }
 
       &.logo-button {
@@ -99,16 +101,8 @@ app-root {
 
     .copy-right-text {
       font-size: 13px;
-      color: #FFFFFF;
-      font-family: "Gotham-Book";
-      opacity: 0.53;
-    }
-
-    .copy-right-logo {
-      color: #FFFFFF;
-      font-style: oblique;
-      font-family: "Gotham-Book";
-      font-weight: bold;
+      color: #a9a9a9;
+      font-family: "Calibri";
     }
   }
 }

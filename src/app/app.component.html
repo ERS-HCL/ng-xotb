@@ -1,6 +1,7 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <button class="logo-button" mat-button [ngClass]="{'active': location.path() === '/dashboard' }" (click)="naviagteToDashboard()">
+    <button class="logo-button" mat-button [ngClass]="{'active': location.path() === '/dashboard' }"
+      (click)="naviagteToDashboard()">
       <img class="app-logo" src="../assets/logo.png" />
     </button>
     <span class="spacer"></span>
@@ -19,8 +20,5 @@
 <div class="footer">
   <div class="copy-right-text">
     ©2020 HCL Technologies. Inc. All Rights Reserved.
-  </div>
-  <div class="copy-right-logo">
-    HCL
   </div>
 </div>
