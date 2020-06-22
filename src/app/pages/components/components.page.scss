@@ -45,9 +45,15 @@ app-components {
           font-size: 18px;
           font-family: "Calibri";
           letter-spacing: 0.54px;
-          color: #2E2E2E;
+          color: #747474;
           text-transform: capitalize;
-          font-weight: bold;
+
+          &[aria-expanded="true"] {
+            mat-panel-title {
+              font-weight: bold;
+              color: #2E2E2E;
+            }
+          }
 
           .mat-expansion-panel-header-title {
             color: #747474;
@@ -58,8 +64,8 @@ app-components {
           padding: 0;
 
           .list-label {
-            font-size: 14px;
-            font-family: "Gotham-Medium";
+            font-size: 16px;
+            font-family: "Calibri";
             color: #747474;
           }
 
@@ -76,7 +82,7 @@ app-components {
 
   .right-body-section {
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     text-align: left;
 
     .component-name {
