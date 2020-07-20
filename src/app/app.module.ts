@@ -8,9 +8,17 @@ import { ComponentsPageComponent } from './pages/components/components.page';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponentsModule } from './modules/material-components/material-components.module';
 import { HighlightModule } from 'ngx-highlightjs';
+import { ContentPageComponent } from './pages/content/content.page';
+import { DesignPageComponent } from './pages/design/design.page';
 
 @NgModule({
-  declarations: [AppComponent, DashboardPageComponent, ComponentsPageComponent],
+  declarations: [
+    AppComponent,
+    DashboardPageComponent,
+    ComponentsPageComponent,
+    ContentPageComponent,
+    DesignPageComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -23,10 +23,14 @@ export class AppComponent {
   }
 
   naviagteToContent() {
-    //this.router.navigateByUrl('/contents');
+    this.router.navigateByUrl('/content');
   }
 
   naviagteToDashboard() {
     this.router.navigateByUrl('/dashboard');
+  }
+
+  naviagteToDesign() {
+    this.router.navigateByUrl('/design');
   }
 }

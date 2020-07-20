@@ -6,7 +6,8 @@
     </button>
     <span class="spacer"></span>
     <div class="s-button-row">
-      <button mat-button [ngClass]="{'active': location.path() === '/design'}">Design</button>
+      <button mat-button [ngClass]="{'active': location.path() === '/design'}"
+        (click)="naviagteToDesign()">Design</button>
       <button mat-button [ngClass]="{'active': location.path() === '/components'}"
         (click)="naviagteToComponents()">Components</button>
       <button mat-button [ngClass]="{'active': location.path() === '/content'}"
