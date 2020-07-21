@@ -200,7 +200,7 @@ app-dashboard {
       p {
         font-size: 26px;
         color: #707070;
-        margin: 2rem 0;
+        margin: 0;
       }
 
       .features-grid {
@@ -259,17 +259,17 @@ app-dashboard {
 
       .reviews-grid {
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-
+        justify-content: center;
 
         .item {
           padding: 1rem;
-          width: 23%;
-          min-height: 224px;
+          margin: 0 0.5rem;
+          width: 24%;
+          min-height: 260px;
           border: 1px solid #E9E9E9;
-          border-radius: 8px;
-          opacity: 1;
+          background: #FFFFFF 0% 0% no-repeat padding-box;
+          box-shadow: 0px 20px 50px #00000017;
+          border-radius: 12px;
 
           .quotes {
             content: url("../../../assets/quotes.svg");
@@ -285,7 +285,7 @@ app-dashboard {
             text-align: left;
             margin: 1rem 0;
             font-family: "Calibri";
-            min-height: 8rem;
+            min-height: 140px;
           }
 
           .name,
@@ -296,6 +296,13 @@ app-dashboard {
             font-family: "Calibri";
           }
         }
+      }
+
+      .read-all {
+        text-align: right;
+        text-decoration: underline;
+        margin: 0.5rem 8%;
+        cursor: pointer;
       }
 
     }
