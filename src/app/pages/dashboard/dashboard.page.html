@@ -36,7 +36,6 @@
       <button mat-button class="started" (click)="navigateToComponents()">Get Started</button>
     </div>
   </div>
-
   <div class="xotb-help-section">
     <p>How xOTB Helps?</p>
     <div class="help-grid">
@@ -47,7 +46,6 @@
       </div>
     </div>
   </div>
-
   <div class="features-benifits">
     <p>Features & Benefits</p>
     <div class="features-grid">
@@ -64,19 +62,21 @@
       </div>
     </div>
   </div>
-
-
   <div class="user-reviews">
     <p>Work was never so fun...</p>
     <div class="reviews-grid">
       <div class="item" *ngFor="let item of userReviews">
-        <div class="quotes">&#8220;</div>
+        <div class="quotes"></div>
         <div class="review">
           {{item.review}}
         </div>
-        <div class="name"> {{item.name}}</div>
-        <div class="designation">( {{item.designation}})</div>
+        <div class="reviewer"></div>
+        <div class="name">{{item.name}}</div>
+        <div class="designation">({{item.designation}})</div>
       </div>
     </div>
+  </div>
+  <div class="dash-footer">
+    <div class="menu-item" *ngFor="let item of footerMenu" (click)="handleMenuItemClick(item)">{{item}}</div>
   </div>
 </div>

@@ -247,8 +247,8 @@ app-dashboard {
 
     .user-reviews {
       text-align: center;
-      background: #FFFFFF;
-      padding: 4%;
+      background: #FAFAFA;
+      padding: 4% 0;
 
       p {
         font-size: 26px;
@@ -272,25 +272,26 @@ app-dashboard {
           opacity: 1;
 
           .quotes {
-            font-size: 60px;
-            padding-top: 1rem;
-            text-align: left;
-            color: #0578C3;
-            font-family: sans-serif;
+            content: url("../../../assets/quotes.svg");
+          }
+
+          .reviewer {
+            content: url('../../../assets/reviewer.png');
           }
 
           .review {
             color: #707070;
             font-size: 16px;
             text-align: left;
-            margin-bottom: 5%;
+            margin: 1rem 0;
             font-family: "Calibri";
+            min-height: 8rem;
           }
 
           .name,
           .designation {
-            color: #0578C3;
-            font-size: 18px;
+            color: #707070;
+            font-size: 16px;
             text-align: left;
             font-family: "Calibri";
           }
@@ -299,7 +300,20 @@ app-dashboard {
 
     }
 
+    .dash-footer {
+      height: 96px;
+      background: #363537 0% 0% no-repeat padding-box;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-
+      .menu-item {
+        font-size: 18px;
+        text-align: left;
+        font-family: "Calibri";
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
   }
 }

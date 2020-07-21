@@ -12,9 +12,19 @@ export class DashboardPageComponent implements OnInit {
   public xotbFeatures: any;
   public userReviews: any;
   public showVideoSection: boolean = false;
+  public footerMenu: any = [];
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.footerMenu = [
+      'Release Notes',
+      'Privacy Policy',
+      'Terms of Service',
+      'Feedback',
+      'GitHb',
+      'Contact Us',
+      'FAQ',
+    ];
     this.xotbHelpTexts = [
       {
         title: "It's Robust",
@@ -82,13 +92,13 @@ export class DashboardPageComponent implements OnInit {
       },
       {
         name: 'Adrian Jacobs',
-        designation: 'Head od Sales',
+        designation: 'CEO',
         review:
           'Angular JS components are very robust and well tested. They even coply to WCG AA accessability requirement. This is so cool just like playing lego blocks with components',
       },
       {
         name: 'Julian Hey',
-        designation: 'developer',
+        designation: 'CEO',
         review:
           'xOTB helped us launch our web app quickly as out time to market was very critical. It helped us provide great user experiance even with a small design and development teams in a record time',
       },
@@ -101,5 +111,9 @@ export class DashboardPageComponent implements OnInit {
 
   showWatchVideoSection() {
     this.showVideoSection = true;
+  }
+
+  handleMenuItemClick(menuItem: string) {
+    console.log('clicked Menu', menuItem);
   }
 }
