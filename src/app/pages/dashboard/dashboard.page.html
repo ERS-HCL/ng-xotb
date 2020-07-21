@@ -1,7 +1,13 @@
 <div class="left-nav-section">
   <div class="side-nav-buttons">
-    <button mat-button class="selected">About xOTB</button>
-    <button mat-button (click)="navigateToComponents()">Get Started</button>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          About xOTB
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="get-started" (click)="navigateToComponents()">Get Started</div>
+    </mat-expansion-panel>
   </div>
 </div>
 <div class="right-body-section">

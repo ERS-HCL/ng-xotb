@@ -3,20 +3,28 @@ app-dashboard {
 
   .left-nav-section {
     .side-nav-buttons {
-      .mat-button {
-        width: 100%;
-        text-align: left;
-        border-radius: 0;
-        font-size: 18px;
-        color: #747474;
-        display: block;
-        font-family: "Calibri";
-        padding: 0.5rem;
-        border-bottom: 1px solid #F5F5F5;
 
-        &.selected {
+      mat-expansion-panel {
+        box-shadow: none;
+
+        mat-panel-title {
+          font-size: 18px;
+          font-family: "Calibri";
+          text-align: left;
           font-weight: bold;
-          color: #000000;
+          letter-spacing: 0.54px;
+          color: #2E2E2E;
+        }
+
+        .get-started {
+          width: 100%;
+          font-size: 18px;
+          color: #2E2E2E;
+          font-family: "Calibri";
+          padding: 0.5rem;
+          text-align: left;
+          cursor: pointer;
+          text-transform: capitalize;
         }
       }
     }
