@@ -6,27 +6,17 @@
 </div>
 <div class="right-body-section">
   <div class="with-video" *ngIf="showVideoSection">
-    <mat-grid-list cols="4" rowHeight="2:1">
-      <mat-grid-tile rowspan="3" colspan="2">
-        <video width="420" height="360" poster="../../../assets/video_thumbnail.png">
+    <mat-grid-list cols="2" rowHeight="1:1">
+      <mat-grid-tile>
+        <video poster="../../../assets/video_thumbnail.png">
         </video>
       </mat-grid-tile>
-      <mat-grid-tile colspan="2">
-        <div class="concept-row">
-          <div class="arrow-icon"></div>
-        </div>
-      </mat-grid-tile>
-      <mat-grid-tile colspan="2">
+      <mat-grid-tile>
         <div class="concept-desc">
-          <p>Give flight to your ideas with our robust, efficient, and adaptable</p>
-          <h3>x<span>OTB</span> Design System</h3>
-        </div>
-
-      </mat-grid-tile>
-      <mat-grid-tile colspan="2">
-        <div class="get-started-buttons">
-          <button mat-button class="watch">Watch Video</button>
-          <button mat-button class="started" (click)="navigateToComponents()">Get Started</button>
+          <h3><span></span> Design System</h3>
+          <div class="get-started-buttons padding-top">
+            <button mat-button class="started" (click)="navigateToComponents()">Get Started</button>
+          </div>
         </div>
       </mat-grid-tile>
     </mat-grid-list>
@@ -38,8 +28,8 @@
       <div class="concept-text">to Creation</div>
     </div>
     <div class="concept-desc">
-      <p>Give flight to your ideas with our robust, efficient, and adaptable xOTB design system</p>
-      <h3>x<span>OTB</span> Design System</h3>
+      <p>Give flight to your ideas with our Robust, Efficient, and Adaptable</p>
+      <h3><span></span> Design System</h3>
     </div>
     <div class="get-started-buttons">
       <button mat-button class="watch" (click)="showWatchVideoSection()">Watch Video</button>
@@ -51,6 +41,7 @@
     <p>How xOTB Helps?</p>
     <div class="help-grid">
       <div class="item" *ngFor="let item of xotbHelpTexts">
+        <span class="help-icon {{item.icon}}"></span>
         <h4 class="{{item.titleColor}}">{{item.title}}</h4>
         <span>{{item.description}} </span>
       </div>
@@ -61,11 +52,15 @@
     <p>Features & Benefits</p>
     <div class="features-grid">
       <div class="item" *ngFor="let item of xotbFeatures">
-        <img src="{{item.image}}">
-        <h4>{{item.tile}}</h4>
-        <span>
-          {{item.content}}
-        </span>
+        <div>
+          <img src="{{item.image}}">
+        </div>
+        <div class="feature-content">
+          <h4>{{item.title}}</h4>
+          <div>
+            {{item.content}}
+          </div>
+        </div>
       </div>
     </div>
   </div>

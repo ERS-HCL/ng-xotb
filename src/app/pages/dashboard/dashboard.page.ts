@@ -18,54 +18,58 @@ export class DashboardPageComponent implements OnInit {
     this.xotbHelpTexts = [
       {
         title: "It's Robust",
+        icon: 'robust',
         titleColor: 'pink',
         description:
-          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea',
+          "XOTB's components are built on Anuglar platform. Each component is thoroughly tested reducing time required on quality assurance. They are robust yet flexible.",
       },
       {
         title: "It's Efficient!",
+        icon: 'efficient',
         titleColor: 'orange',
         description:
-          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea',
+          'XOTB has ready to use components for both designers and developers.Thereby, improving speed, efficiency and promoting common design language and collaboration.',
       },
       {
         title: "It's Accessible",
+        icon: 'accessible',
         titleColor: 'blue',
         description:
-          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea',
+          'XOTB is built on responsive design components providing seamless experience. All components are fully accessible and in compliance with WCG AA guidelines.',
       },
       {
         title: "It's Adaptive",
+        icon: 'adaptive',
         titleColor: 'green',
         description:
-          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea',
+          'XOTB is a design system customizer. It customizes the entire design system uniquely to adapt your brand colors, design, style and tone.',
       },
     ];
 
     this.xotbFeatures = [
       {
-        title: 'Design Libraries',
-        image: '../../../assets/design_library.png',
+        title: 'UX Guidelines',
+        image: '../../../assets/ux_guidelines.svg',
         content:
-          'Utilise our ready-to-use Adobe XD components to kick-start your designs process.',
+          'Reference our UX guidelines that stem from ongoing research and exploration to design cohesive experiences.',
+      },
+      {
+        title: 'Design Libraries',
+        image: '../../../assets/design_library.svg',
+        content:
+          'Utilise our ready-to-use Adobe XD components to kick-start your design process.',
       },
       {
         title: 'Angular Components',
-        image: '../../../assets/component_library.png',
+        image: '../../../assets/component_library.svg',
         content:
           'Leverage our robust, responsive & most importantly customized Angular components that adhere to your branding.',
       },
       {
         title: 'Accessibility Compliant',
-        image: '../../../assets/accessablity.png',
+        image: '../../../assets/accessablity.svg',
         content:
           'Our components are fully accessible and comply the WCAG2.0 AA standards.',
-      },
-      {
-        title: 'UX Guidlines',
-        image: '../../../assets/ux_guidelines.png',
-        content:
-          'Reference our UX guidelines that stem from ongoing research and exploration to design cohesive experiences.',
       },
     ];
 
