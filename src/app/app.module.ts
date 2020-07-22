@@ -7,7 +7,6 @@ import { DashboardPageComponent } from './pages/dashboard/dashboard.page';
 import { ComponentsPageComponent } from './pages/components/components.page';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponentsModule } from './modules/material-components/material-components.module';
-import { HighlightModule } from 'ngx-highlightjs';
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
 import { ComponentsModule } from './components/components.module';
@@ -24,7 +23,6 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HighlightModule,
     ComponentsModule,
     MaterialComponentsModule,
   ],
