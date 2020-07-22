@@ -15,7 +15,8 @@
       </mat-expansion-panel-header>
       <div class="control-components">
         <mat-selection-list #controls [multiple]="false">
-          <mat-list-option *ngFor="let item of container.components" (click)="navigateToComponent(item)">
+          <mat-list-option *ngFor="let item of container.components"
+            [ngClass]="{'selected' : selectedComponent === item}" (click)="navigateToComponent(item)">
             <span class="list-label">{{item}}</span>
           </mat-list-option>
         </mat-selection-list>

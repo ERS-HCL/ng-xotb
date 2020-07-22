@@ -2,20 +2,8 @@ import { COMPONENT_NAMES } from './COMPONENT_NAMES';
 
 export const COMPONENTS_LIST = [
   {
-    title: 'Containers',
-    isExpanded: true,
-    components: [
-      COMPONENT_NAMES.ACCORDION,
-      COMPONENT_NAMES.CARD,
-      COMPONENT_NAMES.HBOX,
-      COMPONENT_NAMES.VBOX,
-      COMPONENT_NAMES.PANEL,
-      COMPONENT_NAMES.DATE_PICKER,
-      COMPONENT_NAMES.DROPDOWN,
-    ],
-  },
-  {
     title: 'Controls',
+    isExpanded: true,
     components: [
       COMPONENT_NAMES.AUTO_COMPLETE,
       COMPONENT_NAMES.CHECKBOX,
@@ -38,6 +26,18 @@ export const COMPONENTS_LIST = [
       COMPONENT_NAMES.TEXT_AREA,
       COMPONENT_NAMES.TOAST,
       COMPONENT_NAMES.TOOL_TIPS,
+    ],
+  },
+  {
+    title: 'Containers',
+    components: [
+      COMPONENT_NAMES.ACCORDION,
+      COMPONENT_NAMES.CARD,
+      COMPONENT_NAMES.HBOX,
+      COMPONENT_NAMES.VBOX,
+      COMPONENT_NAMES.PANEL,
+      COMPONENT_NAMES.DATE_PICKER,
+      COMPONENT_NAMES.DROPDOWN,
     ],
   },
   {

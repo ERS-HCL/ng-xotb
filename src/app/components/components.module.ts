@@ -5,9 +5,10 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ButtonComponent } from './button/button.component';
 import { CardComponent } from './card/card.component';
 import { MaterialComponentsModule } from '../modules/material-components/material-components.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [CheckboxComponent, ButtonComponent, CardComponent],
+  declarations: [CheckboxComponent, ButtonComponent, CardComponent, NotFoundComponent],
   imports: [CommonModule, MaterialComponentsModule, HighlightModule],
   exports: [MaterialComponentsModule, HighlightModule],
 })

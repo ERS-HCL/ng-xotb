@@ -65,7 +65,8 @@ app-components {
 
           .mat-list-option {
             &.selected span {
-              color: #009FFF
+              color: #009FFF;
+              font-weight: bold;
             }
           }
         }

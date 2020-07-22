@@ -4,6 +4,12 @@ import { ButtonComponent } from './button/button.component';
 
 export const childRoutes = [
   {
+    // For now default i am navigating to checkbox, change in later
+    path: '',
+    redirectTo: COMPONENT_NAMES.CHECKBOX,
+    pathMatch: 'full',
+  },
+  {
     path: COMPONENT_NAMES.CHECKBOX,
     component: CheckboxComponent,
   },
