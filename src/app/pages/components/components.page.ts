@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { COMPONENTS_LIST } from 'src/app/constants/COMPONENTS_LIST';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-components',
@@ -7,80 +9,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class ComponentsPageComponent implements OnInit {
-  public categories: any;
-  public moduleCode: string;
-  public templateCode: string;
-  public componentCode: string;
-  public apiTableColums: any;
-  public apiSource: any;
-  constructor() {}
+  public componentsList: any = COMPONENTS_LIST;
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    this.categories = ['Navigators', 'DataTable', 'Template'];
-    // This is dummy structure
-    this.apiTableColums = ['Property', 'Description', 'Type', 'Default'];
-    this.apiSource = [
-      {
-        property: '[label]',
-        description: 'Checkbox Label',
-        type: 'string|TemplateRef',
-        default: '',
-      },
-      {
-        property: '[error]',
-        description: 'Error message',
-        type: 'string|TemplateRef',
-        default: '',
-      },
-      {
-        property: '[required]',
-        description: 'Highlightd as required field',
-        type: 'boolean',
-        default: 'false',
-      },
-      {
-        property: '[disabled]',
-        description: 'Disable control',
-        type: 'boolean',
-        default: 'false',
-      },
-    ];
+  ngOnInit(): void {}
 
-    this.moduleCode = `
-    ...
-
-    import { XotbCheckboxesModule } from 'ng-xotb/controls/checkboxes';
-
-    @NgModule({
-        imports:[XotbCheckboxesModule]
-        ...
-    })
-
-    ...`;
-
-    this.templateCode = `    <xotb-checkbox label="Checkbox Label" [error]="hasError ? error : null">
-      <input xotb type="checkbox" [required]="required" [disabled]="disabled" />
-    </xotb-checkbox>`;
-
-    this.componentCode = `
-    ...
-
-    @Component({
-        templateUrl:'./component.html',
-        ...
-    })
-    export class DemoComponent {
-
-        required: boolean = false;
-
-        disabled: boolean = false;
-
-        hasError: boolean = false;
-
-        error:string = "This Input has some error"
-
-    }
-
-    ...`;
+  navigateToComponent(selectedComponent: string) {
+    console.log('component', selectedComponent);
+    this.router.navigate(['/components', selectedComponent]);
   }
 }

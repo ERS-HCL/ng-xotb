@@ -10,6 +10,7 @@ import { MaterialComponentsModule } from './modules/material-components/material
 import { HighlightModule } from 'ngx-highlightjs';
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -24,8 +25,10 @@ import { DesignPageComponent } from './pages/design/design.page';
     AppRoutingModule,
     BrowserAnimationsModule,
     HighlightModule,
+    ComponentsModule,
     MaterialComponentsModule,
   ],
+  exports: [ComponentsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

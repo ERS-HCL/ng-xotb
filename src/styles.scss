@@ -11,7 +11,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$xotb-components-primary: mat-palette($mat-indigo);
+$xotb-components-primary: mat-palette($mat-blue);
 $xotb-components-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -110,7 +110,7 @@ body {
 
 .left-nav-section {
   width: 296px;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   -webkit-box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
   box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);

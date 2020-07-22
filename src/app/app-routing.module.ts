@@ -4,6 +4,9 @@ import { DashboardPageComponent } from './pages/dashboard/dashboard.page';
 import { ComponentsPageComponent } from './pages/components/components.page';
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { ButtonComponent } from './components/button/button.component';
+import { COMPONENT_NAMES } from './constants/COMPONENT_NAMES';
 
 const routes: Routes = [
   {
@@ -18,6 +21,16 @@ const routes: Routes = [
   {
     path: 'components',
     component: ComponentsPageComponent,
+    children: [
+      {
+        path: COMPONENT_NAMES.CHECKBOX,
+        component: CheckboxComponent,
+      },
+      {
+        path: COMPONENT_NAMES.BUTTON,
+        component: ButtonComponent,
+      },
+    ],
   },
   {
     path: 'content',
