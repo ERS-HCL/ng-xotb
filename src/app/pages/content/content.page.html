@@ -1,24 +1,26 @@
   <div class="left-nav-section">
-    <mat-expansion-panel [expanded]="true">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Brand
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div class="brand-section">
-        <mat-selection-list #controls [multiple]="false">
-          <mat-list-option class="selected">
-            <span class="list-label">Tone Of Voice</span>
-          </mat-list-option>
-          <mat-list-option>
-            <span class="list-label">Writing Guidelines</span>
-          </mat-list-option>
-          <mat-list-option>
-            <span class="list-label">Accessibility Guidelines</span>
-          </mat-list-option>
-        </mat-selection-list>
-      </div>
-    </mat-expansion-panel>
+    <div class="components-panel">
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Brand
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="brand-section">
+          <mat-selection-list #controls [multiple]="false">
+            <mat-list-option class="selected">
+              <span class="list-label">Tone Of Voice</span>
+            </mat-list-option>
+            <mat-list-option>
+              <span class="list-label">Writing Guidelines</span>
+            </mat-list-option>
+            <mat-list-option>
+              <span class="list-label">Accessibility Guidelines</span>
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
+      </mat-expansion-panel>
+    </div>
   </div>
   <!-- Start of the Right section Panel -->
   <div class="right-body-section">
@@ -164,20 +166,21 @@
           </div>
         </mat-tab>
         <mat-tab label="Adaptive Tones">
-            <div class="adaptive-content">
-              <p>
-                When crafting communications, it would be likely to have the same voice all the time, but our tone would differ depending on where we are, who we are with and the emotions and expectations of our audiences.
-              </p>
-              <p>Such slight variations in tone of our communications can make it easier for us to connect with our audiences.</p>
-              <p>The factors which may affect the tone of our communications include, but would not be limited to:</p>
-              <ul>
-                <li>The intended audience</li>
-                <li>Medium  of communication</li>
-                <li>And context</li>
-              </ul>
+          <div class="adaptive-content">
+            <p>
+              When crafting communications, it would be likely to have the same voice all the time, but our tone would
+              differ depending on where we are, who we are with and the emotions and expectations of our audiences.
+            </p>
+            <p>Such slight variations in tone of our communications can make it easier for us to connect with our
+              audiences.</p>
+            <p>The factors which may affect the tone of our communications include, but would not be limited to:</p>
+            <ul>
+              <li>The intended audience</li>
+              <li>Medium of communication</li>
+              <li>And context</li>
+            </ul>
           </div>
         </mat-tab>
       </mat-tab-group>
-
     </div>
   </div>

@@ -109,9 +109,82 @@ body {
 }
 
 .left-nav-section {
-  width: 296px;
-  padding: 1rem 1rem;
+  width: 380px;
+  padding: 1rem 1rem 1rem 2rem;
+  box-sizing: unset;
   -webkit-box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
   box-shadow: inset -10px 0px 10px -2px rgba(0, 0, 0, 0.15);
+
+  .mat-radio-button {
+    font-size: 18px;
+    font-family: "Calibri";
+    letter-spacing: 0.54px;
+    color: #2E2E2E;
+    text-transform: capitalize;
+    opacity: 1;
+
+    ~.mat-radio-button {
+      margin-left: 16px;
+    }
+  }
+
+  .custom-checkbox {
+    margin: 1.5rem 0;
+
+    .mat-checkbox-label {
+      text-align: left;
+      font-size: 18px;
+      font-family: "Calibri";
+      color: #2E2E2E;
+      opacity: 1;
+    }
+  }
+
+  .components-panel {
+    .mat-expansion-panel {
+      box-shadow: none;
+      border-bottom: 1px solid #F8F8F8;
+      border-radius: 0;
+
+      .mat-expansion-panel-header {
+        padding: 0 8px 0 0;
+        text-align: left;
+        font-size: 18px;
+        font-family: "Calibri";
+        letter-spacing: 0.54px;
+        color: #747474;
+        text-transform: capitalize;
+
+        &[aria-expanded="true"] {
+          mat-panel-title {
+            font-weight: bold;
+            color: #2E2E2E;
+          }
+        }
+
+        .mat-expansion-panel-header-title {
+          color: #747474;
+        }
+      }
+
+      .mat-expansion-panel-body {
+        padding: 0;
+
+        .list-label {
+          font-size: 18px;
+          font-family: "Calibri";
+          color: #747474;
+        }
+
+        .mat-list-option {
+          &.selected span {
+            color: #009FFF;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
 }
