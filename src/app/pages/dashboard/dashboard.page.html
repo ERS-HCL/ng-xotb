@@ -1,12 +1,18 @@
 <div class="left-nav-section">
-  <div class="side-nav-buttons">
+  <div class="components-panel">
     <mat-expansion-panel [expanded]="true">
       <mat-expansion-panel-header>
         <mat-panel-title>
           About xOTB
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <div class="get-started" (click)="navigateToComponents()">Get Started</div>
+      <div class="control-components">
+        <mat-selection-list #controls [multiple]="false">
+          <mat-list-option>
+            <span class="list-label" (click)="navigateToComponents()">Get Started</span>
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
     </mat-expansion-panel>
   </div>
 </div>

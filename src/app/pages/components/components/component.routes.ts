@@ -1,20 +1,19 @@
-import { COMPONENT_NAMES } from '../constants/COMPONENT_NAMES';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ButtonComponent } from './button/button.component';
 
-export const childRoutes = [
+export const childComponentRoutes = [
   {
     // For now default i am navigating to checkbox, change in later
     path: '',
-    redirectTo: COMPONENT_NAMES.CHECKBOX,
+    redirectTo: 'checkBox',
     pathMatch: 'full',
   },
   {
-    path: COMPONENT_NAMES.CHECKBOX,
+    path: 'checkBox',
     component: CheckboxComponent,
   },
   {
-    path: COMPONENT_NAMES.BUTTON,
+    path: 'button',
     component: ButtonComponent,
   },
 ];

@@ -4,11 +4,16 @@ import { HighlightModule } from 'ngx-highlightjs';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ButtonComponent } from './button/button.component';
 import { CardComponent } from './card/card.component';
-import { MaterialComponentsModule } from '../modules/material-components/material-components.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MaterialComponentsModule } from 'src/app/modules/material-components/material-components.module';
 
 @NgModule({
-  declarations: [CheckboxComponent, ButtonComponent, CardComponent, NotFoundComponent],
+  declarations: [
+    CheckboxComponent,
+    ButtonComponent,
+    CardComponent,
+    NotFoundComponent,
+  ],
   imports: [CommonModule, MaterialComponentsModule, HighlightModule],
   exports: [MaterialComponentsModule, HighlightModule],
 })

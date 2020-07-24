@@ -4,7 +4,7 @@ import { DashboardPageComponent } from './pages/dashboard/dashboard.page';
 import { ComponentsPageComponent } from './pages/components/components.page';
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
-import { childRoutes } from './components/component.routes';
+import { childComponentRoutes } from './pages/components/components/component.routes';
 
 const routes: Routes = [
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: 'components',
     component: ComponentsPageComponent,
-    children: childRoutes,
+    children: childComponentRoutes,
   },
   {
     path: 'content',
