@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponentsModule } from './modules/material-components/material-components.module';
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
-import { ComponentsModule } from './components/components.module';
+import { ComponentsModule } from './pages/components/components/components.module';
 import { DesignComponentsModule } from './pages/design/components/design.module';
 
 @NgModule({

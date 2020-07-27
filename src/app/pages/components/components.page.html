@@ -16,8 +16,9 @@
       <div class="control-components">
         <mat-selection-list #controls [multiple]="false">
           <mat-list-option *ngFor="let item of container.components"
-            [ngClass]="{'selected' : selectedComponent === item}" (click)="navigateToComponent(item)">
-            <span class="list-label">{{item}}</span>
+            [ngClass]="{'selected' : router.url === '/components/' + item.value}"
+            (click)="navigateToComponent(item.value)">
+            <span class="list-label">{{item.name}}</span>
           </mat-list-option>
         </mat-selection-list>
       </div>
