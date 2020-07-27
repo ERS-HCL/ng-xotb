@@ -1,1 +1,24 @@
-<p>design works!</p>
+<div class="left-nav-section">
+  <div class="components-panel">
+    <mat-expansion-panel *ngFor="let container of componentsList" [expanded]="container.isExpanded">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{container.title}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="control-components">
+        <mat-selection-list #controls [multiple]="false">
+          <mat-list-option *ngFor="let item of container.components"
+            [ngClass]="{'selected' : selectedComponent === item}" (click)="navigateToComponent(item)">
+            <span class="list-label">{{item}}</span>
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </mat-expansion-panel>
+  </div>
+</div>
+<!-- End of the Left section Panel -->
+<!-- Start of the Right section Panel -->
+<div class="right-body-section">
+  <router-outlet></router-outlet>
+</div>

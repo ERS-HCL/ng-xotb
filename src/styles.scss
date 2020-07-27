@@ -90,6 +90,11 @@ $xotb-components-theme: mat-light-theme($xotb-components-primary, $xotb-componen
   font-family: "Calibri-bold";
   src: url("./assets/fonts/calibrib.ttf");
 }
+@font-face {
+  font-family: "Calibri-italic";
+  src: url("./assets/fonts/calibrii.ttf");
+}
+
 
 .mat-typography {
   font-family: "Calibri", Roboto, "Helvetica Neue", sans-serif;

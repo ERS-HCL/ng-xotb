@@ -10,6 +10,7 @@ import { MaterialComponentsModule } from './modules/material-components/material
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
 import { ComponentsModule } from './components/components.module';
+import { DesignComponentsModule } from './pages/design/components/design.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ComponentsModule } from './components/components.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentsModule,
+    DesignComponentsModule,
     MaterialComponentsModule,
   ],
   exports: [ComponentsModule],

@@ -1,0 +1,75 @@
+app-design {
+  display: flex;
+
+  .left-nav-section {
+    .mat-radio-button {
+      font-size: 18px;
+      font-family: "Calibri";
+      letter-spacing: 0.54px;
+      color: #2E2E2E;
+      text-transform: capitalize;
+      opacity: 1;
+
+      ~.mat-radio-button {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .right-body-section {
+    width: 100%;
+    padding: 3.5rem;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Calibri";
+    color: #2E2E2E;
+    line-height: 24px;
+
+    .section-name {
+      font-size: 55px;
+      font-family: "calibri-light";
+      letter-spacing: 1.1px;
+      color: #2E2E2E;
+      line-height: 23px;
+    }
+
+    .section-description {
+      letter-spacing: 0.6px;
+      margin-top: 2.5rem;
+    }
+    .mat-tab-label-content {
+
+    }
+
+    .mat-tab-label {
+      text-align: left;
+      font-size: 20px;
+      font-family: "Calibri";
+      letter-spacing: 0.6px;
+      color: #2E2E2E;
+      opacity: 1;
+      text-transform: capitalize;
+    }
+
+    .mat-tab-label-active {
+      background-color: #F8F8F8;
+    }
+
+    .tabs-section {
+      padding-top: 3rem;
+    }
+    
+    .mat-tab-body-content {
+      padding-top: 2rem;
+      font-family: "Calibri";
+
+      .sub-section-heading {
+        font-family: "Calibri-bold";
+      }
+      .tab-title-note-details {
+        font-family: "Calibri-italic";
+      }
+    }
+  }
+
+}

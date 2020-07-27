@@ -5,6 +5,7 @@ import { ComponentsPageComponent } from './pages/components/components.page';
 import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
 import { childRoutes } from './components/component.routes';
+import { designChildRoutes } from './pages/design/components/design.routes';
 
 const routes: Routes = [
   {
@@ -28,6 +29,7 @@ const routes: Routes = [
   {
     path: 'design',
     component: DesignPageComponent,
+    children: designChildRoutes,
   },
 ];
 
