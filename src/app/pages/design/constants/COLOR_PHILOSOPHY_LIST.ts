@@ -3,7 +3,7 @@ export const COLOR_PHILOSOPHY_LIST = {
     title: 'Primary',
     colors: [
       {code: '#006BB6', lable: 'Accessibility Score 4.3 #006BB6'},
-      {code: '#006BB6'},
+      {code: '#002D4D'},
       {code: '#00375D'},
       {code: '#004A7E'},
       {code: '#0076C9'},

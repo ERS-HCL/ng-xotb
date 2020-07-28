@@ -5,5 +5,11 @@
  */
 export const DESIGN_BRAND_NAMES = {
   PHILOSOPHY: 'Philosophy',
-  COLOR: 'Color'
+  COLOR: 'Color',
+  ILLUSTRATION: 'Illustration',
+  IMAGES: 'Images',
+  PHOTOGRAPHY: 'Photography',
+  ICONOGRAPHY: 'Iconography',
+  TYPOGRAPHY: 'Typography',
+  DESIGN_KIT: 'Design Kit'
 };

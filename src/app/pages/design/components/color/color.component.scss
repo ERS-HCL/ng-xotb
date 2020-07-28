@@ -1,5 +1,4 @@
 app-color {
-
   .mat-tab-body {
     .mat-tab-body-content {
       .brand-content {
@@ -7,9 +6,92 @@ app-color {
           padding-top: 1rem;
         }
         .color-philosophy-section {
-            border: 1px solid #DCDCDC;
-            padding: 1rem;
-            margin-top: 2rem;
+          border: 1px solid #dcdcdc;
+          padding: 1rem;
+          margin-top: 2rem;
+
+          .philosophy-color-grids {
+
+            padding-top: 2.5rem;
+            .grid-heading {
+              padding: 0.5rem 0 0.5rem;
+              display: inline-block;
+              font-family: "Calibri-bold";
+              font-size: 18px;
+            }
+
+            .color-holder {
+              width: 125px;
+              height: 57px;
+              vertical-align: middle;
+              color: #ffffff;
+              font-size: 12px;
+              span {
+                margin: 10px;
+              }
+            }
+
+            .color-philosophy-left-section{
+              padding-right: 3rem;
+              float: left;
+              .color-philosophy-text-section{
+                .color-holder{
+                  color: #000000;
+                }
+                
+              }
+            }
+
+            .color-philosophy-right-section {
+              float: right;
+            }
+
+            .color-philosophy-left-section, .color-philosophy-right-section {
+              display: inline-block;
+
+              .color-philosophy-primary-section, .color-philosophy-text-section, .color-philosophy-background-section, .color-philosophy-secondary-section {
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        .color-philosophy-system-list {
+          padding-top: 2rem;
+          clear: both;
+
+          span {
+            padding-right: 1rem;
+          }
+
+          .system-color {
+            display: inline-block;
+            width: 53px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+        .color-philosophy-button-section {
+          padding-top: 1.5rem;
+          button {
+            background-color: #363537;
+            color: #ffffff;
+            margin-right: 10px;
+          }
+        }
+      }
+      .accessibility-content{
+        span {
+          color: #009FFF;
+        }
+        .text-details {
+          border: 1px solid #009FFF;
+          margin: 10px;
+        }
+        .sub-section-content{
+          padding-bottom: 1rem;
+          
         }
       }
     }

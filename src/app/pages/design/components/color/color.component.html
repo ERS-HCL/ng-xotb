@@ -1,5 +1,9 @@
 <div class="section-name">Color</div>
-<div class="section-description">Color is the characteristic of things that is produced by conflicting qualities of light being reflected by them. As soon as light shines on an object, some colors bounce off the object and others are absorbed by it.</div>
+<div class="section-description">
+  Color is the characteristic of things that is produced by conflicting
+  qualities of light being reflected by them. As soon as light shines on an
+  object, some colors bounce off the object and others are absorbed by it.
+</div>
 <div class="tabs-section">
   <mat-tab-group animationDuration="0ms">
     <mat-tab label="Brand">
@@ -8,30 +12,139 @@
         <div>test11</div>
         <p class="sub-section-heading">Color Philosophy</p>
         <span class="sub-section-content">
-            The color most iconically associated with the HCL Brand is the HCL Blue, which communicates the emotions of trust, reliability and dependability customers have come to expect from us. Opaque White is used as the primary background color and helps lends a clean look and feel to the creatives Flat black is used for text-in-focus to ensure legibility across media.
+          The color most iconically associated with the HCL Brand is the HCL
+          Blue, which communicates the emotions of trust, reliability and
+          dependability customers have come to expect from us. Opaque White is
+          used as the primary background color and helps lends a clean look and
+          feel to the creatives Flat black is used for text-in-focus to ensure
+          legibility across media.
         </span>
         <div class="tab-content-note">
-            <span class="sub-section-heading">
+          <span class="sub-section-heading">
             Note:
-            </span>
-            <span class="tab-title-note-details">
-                The relative size of the color spaces in the diagram indicates how frequently these are to be used
-            </span>
+          </span>
+          <span class="tab-title-note-details">
+            The relative size of the color spaces in the diagram indicates how
+            frequently these are to be used
+          </span>
         </div>
-        
+
         <div class="color-philosophy-section">
-            <p class="sub-section-heading">Color Philosophy</p>
-            <span class="sub-section-content">
-               The Bright and Fresh colors of blue communicates the emotions of trust, reliability and dependability. These palette is ideal for corporates as well as companies working in medical domain.
+          <p class="sub-section-heading">Color Philosophy</p>
+          <span class="sub-section-content">
+            The Bright and Fresh colors of blue communicates the emotions of
+            trust, reliability and dependability. These palette is ideal for
+            corporates as well as companies working in medical domain.
+          </span>
+          <div class="tab-content-note">
+            <span class="sub-section-heading">
+              Keywords:
             </span>
-            <div class="tab-content-note">
-                <span class="sub-section-heading">
-                    Keywords:
-                </span>
-                <span>
-                    Health Care, Medical, Medicine, Care, Growth
-                </span>
+            <span>
+              Health Care, Medical, Medicine, Care, Growth
+            </span>
+          </div>
+          <div class="philosophy-color-grids">
+            <div class="color-philosophy-left-section">
+              <div class="color-philosophy-primary-section">
+                <span class="grid-heading">{{
+                  colorPhilosophyList.primary_colors.title
+                }}</span>
+                <div
+                  *ngFor="
+                    let color of colorPhilosophyList.primary_colors.colors
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
+                  <span>{{ color.code }}</span>
+                </div>
+              </div>
+              <div class="color-philosophy-text-section">
+                <span class="grid-heading">{{
+                  colorPhilosophyList.text_colors.title
+                }}</span>
+                <div
+                  *ngFor="let color of colorPhilosophyList.text_colors.colors"
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
+                  <span>{{ color.code }}</span>
+                </div>
+              </div>
+              <div class="color-philosophy-background-section">
+                <span class="grid-heading">{{
+                  colorPhilosophyList.background_colors.title
+                }}</span>
+                <div
+                  *ngFor="
+                    let color of colorPhilosophyList.background_colors.colors
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
+                  <span>{{ color.code }}</span>
+                </div>
+              </div>
             </div>
+            <div class="color-philosophy-right-section">
+              <div class="color-philosophy-secondary-section">
+                <span class="grid-heading">{{
+                  colorPhilosophyList.secondary_colors_one.title
+                }}</span>
+                <div
+                  *ngFor="
+                    let color of colorPhilosophyList.secondary_colors_one.colors
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
+                  <span>{{ color.code }}</span>
+                </div>
+              </div>
+              <div class="color-philosophy-secondary-section">
+                <span class="grid-heading">{{
+                  colorPhilosophyList.secondary_colors_two.title
+                }}</span>
+                <div
+                  *ngFor="
+                    let color of colorPhilosophyList.secondary_colors_two.colors
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
+                  <span>{{ color.code }}</span>
+                </div>
+              </div>
+              <div class="color-philosophy-secondary-section">
+                <span class="grid-heading">{{
+                  colorPhilosophyList.secondary_colors_three.title
+                }}</span>
+                <div
+                  *ngFor="
+                    let color of colorPhilosophyList.secondary_colors_three
+                      .colors
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
+                  <span>{{ color.code }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="color-philosophy-system-list">
+            <span>{{ colorSystemList.title }}</span>
+            <div
+              *ngFor="let color of colorSystemList.colors"
+              class="system-color"
+              [ngStyle]="{ backgroundColor: color.code }"
+            ></div>
+          </div>
+          <div class="color-philosophy-button-section">
+            <button mat-button>Set As Brand Color</button>
+            <button mat-button>Apply colors to Components</button>
+          </div>
         </div>
       </div>
     </mat-tab>
@@ -39,19 +152,33 @@
       <div class="color-families-content">
         <span class="section-title"> &lt;xotb-checkbox&gt; </span>
         <div class="code-section">
-            test3
+          test3
         </div>
       </div>
     </mat-tab>
     <mat-tab label="Accessibility">
       <div class="accessibility-content">
-        Coming soon..
+        <div class="sub-section-content">
+          Color accessibility enables people with visual impairments or color
+          vision deficiencies to interact with digital experiences in the same
+          way as their non-visually-impaired counterparts. The WHO estimated
+          that roughly 217 million people live with some form of moderate to
+          severe vision impairment. That statistic alone is reason enough to
+          design for accessibility. Xotb's color palette provides a range of
+          accessible combinations. Subtracting the foreground value from the
+          background value helps determine whether that color combination meets
+          the WCAG AA contrast ratio success criteria.
+        </div>
+        <p class="sub-section-heading">Accessibility & Contrasts </p>
+        <p>We evaluate your color combination using the WCAG 2.0 guidelines for contrast accessibility.</p>
+        <span>Text color</span>
+        <div class="text-details">#747474</div>
       </div>
     </mat-tab>
     <mat-tab label="Library">
-        <div class="library-content">
-          Coming soon..
-        </div>
-      </mat-tab>
+      <div class="library-content">
+        Coming soon..
+      </div>
+    </mat-tab>
   </mat-tab-group>
 </div>

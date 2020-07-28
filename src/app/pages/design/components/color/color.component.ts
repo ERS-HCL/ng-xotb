@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { COLOR_SYSTEM_LIST } from '../../constants/COLOR_SYSTEM_LIST';
+import { COLOR_PHILOSOPHY_LIST } from '../../constants/COLOR_PHILOSOPHY_LIST';
 
 @Component({
   selector: 'app-color',
@@ -7,10 +9,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class ColorComponent implements OnInit {
-
+  public colorSystemList: any = COLOR_SYSTEM_LIST['system_colors'];
+  public colorPhilosophyList: any = COLOR_PHILOSOPHY_LIST;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.colorSystemList);
   }
 
 }
