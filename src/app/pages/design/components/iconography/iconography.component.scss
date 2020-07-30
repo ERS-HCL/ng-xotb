@@ -1,0 +1,35 @@
+app-iconography {
+    .mat-tab-body {
+      .mat-tab-body-content {
+        .sub-section-content {
+            padding-bottom: 2rem;
+        }
+        img {
+            width: 90%;
+            padding-top: 1rem;
+          }
+       .library-content{
+        padding-bottom: 2rem;
+
+        .download-icon-link {
+            padding-bottom: 10px;
+            span {
+                padding-right: 20px;
+            }
+        }
+        img {
+            width: 90%;
+          }
+       }
+
+       .specifications-content {
+           .defination-section {
+               padding-bottom: 1rem;
+               .sub-heading{
+                font-family: "Calibri-bold";
+               }
+           }
+       }
+    }
+  }
+}

@@ -28,7 +28,7 @@ import { DesignComponentsModule } from './pages/design/components/design.module'
     DesignComponentsModule,
     MaterialComponentsModule,
   ],
-  exports: [ComponentsModule],
+  exports: [ComponentsModule, DesignComponentsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

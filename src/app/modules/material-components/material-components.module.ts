@@ -13,6 +13,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [],
@@ -30,6 +32,8 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     MatDividerModule,
     MatTableModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   exports: [
     MatToolbarModule,
@@ -45,6 +49,7 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     MatDividerModule,
     MatTableModule,
+    MatSelectModule,
   ],
 })
 export class MaterialComponentsModule {}

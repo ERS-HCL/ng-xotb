@@ -1,6 +1,8 @@
 import { DESIGN_BRAND_NAMES } from '../constants/DESIGN_BRAND_NAMES';
 import { PhilosophyComponent } from './philosophy/philosophy.component';
 import { ColorComponent } from './color/color.component';
+import { IconographyComponent } from './iconography/iconography.component';
+import { DesignkitComponent } from './designkit/designkit.component';
 
 export const designChildRoutes = [
   {
@@ -16,5 +18,13 @@ export const designChildRoutes = [
   {
     path: DESIGN_BRAND_NAMES.COLOR,
     component: ColorComponent,
+  },
+  {
+    path: DESIGN_BRAND_NAMES.ICONOGRAPHY,
+    component: IconographyComponent,
+  },
+  {
+    path: DESIGN_BRAND_NAMES.DESIGN_KIT,
+    component: DesignkitComponent,
   },
 ];
