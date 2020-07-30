@@ -12,7 +12,7 @@ export const designChildRoutes = [
   {
     // For now default i am navigating to checkbox, change in later
     path: '',
-    redirectTo: DESIGN_BRAND_NAMES.PHILOSOPHY,
+    redirectTo: DESIGN_BRAND_NAMES.COLOR,
     pathMatch: 'full',
   },
   {
