@@ -4,9 +4,10 @@ app-color {
       .brand-content {
         .primary-accent-colors {
           padding-bottom: 2rem;
-          
+
           .color-box-section {
             display: flex;
+
             .blue-box,
             .white-box,
             .black-box {
@@ -15,7 +16,8 @@ app-color {
               flex: 1;
               height: 104px;
               border: 1px solid #DCDCDC;
-              span{
+
+              span {
                 font-family: "Calibri-bold";
                 font-size: 15px;
                 padding: 1rem;
@@ -117,8 +119,10 @@ app-color {
             margin-right: 10px;
           }
         }
+
         .color-philosophy-button-section {
           padding-top: 1.5rem;
+
           button {
             background-color: #363537;
             color: #ffffff;
@@ -132,6 +136,7 @@ app-color {
           width: 80%;
         }
       }
+
       .accessibility-content {
         span {
           color: #009fff;

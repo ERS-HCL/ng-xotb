@@ -5,7 +5,7 @@
   object, some colors bounce off the object and others are absorbed by it.
 </div>
 <div class="tabs-section">
-  <mat-tab-group animationDuration="0ms">
+  <mat-tab-group animationDuration="0ms" dynamicHeight>
     <mat-tab label="Brand">
       <div class="brand-content">
         <div class="primary-accent-colors">
@@ -74,13 +74,9 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.primary_colors.title
                 }}</span>
-                <div
-                  *ngFor="
+                <div *ngFor="
                     let color of colorPhilosophyList.primary_colors.colors
-                  "
-                  class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }"
-                >
+                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -88,11 +84,8 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.text_colors.title
                 }}</span>
-                <div
-                  *ngFor="let color of colorPhilosophyList.text_colors.colors"
-                  class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }"
-                >
+                <div *ngFor="let color of colorPhilosophyList.text_colors.colors" class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }">
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -100,13 +93,9 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.background_colors.title
                 }}</span>
-                <div
-                  *ngFor="
+                <div *ngFor="
                     let color of colorPhilosophyList.background_colors.colors
-                  "
-                  class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }"
-                >
+                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -116,13 +105,9 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.secondary_colors_one.title
                 }}</span>
-                <div
-                  *ngFor="
+                <div *ngFor="
                     let color of colorPhilosophyList.secondary_colors_one.colors
-                  "
-                  class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }"
-                >
+                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -130,13 +115,9 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.secondary_colors_two.title
                 }}</span>
-                <div
-                  *ngFor="
+                <div *ngFor="
                     let color of colorPhilosophyList.secondary_colors_two.colors
-                  "
-                  class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }"
-                >
+                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -144,14 +125,10 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.secondary_colors_three.title
                 }}</span>
-                <div
-                  *ngFor="
+                <div *ngFor="
                     let color of colorPhilosophyList.secondary_colors_three
                       .colors
-                  "
-                  class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }"
-                >
+                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -159,11 +136,8 @@
           </div>
           <div class="color-philosophy-system-list">
             <span>{{ colorSystemList.title }}</span>
-            <div
-              *ngFor="let color of colorSystemList.colors"
-              class="system-color"
-              [ngStyle]="{ backgroundColor: color.code }"
-            ></div>
+            <div *ngFor="let color of colorSystemList.colors" class="system-color"
+              [ngStyle]="{ backgroundColor: color.code }"></div>
           </div>
           <div class="color-philosophy-button-section">
             <button mat-button>Set As Brand Color</button>
