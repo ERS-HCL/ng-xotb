@@ -6,6 +6,17 @@
   <mat-tab-group animationDuration="0ms">
     <mat-tab label="Canvas">
       <div class="example-content">
+        <p>Usages</p>
+        <ul>
+          <li>
+            You want to make a multi section from a list
+          </li>
+          <li>
+            You might need to use checkbox for a single option (not a list). Then it would be same as using switch to
+            toggle between to states. The diffrence is that Switch will trigger the state change directly, but Checkbox
+            just marks the state as changed and this needs to be submitted.
+          </li>
+        </ul>
         <p>Examples</p>
         <div class="example-iframe-content">
           <iframe
@@ -16,13 +27,10 @@
               border: 0;
               border-radius: 4px;
               overflow: hidden;
-            "
-            title="angular-ng-xotb-checkbox"
+            " title="angular-ng-xotb-checkbox"
             allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-            sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-          ></iframe>
+            sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
         </div>
-        <p>Usages</p>
         <mat-divider></mat-divider>
         <span class="section-title">
           module.ts
