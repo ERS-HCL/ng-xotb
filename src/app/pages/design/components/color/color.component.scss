@@ -194,7 +194,7 @@ app-color {
           .input-icon {
             position: relative;
             display: inline-block;
-            color: #009fff;
+            color: #000000;
           }
           
           .input-icon > i {
@@ -248,14 +248,42 @@ app-color {
         }
 
         .result-text-section {
-          padding-top: 2.5rem;
-
-          p {
-            color: #9e9e9e;
+          width: 40%;
+          .color-section{
+            margin-top: 10px;
           }
-
-          .result-text {
-            color: #ffa316;
+          span {
+            font-size: 24px;
+            padding-bottom: 10px;
+          }
+          .primary-color-code, .secondary-color-code {
+            vertical-align: middle;
+            border: 1px solid #707070;
+            border-radius: 5px;
+            padding: 6px;
+            display: inline-block;
+            .color-code-value {
+              padding-right: 2rem;
+              overflow: hidden;
+            }
+            input{
+              width: 2rem;
+              height: 2rem;
+              border-radius: 3px;
+            }
+          }
+          .secondary-color-code {
+            float: right;
+          }
+          .result-container {
+            margin-top: 2rem;
+            span {
+              font-weight: 500;
+              font-size: 20px;;
+            }
+            div {
+              display: inline;
+            }
           }
         }
       }
