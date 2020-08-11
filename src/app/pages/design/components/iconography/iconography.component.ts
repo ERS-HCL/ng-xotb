@@ -11,6 +11,7 @@ export class IconographyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    localStorage.setItem("theme", "red");
   }
 
 }

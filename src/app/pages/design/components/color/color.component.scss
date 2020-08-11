@@ -139,8 +139,9 @@ app-color {
 
       .accessibility-content {
         span {
-          color: #009fff;
+          color: #2E2E2E;
           padding-right: 1rem;
+          font-family: "Calibri-bold";
         }
 
         img {
@@ -150,7 +151,6 @@ app-color {
 
         .text-details {
           border: 1px solid #009fff;
-          margin: 10px;
           display: inline-block;
           padding: 5px 20px;
           color: #009fff;
@@ -169,14 +169,82 @@ app-color {
         }
 
         .text-bgcolor-section {
+          width: 40%;
+          .text-color-section, .bg-color-section {
+            padding: 10px 10px 10px 0;
+            overflow: hidden;
+            display: table;
+            width: 90%;
+            span {
+              display: table-cell;
+              vertical-align: middle;
+            }
+            .color-code{
+              float: right;
+            }
+            .color-code-value {
+              padding-right: 2rem;
+              display: table-cell;
+              vertical-align: middle;
+            }
+          }
+          .text-font-details-section {
+            padding: 10px;
+          }
+          .input-icon {
+            position: relative;
+            display: inline-block;
+            color: #009fff;
+          }
+          
+          .input-icon > i {
+            position: absolute;
+            display: block;
+            transform: translate(0, -50%);
+            top: 50%;
+            pointer-events: none;
+            width: 25px;
+            text-align: center;
+            font-style: normal;
+          }
+          
+          .input-icon > input {
+            font-family: "Calibri";
+            font-size: 18px;
+            border: 1px solid #009fff;
+            color: #009fff;
+          }
+          
           display: inline-block;
+          .color-code, .font-size {
+            vertical-align: middle;
+            border: 1px solid #707070;
+            border-radius: 5px;
+            padding: 6px;
+            display: table;
+            input{
+              width: 2rem;
+              height: 2rem;
+              border-radius: 3px;
+            }
+          }
         }
 
         .empty-box-section {
-          width: 300px;
-          height: 80px;
-          border: 1px solid #009fff;
-          display: inline-block;
+          width: 30%;
+          height: 100%;
+          border: 1px solid #A8A8A8;
+          padding: 30px;
+          float: right;
+          clear: both;
+          text-align: center;
+          .sample-heading-text {
+            font-size: 22px;
+            padding-bottom: 15px;
+          }
+          .sample-content-text {
+            font-size: 14px;
+          }
         }
 
         .result-text-section {

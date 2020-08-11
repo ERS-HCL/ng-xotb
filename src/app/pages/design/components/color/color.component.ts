@@ -13,6 +13,7 @@ export class ColorComponent implements OnInit {
   public colorSystemList: any = COLOR_SYSTEM_LIST['system_colors'];
   public colorPhilosophyList: any = COLOR_PHILOSOPHY_LIST;
   public domainList: any = DOMAIN_LIST;
+  public test123: any = "";
   constructor() {}
 
   ngOnInit(): void {

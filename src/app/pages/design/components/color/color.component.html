@@ -74,9 +74,13 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.primary_colors.title
                 }}</span>
-                <div *ngFor="
+                <div
+                  *ngFor="
                     let color of colorPhilosophyList.primary_colors.colors
-                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -84,8 +88,11 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.text_colors.title
                 }}</span>
-                <div *ngFor="let color of colorPhilosophyList.text_colors.colors" class="color-holder"
-                  [ngStyle]="{ backgroundColor: color.code }">
+                <div
+                  *ngFor="let color of colorPhilosophyList.text_colors.colors"
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -93,9 +100,13 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.background_colors.title
                 }}</span>
-                <div *ngFor="
+                <div
+                  *ngFor="
                     let color of colorPhilosophyList.background_colors.colors
-                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -105,9 +116,13 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.secondary_colors_one.title
                 }}</span>
-                <div *ngFor="
+                <div
+                  *ngFor="
                     let color of colorPhilosophyList.secondary_colors_one.colors
-                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -115,9 +130,13 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.secondary_colors_two.title
                 }}</span>
-                <div *ngFor="
+                <div
+                  *ngFor="
                     let color of colorPhilosophyList.secondary_colors_two.colors
-                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -125,10 +144,14 @@
                 <span class="grid-heading">{{
                   colorPhilosophyList.secondary_colors_three.title
                 }}</span>
-                <div *ngFor="
+                <div
+                  *ngFor="
                     let color of colorPhilosophyList.secondary_colors_three
                       .colors
-                  " class="color-holder" [ngStyle]="{ backgroundColor: color.code }">
+                  "
+                  class="color-holder"
+                  [ngStyle]="{ backgroundColor: color.code }"
+                >
                   <span>{{ color.code }}</span>
                 </div>
               </div>
@@ -136,8 +159,11 @@
           </div>
           <div class="color-philosophy-system-list">
             <span>{{ colorSystemList.title }}</span>
-            <div *ngFor="let color of colorSystemList.colors" class="system-color"
-              [ngStyle]="{ backgroundColor: color.code }"></div>
+            <div
+              *ngFor="let color of colorSystemList.colors"
+              class="system-color"
+              [ngStyle]="{ backgroundColor: color.code }"
+            ></div>
           </div>
           <div class="color-philosophy-button-section">
             <button mat-button>Set As Brand Color</button>
@@ -175,16 +201,28 @@
           contrast accessibility.
         </p>
         <div class="text-bgcolor-section">
-          <span>Text color</span>
-          <div class="text-details">#747474</div>
-          <div class="text-details">18 px</div>
-          <div class="text-details">Regular</div>
-          <div class="bg-color-container">
+          <div class="text-color-section">
+            <span>Text color</span>
+            <div class="input-icon color-code">
+              <div class="display-inline-block color-code-value">#333333</div>
+              <input type="color" name="name_test" id="" />
+            </div>
+          </div>
+          <div class="bg-color-section">
             <span>Background Color</span>
-            <div class="text-details bg-color-code">#EEEEEE</div>
+            <div class="input-icon color-code">
+              <div class="display-inline-block color-code-value">#333333</div>
+              <input type="color" name="name_test" id="" />
+            </div>
           </div>
         </div>
-        <div class="empty-box-section"></div>
+        <div class="empty-box-section">
+          <div class="sample-heading-text">Example Text</div>
+          <div class="sample-content-text">
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+          </div>
+        </div>
         <div class="result-text-section">
           <p class="result-text">
             Result can be :
