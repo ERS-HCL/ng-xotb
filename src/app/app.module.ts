@@ -28,7 +28,7 @@ import { DesignComponentsModule } from './pages/design/components/design.module'
     BrowserAnimationsModule,
     ComponentsModule,
     DesignComponentsModule,
-    MaterialComponentsModule,
+    MaterialComponentsModule
   ],
   exports: [ComponentsModule, DesignComponentsModule],
   providers: [],

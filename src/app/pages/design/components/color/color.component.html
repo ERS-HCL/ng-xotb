@@ -6,6 +6,67 @@
 </div>
 <div class="tabs-section">
   <mat-tab-group animationDuration="0ms" dynamicHeight>
+    <mat-tab label="Accessibility">
+      <div class="accessibility-content">
+        <div class="sub-section-content">
+          Color accessibility enables people with visual impairments or color
+          vision deficiencies to interact with digital experiences in the same
+          way as their non-visually-impaired counterparts. The WHO estimated
+          that roughly 217 million people live with some form of moderate to
+          severe vision impairment. That statistic alone is reason enough to
+          design for accessibility. Xotb's color palette provides a range of
+          accessible combinations. Subtracting the foreground value from the
+          background value helps determine whether that color combination meets
+          the WCAG AA contrast ratio success criteria.
+        </div>
+        <img src="../../../../../assets/video-holder.png" />
+        <p class="sub-section-heading">Accessibility & Contrasts</p>
+        <p>
+          We evaluate your color combination using the WCAG 2.0 guidelines for
+          contrast accessibility.
+        </p>
+        <div class="text-bgcolor-section">
+          <div class="text-color-section">
+            <span class="calibri-bold">Text color</span>
+            <div class="input-icon color-code">
+              <div class="display-inline-block color-code-value">{{ fontColor.toUpperCase() }}</div>
+              <input type="color" [(ngModel)]="fontColor" />
+            </div>
+          </div>
+          <div class="bg-color-section">
+            <span class="calibri-bold">Background Color</span>
+            <div class="input-icon color-code">
+              <div class="display-inline-block color-code-value">{{ backgroundColor.toUpperCase() }}</div>
+              <input type="color" [(ngModel)]="backgroundColor" />
+            </div>
+          </div>
+        </div>
+        <div class="empty-box-section" [ngStyle]="{'background-color': backgroundColor}">
+          <div class="sample-heading-text" [ngStyle]="{'color': fontColor}">Example Text</div>
+          <div class="sample-content-text" [ngStyle]="{'color': fontColor}">
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+          </div>
+        </div>
+        <div class="result-text-section">
+          <span>Contrast: {{largeTextContrastDetails.ratio.toFixed(2)}}</span>
+          <div class="color-section">
+            <div class="primary-color-code">
+              <div class="display-inline-block color-code-value">Small text</div>
+              <div [ngStyle]="{'background-color': smallTextContrastColor()}" class="small-text-comliant-result"></div>
+            </div>
+            <div class="secondary-color-code">
+              <div class="display-inline-block color-code-value">Large Text</div>
+              <div [ngStyle]="{'background-color': largeTextContrastColor()}" class="large-text-comliant-result"></div>
+            </div>
+            <div class="result-container">
+              <span class="calibri-bold">Result:</span>
+              <div>{{resultContrast()}}</div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
     <mat-tab label="Brand">
       <div class="brand-content">
         <div class="primary-accent-colors">
@@ -181,67 +242,7 @@
         <img src="../../../../../assets/color-families-img.png" />
       </div>
     </mat-tab>
-    <mat-tab label="Accessibility">
-      <div class="accessibility-content">
-        <div class="sub-section-content">
-          Color accessibility enables people with visual impairments or color
-          vision deficiencies to interact with digital experiences in the same
-          way as their non-visually-impaired counterparts. The WHO estimated
-          that roughly 217 million people live with some form of moderate to
-          severe vision impairment. That statistic alone is reason enough to
-          design for accessibility. Xotb's color palette provides a range of
-          accessible combinations. Subtracting the foreground value from the
-          background value helps determine whether that color combination meets
-          the WCAG AA contrast ratio success criteria.
-        </div>
-        <img src="../../../../../assets/video-holder.png" />
-        <p class="sub-section-heading">Accessibility & Contrasts</p>
-        <p>
-          We evaluate your color combination using the WCAG 2.0 guidelines for
-          contrast accessibility.
-        </p>
-        <div class="text-bgcolor-section">
-          <div class="text-color-section">
-            <span>Text color</span>
-            <div class="input-icon color-code">
-              <div class="display-inline-block color-code-value">#333333</div>
-              <input type="color" name="name_test" id="" />
-            </div>
-          </div>
-          <div class="bg-color-section">
-            <span>Background Color</span>
-            <div class="input-icon color-code">
-              <div class="display-inline-block color-code-value">#333333</div>
-              <input type="color" name="name_test" id="" />
-            </div>
-          </div>
-        </div>
-        <div class="empty-box-section">
-          <div class="sample-heading-text">Example Text</div>
-          <div class="sample-content-text">
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-          </div>
-        </div>
-        <div class="result-text-section">
-          <span>Contrast: 4.5</span>
-          <div class="color-section">
-            <div class="primary-color-code">
-              <div class="display-inline-block color-code-value">Small text</div>
-              <input type="color" name="name_test" id="" />
-            </div>
-            <div class="secondary-color-code">
-              <div class="display-inline-block color-code-value">Large Text</div>
-              <input type="color" name="name_test" id="" />
-            </div>
-            <div class="result-container">
-              <span>Result:</span>
-              <div>Your combination is AA compliant.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </mat-tab>
+    
     <mat-tab label="Library">
       <div class="library-content">
         <div class="sub-section-content">

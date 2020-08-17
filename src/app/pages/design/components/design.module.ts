@@ -11,10 +11,11 @@ import { DesignkitComponent } from './designkit/designkit.component';
 import { ImagesComponent } from './images/images.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { TypographyComponent } from './typography/typography.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [PhilosophyComponent, ColorComponent, IllustrationComponent, SelectComponent, IconographyComponent, DesignkitComponent, ImagesComponent, PhotographyComponent, TypographyComponent],
-  imports: [CommonModule, MaterialComponentsModule, HighlightModule],
+  imports: [CommonModule, MaterialComponentsModule, HighlightModule, FormsModule],
   exports: [MaterialComponentsModule, HighlightModule],
 })
 export class DesignComponentsModule {}

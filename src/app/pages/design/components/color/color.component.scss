@@ -15,7 +15,7 @@ app-color {
               color: #ffffff;
               flex: 1;
               height: 104px;
-              border: 1px solid #DCDCDC;
+              border: 1px solid #dcdcdc;
 
               span {
                 font-family: "Calibri-bold";
@@ -139,9 +139,8 @@ app-color {
 
       .accessibility-content {
         span {
-          color: #2E2E2E;
+          color: #2e2e2e;
           padding-right: 1rem;
-          font-family: "Calibri-bold";
         }
 
         img {
@@ -170,33 +169,41 @@ app-color {
 
         .text-bgcolor-section {
           width: 40%;
-          .text-color-section, .bg-color-section {
+
+          .text-color-section,
+          .bg-color-section {
             padding: 10px 10px 10px 0;
             overflow: hidden;
             display: table;
-            width: 90%;
+            width: 85%;
+
             span {
               display: table-cell;
               vertical-align: middle;
             }
-            .color-code{
+
+            .color-code {
               float: right;
+              min-width: 158px;
             }
+
             .color-code-value {
               padding-right: 2rem;
               display: table-cell;
               vertical-align: middle;
             }
           }
+
           .text-font-details-section {
             padding: 10px;
           }
+
           .input-icon {
             position: relative;
             display: inline-block;
             color: #000000;
           }
-          
+
           .input-icon > i {
             position: absolute;
             display: block;
@@ -207,25 +214,43 @@ app-color {
             text-align: center;
             font-style: normal;
           }
-          
+
           .input-icon > input {
             font-family: "Calibri";
             font-size: 18px;
-            border: 1px solid #009fff;
+            border: 1px solid #707070;
             color: #009fff;
           }
-          
+
           display: inline-block;
-          .color-code, .font-size {
+
+          .color-code,
+          .font-size {
             vertical-align: middle;
             border: 1px solid #707070;
             border-radius: 5px;
             padding: 6px;
             display: table;
-            input{
+
+            input::-webkit-color-swatch {
+              border: none;
+              border-color: transparent;
+            }
+            input[type="color"] {
+              -webkit-appearance: none;
+              border: none;
+            }
+            input[type="color"]::-webkit-color-swatch-wrapper {
+              padding: 0;
+            }
+            input[type="color"]::-webkit-color-swatch {
+              border: none;
+            }
+            input {
               width: 2rem;
               height: 2rem;
               border-radius: 3px;
+              float: right;
             }
           }
         }
@@ -233,7 +258,7 @@ app-color {
         .empty-box-section {
           width: 30%;
           height: 100%;
-          border: 1px solid #A8A8A8;
+          border: 1px solid #a8a8a8;
           padding: 30px;
           float: right;
           clear: both;
@@ -249,40 +274,59 @@ app-color {
 
         .result-text-section {
           width: 40%;
-          .color-section{
+
+          .color-section {
             margin-top: 10px;
           }
+
           span {
             font-size: 24px;
             padding-bottom: 10px;
           }
-          .primary-color-code, .secondary-color-code {
+
+          .primary-color-code,
+          .secondary-color-code {
             vertical-align: middle;
             border: 1px solid #707070;
             border-radius: 5px;
             padding: 6px;
             display: inline-block;
+
             .color-code-value {
               padding-right: 2rem;
               overflow: hidden;
             }
-            input{
+
+            .small-text-comliant-result,
+            .large-text-comliant-result {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 3px;
+              float: right;
+              border: 1px solid #707070;
+            }
+
+            input {
               width: 2rem;
               height: 2rem;
               border-radius: 3px;
             }
           }
+
           .secondary-color-code {
             float: right;
           }
+
           .result-container {
             margin-top: 2rem;
+
             span {
               font-weight: 500;
-              font-size: 20px;;
+              font-size: 20px;
             }
+
             div {
-              display: inline;
+              white-space: pre;
             }
           }
         }
