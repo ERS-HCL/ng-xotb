@@ -22,15 +22,15 @@ app-tone {
       }
     }
     .thick-line {
-      border-bottom: 2px solid #cccccc;
+      border-bottom: 3px solid #cccccc;
       width: 24%;
       position: absolute;
-      top: 13px;
+      top: 12px;
       left: 7rem;
     }
     .parent {
       width: 60%;
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 1px solid #D1D1D1;
       position: relative;
       z-index: -1;
       margin-left: 10px;
@@ -39,14 +39,14 @@ app-tone {
     .parent:before,
     .parent:after,
     .child {
-      background: #cccccc;
+      background: #D1D1D1;
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      border: 1px solid #cccccc;
+      border: 1px solid #D1D1D1;
       position: absolute;
       content: "";
-      top: -3px;
+      top: -4px;
     }
     .parent:before {
       left: 0;
