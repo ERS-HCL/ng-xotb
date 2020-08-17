@@ -2,9 +2,20 @@ app-root {
   .display-inline-block {
     display: inline-block;
   }
-  
+
   .calibri-bold {
     font-family: "Calibri-bold";
+  }
+  .blue-color {
+    color: #0090FF;
+  }
+
+  .font-medium {
+    font-size: 18px;
+  }
+
+  .font-large {
+    font-size: 22px;
   }
 
   mat-toolbar {

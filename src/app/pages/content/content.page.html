@@ -1,186 +1,269 @@
-  <div class="left-nav-section">
-    <div class="components-panel">
-      <mat-expansion-panel [expanded]="true">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Brand
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div class="brand-section">
-          <mat-selection-list #controls [multiple]="false">
-            <mat-list-option class="selected">
-              <span class="list-label">Tone Of Voice</span>
-            </mat-list-option>
-            <mat-list-option>
-              <span class="list-label">Writing Guidelines</span>
-            </mat-list-option>
-            <mat-list-option>
-              <span class="list-label">Accessibility Guidelines</span>
-            </mat-list-option>
-          </mat-selection-list>
+<div class="left-nav-section">
+  <div class="components-panel">
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Brand
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="brand-section">
+        <mat-selection-list #controls [multiple]="false">
+          <mat-list-option class="selected">
+            <span class="list-label">Tone Of Voice</span>
+          </mat-list-option>
+          <mat-list-option>
+            <span class="list-label">Writing Guidelines</span>
+          </mat-list-option>
+          <mat-list-option>
+            <span class="list-label">Accessibility Guidelines</span>
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </mat-expansion-panel>
+  </div>
+</div>
+<!-- Start of the Right section Panel -->
+<div class="right-body-section">
+  <div class="section-name">Tone of Voice</div>
+  <div class="section-description">
+    Voice and tone refers to how we sound when we speak or write.
+  </div>
+
+  <div class="tabs-section">
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="Voice">
+        <div class="voice-content">
+          <p>
+            Voice and tone are generally confused and used interchangeably.
+            However they are very different.
+          </p>
+          <ul>
+            <li>
+              Voice refers to our personality that does not change with context
+              or situation.
+            </li>
+            <li>
+              Tone refers to author’s mood. In speech, voice is reflected
+              through pitch, volume, body language, etc.
+            </li>
+          </ul>
+          <p>
+            When we write, it comes across through usage of italics, bold
+            ,capitals, punctuation, grammar, word choice, and just about every
+            other ingredient involved in writing.
+          </p>
+          <p>
+            Our voice is an expression of our brand’s personality. It represents
+            core principles that guide our communications – the way our messages
+            ‘sounds and feels’ distinctly as HCL Technologies. A congruent,
+            recognizable voice supports and complements our uniform and
+            consistent visual identity.
+          </p>
+          <p>
+            While the exact tone to be used would depend on the circumstances in
+            consideration, our voice must always be confident, authentic, and
+            simple to understand.
+          </p>
+          <mat-divider></mat-divider>
         </div>
-      </mat-expansion-panel>
-    </div>
+      </mat-tab>
+      <mat-tab label="Tone">
+        <div class="tone-content">
+          <app-tone></app-tone>
+        </div>
+      </mat-tab>
+      <mat-tab label="Guidelines">
+        <div class="guidelines-content">
+          <div class="guidelines-sub-section">
+            <div class="section-heading">Confident But Not Boasful</div>
+            <div class="section-content">
+              <ul>
+                <li>Write with clarity as it expresses your knowledge.</li>
+                <li>
+                  Know what you want to say. Always write down the objective/
+                  purpose of writing in your draft copy before you begin.
+                </li>
+                <li>
+                  Sometimes the intent could be to guide the user to take
+                  appropriate action.
+                </li>
+                <li>
+                  At other times, it could be to merely share the knowledge.
+                </li>
+                <li>
+                  In both the cases the tone, way of presenting the content will
+                  differ. In the first, it would be more persuasive, with
+                  related key information, facts that support the action to be
+                  taken. While it the later it would be mere presentation of
+                  data.
+                </li>
+                <li>
+                  Avoid using jargon and unfamiliar words. IF used, define
+                  unfamiliar words to provide clarity.
+                </li>
+                <li>
+                  Write one-sentence paragraphs. This will make the content
+                  scannable. Single sentence paragraph makes user to stop, read
+                  and understand.
+                </li>
+                <li>
+                  Keep your sentences short. This method will force you to
+                  remove unnecessary information and make your content more
+                  crisp and clear. To achieve this, watch out for these words:
+                  <ul class="sub-section-content">
+                    <li>
+                      <span>Adverbs:</span> For example, actually, currently,
+                      really, literally etc.
+                    </li>
+                    <li><span>Adjectives:</span> very, real, simple etc.</li>
+                    <li>
+                      <span>Unnecessary words or filler words:</span> perhaps,
+                      pretty, now, that, in order, just and maybe
+                    </li>
+                  </ul>
+                </li>
+                <li>Be consistent.</li>
+                <li>
+                  Write with Optimism. Write in a hopeful; cheerful. For
+                  example, We navigate organizations from where they are to
+                  where they aspire to be.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="guidelines-sub-section">
+            <div class="section-heading">Respectful But Not Condescending</div>
+            <div class="section-content">
+              <ul>
+                <li>Be polite, kind and courteous.</li>
+                <li>Say ‘Thank you’ or ‘Please’.</li>
+                <li>
+                  Choose a positive tone of voice over a negative or
+                  authoritative tone. For example, instead of using ‘Don’t
+                  forget’ use ‘Remember’.
+                </li>
+                <li>
+                  Rather than focusing on the problem, focus on the solution or
+                  action. For example, instead of ‘Since you didn’t submit your
+                  receipts, you cannot claim the reimbursement’ use ‘As soon as
+                  you submit your receipts, we will be happy to reimburse the
+                  amount’.
+                </li>
+                <li>Avoid long explanations, and focus on the solution</li>
+                <li>
+                  Use antonyms to avoid the word “not.” For example, Instead of
+                  ‘To avoid taking more time to access key information, use
+                  quick links’ use ‘Quick links help you access key
+                  <ul class="sub-section-content">
+                    <li>information faster’.</li>
+                    <li>
+                      Instead of saying ‘You are not allowed to swipe in after
+                      10 am’ use ‘Swipe in before 10 am’.
+                    </li>
+                    <li>Instead of ‘not able’ use ‘unable’</li>
+                  </ul>
+                </li>
+                <li>
+                  Try not to be condescending. Avoid over explaining a concept
+                  that people clearly already understand.
+                </li>
+                <li>
+                  Avoid patronizing. Talking down makes people feel
+                  disrespected.
+                </li>
+                <li>
+                  Avoid defensive tone. Be watchful of usage of the word “but”.
+                  Agree to disagree..
+                </li>
+                <li>
+                  Be authentic
+                  <ol class="sub-section-content-or-list" type="a">
+                    <li>
+                      Do thorough research and back your insights with data and
+                      facts
+                    </li>
+                    <li>Provide social proofs, references wherever possible</li>
+                  </ol>
+                </li>
+                <li>Create original content, do not indulge in plagiarism</li>
+                <li>
+                  Be genuine
+                  <ol class="sub-section-content-or-list" type="a">
+                    <li>Apologize if an error occur.</li>
+                    <li>
+                      Appreciate when something is completed or done well by
+                      your users. This encourages the users. However don’t
+                      overpraise at it might sound unreal.
+                    </li>
+                    <li>
+                      Use simple, clear sentences instead of using jargon-heavy
+                      language to create a sense of superiority.
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="guidelines-sub-section">
+            <div class="section-heading">Friendly But Not Casual</div>
+            <div class="section-content">
+              <ul>
+                <li>
+                  Write in a conversational tone
+                  <ol class="sub-section-content-or-list" type="a">
+                    <li>Use active voice over a passive one.</li>
+                    <li>
+                      Instead of ‘employees’ or ‘users’, use ‘You’ and ‘we’
+                    </li>
+                    <li>Keep sentences short, clear and jargon light.</li>
+                    <li>
+                      Use contractions. For example, instead of ‘they will’ and
+                      ‘we are’ use they’ll and we’re over to make it sound less
+                      formal.
+                    </li>
+                    <li>
+                      Use interjections such as Yeh! Oh-Oh! Sorry! Thanks!
+                      However, avoid using colloquial slangs that makes it sound
+                      too casual.
+                    </li>
+                    <li>
+                      Avoid using unnecessary heavy jargons. Use simple words
+                      that are easy to consume.
+                    </li>
+                    <li>
+                      Use more emotional or sensory words to add power to your
+                      message. However, avoid being too dramatic.
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Adaptive Tones">
+        <div class="adaptive-content">
+          <p>
+            When crafting communications, it would be likely to have the same
+            voice all the time, but our tone would differ depending on where we
+            are, who we are with and the emotions and expectations of our
+            audiences.
+          </p>
+          <p>
+            Such slight variations in tone of our communications can make it
+            easier for us to connect with our audiences.
+          </p>
+          <p>
+            The factors which may affect the tone of our communications include,
+            but would not be limited to:
+          </p>
+          <ul>
+            <li>The intended audience</li>
+            <li>Medium of communication</li>
+            <li>And context</li>
+          </ul>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
   </div>
-  <!-- Start of the Right section Panel -->
-  <div class="right-body-section">
-    <div class="section-name">Tone of Voice</div>
-    <div class="section-description">Voice and tone refers to how we sound when we speak or write.</div>
-
-    <div class="tabs-section">
-      <mat-tab-group animationDuration="0ms">
-        <mat-tab label="Voice">
-          <div class="voice-content">
-            <p>
-              Voice and tone are generally confused and used interchangeably. However they are very different.
-            </p>
-            <ul>
-              <li>Voice refers to our personality that does not change with context or situation.</li>
-              <li>Tone refers to author’s mood. In speech, voice is reflected through pitch, volume, body language, etc.
-              </li>
-            </ul>
-            <p>
-              When we write, it comes across through usage of italics, bold ,capitals, punctuation, grammar, word
-              choice, and just about every other ingredient involved in writing.
-            </p>
-            <p>
-              Our voice is an expression of our brand’s personality. It represents core principles that guide our
-              communications – the way our messages ‘sounds and feels’ distinctly as HCL Technologies. A congruent,
-              recognizable voice supports and complements our uniform and consistent visual identity.
-            </p>
-            <p>
-              While the exact tone to be used would depend on the circumstances in consideration, our voice must
-              always be confident, authentic, and simple to understand.
-            </p>
-            <mat-divider></mat-divider>
-          </div>
-        </mat-tab>
-        <mat-tab label="Tone">
-          <div class="api-content">
-            <span class="section-title"> test </span>
-            <div class="code-section">
-
-            </div>
-          </div>
-        </mat-tab>
-        <mat-tab label="Guidelines">
-          <div class="guidelines-content">
-            <div class="guidelines-sub-section">
-              <div class="section-heading">Confident But Not Boasful</div>
-              <div class="section-content">
-                <ul>
-                  <li>Write with clarity as it expresses your knowledge.</li>
-                  <li>Know what you want to say. Always write down the objective/ purpose of writing in your draft copy
-                    before you begin.</li>
-                  <li>Sometimes the intent could be to guide the user to take appropriate action.</li>
-                  <li>At other times, it could be to merely share the knowledge.</li>
-                  <li>In both the cases the tone, way of presenting the content will differ. In the first, it would be
-                    more persuasive, with related key information, facts that support the action to be taken. While it
-                    the
-                    later it would be mere presentation of data.</li>
-                  <li>Avoid using jargon and unfamiliar words. IF used, define unfamiliar words to provide clarity.</li>
-                  <li>Write one-sentence paragraphs. This will make the content scannable. Single sentence paragraph
-                    makes
-                    user to stop, read and understand.</li>
-                  <li>Keep your sentences short. This method will force you to remove unnecessary information and make
-                    your content more crisp and clear. To achieve this, watch out for these words:
-                    <ul class="sub-section-content">
-                      <li><span>Adverbs:</span> For example, actually, currently, really, literally etc.</li>
-                      <li><span>Adjectives:</span> very, real, simple etc.</li>
-                      <li><span>Unnecessary words or filler words:</span> perhaps, pretty, now, that, in order, just and
-                        maybe</li>
-                    </ul>
-                  </li>
-                  <li>Be consistent.</li>
-                  <li>Write with Optimism. Write in a hopeful; cheerful. For example, We navigate organizations from
-                    where
-                    they are to where they aspire to be.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="guidelines-sub-section">
-              <div class="section-heading">Respectful But Not Condescending</div>
-              <div class="section-content">
-                <ul>
-                  <li>Be polite, kind and courteous.</li>
-                  <li>Say ‘Thank you’ or ‘Please’.</li>
-                  <li>Choose a positive tone of voice over a negative or authoritative tone. For example, instead of
-                    using ‘Don’t forget’ use ‘Remember’.</li>
-                  <li>Rather than focusing on the problem, focus on the solution or action. For example, instead of
-                    ‘Since you didn’t submit your receipts, you cannot claim the reimbursement’ use ‘As soon as you
-                    submit your receipts, we will be happy to reimburse the amount’.</li>
-                  <li>Avoid long explanations, and focus on the solution</li>
-                  <li>Use antonyms to avoid the word “not.” For example, Instead of ‘To avoid taking more time to access
-                    key information, use quick links’ use ‘Quick links help you access key
-                    <ul class="sub-section-content">
-                      <li>information faster’.</li>
-                      <li>Instead of saying ‘You are not allowed to swipe in after 10 am’ use ‘Swipe in before 10 am’.
-                      </li>
-                      <li>Instead of ‘not able’ use ‘unable’</li>
-                    </ul>
-                  </li>
-                  <li>Try not to be condescending. Avoid over explaining a concept that people clearly already
-                    understand.</li>
-                  <li>Avoid patronizing. Talking down makes people feel disrespected.</li>
-                  <li>Avoid defensive tone. Be watchful of usage of the word “but”. Agree to disagree..</li>
-                  <li>Be authentic
-                    <ol class="sub-section-content-or-list" type="a">
-                      <li>Do thorough research and back your insights with data and facts</li>
-                      <li>Provide social proofs, references wherever possible</li>
-                    </ol>
-                  </li>
-                  <li>Create original content, do not indulge in plagiarism</li>
-                  <li>Be genuine
-                    <ol class="sub-section-content-or-list" type="a">
-                      <li>Apologize if an error occur.</li>
-                      <li>Appreciate when something is completed or done well by your users. This encourages the users.
-                        However don’t overpraise at it might sound unreal.</li>
-                      <li>Use simple, clear sentences instead of using jargon-heavy language to create a sense of
-                        superiority.</li>
-                    </ol>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="guidelines-sub-section">
-              <div class="section-heading">Friendly But Not Casual</div>
-              <div class="section-content">
-                <ul>
-                  <li>Write in a conversational tone
-                    <ol class="sub-section-content-or-list" type="a">
-                      <li>Use active voice over a passive one.</li>
-                      <li>Instead of ‘employees’ or ‘users’, use ‘You’ and ‘we’</li>
-                      <li>Keep sentences short, clear and jargon light.</li>
-                      <li>Use contractions. For example, instead of ‘they will’ and ‘we are’ use they’ll and we’re over
-                        to make it sound less formal.</li>
-                      <li>Use interjections such as Yeh! Oh-Oh! Sorry! Thanks! However, avoid using colloquial slangs
-                        that makes it sound too casual.</li>
-                      <li>Avoid using unnecessary heavy jargons. Use simple words that are easy to consume.</li>
-                      <li>Use more emotional or sensory words to add power to your message. However, avoid being too
-                        dramatic.</li>
-                    </ol>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </mat-tab>
-        <mat-tab label="Adaptive Tones">
-          <div class="adaptive-content">
-            <p>
-              When crafting communications, it would be likely to have the same voice all the time, but our tone would
-              differ depending on where we are, who we are with and the emotions and expectations of our audiences.
-            </p>
-            <p>Such slight variations in tone of our communications can make it easier for us to connect with our
-              audiences.</p>
-            <p>The factors which may affect the tone of our communications include, but would not be limited to:</p>
-            <ul>
-              <li>The intended audience</li>
-              <li>Medium of communication</li>
-              <li>And context</li>
-            </ul>
-          </div>
-        </mat-tab>
-      </mat-tab-group>
-    </div>
-  </div>
+</div>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';    
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +12,7 @@ import { ContentPageComponent } from './pages/content/content.page';
 import { DesignPageComponent } from './pages/design/design.page';
 import { ComponentsModule } from './pages/components/components/components.module';
 import { DesignComponentsModule } from './pages/design/components/design.module';
+import { ContentModule } from './pages/content/content.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { DesignComponentsModule } from './pages/design/components/design.module'
     DashboardPageComponent,
     ComponentsPageComponent,
     ContentPageComponent,
-    DesignPageComponent,
+    DesignPageComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,8 @@ import { DesignComponentsModule } from './pages/design/components/design.module'
     BrowserAnimationsModule,
     ComponentsModule,
     DesignComponentsModule,
-    MaterialComponentsModule
+    MaterialComponentsModule,
+    ContentModule
   ],
   exports: [ComponentsModule, DesignComponentsModule],
   providers: [],
