@@ -1,0 +1,117 @@
+<div class="color-philosophy-section">
+  <p class="sub-section-heading">Color Philosophy</p>
+  <span class="sub-section-content">
+    The Bright and Fresh colors of blue communicates the emotions of
+    trust, reliability and dependability. These palette is ideal for
+    corporates as well as companies working in medical domain.
+  </span>
+  <div class="tab-content-note">
+    <span class="sub-section-heading">
+      Keywords:
+    </span>
+    <span>
+      Health Care, Medical, Medicine, Care, Growth
+    </span>
+  </div>
+  <div class="philosophy-color-grids">
+    <div class="color-philosophy-left-section">
+      <div class="color-philosophy-primary-section">
+        <span class="grid-heading">{{
+          colorPhilosophyList.primary_colors.title
+        }}</span>
+        <div
+          *ngFor="
+            let color of colorPhilosophyList.primary_colors.colors
+          "
+          class="color-holder"
+          [ngStyle]="{ backgroundColor: color.code }"
+        >
+          <span>{{ color.code }}</span>
+        </div>
+      </div>
+      <div class="color-philosophy-text-section">
+        <span class="grid-heading">{{
+          colorPhilosophyList.text_colors.title
+        }}</span>
+        <div
+          *ngFor="let color of colorPhilosophyList.text_colors.colors"
+          class="color-holder"
+          [ngStyle]="{ backgroundColor: color.code }"
+        >
+          <span>{{ color.code }}</span>
+        </div>
+      </div>
+      <div class="color-philosophy-background-section">
+        <span class="grid-heading">{{
+          colorPhilosophyList.background_colors.title
+        }}</span>
+        <div
+          *ngFor="
+            let color of colorPhilosophyList.background_colors.colors
+          "
+          class="color-holder"
+          [ngStyle]="{ backgroundColor: color.code }"
+        >
+          <span>{{ color.code }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="color-philosophy-right-section">
+      <div class="color-philosophy-secondary-section">
+        <span class="grid-heading">{{
+          colorPhilosophyList.secondary_colors_one.title
+        }}</span>
+        <div
+          *ngFor="
+            let color of colorPhilosophyList.secondary_colors_one.colors
+          "
+          class="color-holder"
+          [ngStyle]="{ backgroundColor: color.code }"
+        >
+          <span>{{ color.code }}</span>
+        </div>
+      </div>
+      <div class="color-philosophy-secondary-section">
+        <span class="grid-heading">{{
+          colorPhilosophyList.secondary_colors_two.title
+        }}</span>
+        <div
+          *ngFor="
+            let color of colorPhilosophyList.secondary_colors_two.colors
+          "
+          class="color-holder"
+          [ngStyle]="{ backgroundColor: color.code }"
+        >
+          <span>{{ color.code }}</span>
+        </div>
+      </div>
+      <div class="color-philosophy-secondary-section">
+        <span class="grid-heading">{{
+          colorPhilosophyList.secondary_colors_three.title
+        }}</span>
+        <div
+          *ngFor="
+            let color of colorPhilosophyList.secondary_colors_three
+              .colors
+          "
+          class="color-holder"
+          [ngStyle]="{ backgroundColor: color.code }"
+        >
+          <span>{{ color.code }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="color-philosophy-system-list">
+    <span>{{ colorSystemList.title }}</span>
+    <div
+      *ngFor="let color of colorSystemList.colors"
+      class="system-color"
+      [ngStyle]="{ backgroundColor: color.code }"
+    ></div>
+  </div>
+  <div class="color-philosophy-button-section">
+    <button mat-button>Set As Brand Color</button>
+    <button mat-button>Sample UI</button>
+  </div>
+</div>

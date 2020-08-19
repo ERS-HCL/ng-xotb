@@ -7,7 +7,8 @@
 <div class="tabs-section">
   <mat-tab-group animationDuration="0ms" dynamicHeight>
     <mat-tab label="Accessibility">
-      <div class="accessibility-content">
+
+    <div class="accessibility-content">
         <div class="sub-section-content">
           Color accessibility enables people with visual impairments or color
           vision deficiencies to interact with digital experiences in the same
@@ -29,39 +30,58 @@
           <div class="text-color-section">
             <span class="calibri-bold">Text color</span>
             <div class="input-icon color-code">
-              <div class="display-inline-block color-code-value">{{ fontColor.toUpperCase() }}</div>
+              <div class="display-inline-block color-code-value">
+                {{ fontColor.toUpperCase() }}
+              </div>
               <input type="color" [(ngModel)]="fontColor" />
             </div>
           </div>
           <div class="bg-color-section">
             <span class="calibri-bold">Background Color</span>
             <div class="input-icon color-code">
-              <div class="display-inline-block color-code-value">{{ backgroundColor.toUpperCase() }}</div>
+              <div class="display-inline-block color-code-value">
+                {{ backgroundColor.toUpperCase() }}
+              </div>
               <input type="color" [(ngModel)]="backgroundColor" />
             </div>
           </div>
         </div>
-        <div class="empty-box-section" [ngStyle]="{'background-color': backgroundColor}">
-          <div class="sample-heading-text" [ngStyle]="{'color': fontColor}">Example Text</div>
-          <div class="sample-content-text" [ngStyle]="{'color': fontColor}">
+        <div
+          class="empty-box-section"
+          [ngStyle]="{ 'background-color': backgroundColor }"
+        >
+          <div class="sample-heading-text" [ngStyle]="{ color: fontColor }">
+            Example Text
+          </div>
+          <div class="sample-content-text" [ngStyle]="{ color: fontColor }">
             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
             Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
           </div>
         </div>
         <div class="result-text-section">
-          <span>Contrast: {{largeTextContrastDetails.ratio.toFixed(2)}}</span>
+          <span>Contrast: {{ largeTextContrastDetails.ratio.toFixed(2) }}</span>
           <div class="color-section">
             <div class="primary-color-code">
-              <div class="display-inline-block color-code-value">Small text</div>
-              <div [ngStyle]="{'background-color': smallTextContrastColor()}" class="small-text-comliant-result"></div>
+              <div class="display-inline-block color-code-value">
+                Small text
+              </div>
+              <div
+                [ngStyle]="{ 'background-color': smallTextContrastColor() }"
+                class="small-text-comliant-result"
+              ></div>
             </div>
             <div class="secondary-color-code">
-              <div class="display-inline-block color-code-value">Large Text</div>
-              <div [ngStyle]="{'background-color': largeTextContrastColor()}" class="large-text-comliant-result"></div>
+              <div class="display-inline-block color-code-value">
+                Large Text
+              </div>
+              <div
+                [ngStyle]="{ 'background-color': largeTextContrastColor() }"
+                class="large-text-comliant-result"
+              ></div>
             </div>
             <div class="result-container">
               <span class="calibri-bold">Result:</span>
-              <div>{{resultContrast()}}</div>  
+              <div>{{ resultContrast() }}</div>
             </div>
           </div>
         </div>
@@ -242,7 +262,7 @@
         <img src="../../../../../assets/color-families-img.png" />
       </div>
     </mat-tab>
-    
+
     <mat-tab label="Library">
       <div class="library-content">
         <div class="sub-section-content">
@@ -251,7 +271,7 @@
           be used, arranged, coordinated, blended, and related to one another.
         </div>
         <div>
-          <!-- <app-select [options]="domainList"></app-select> -->
+          <app-color-library></app-color-library>
         </div>
       </div>
     </mat-tab>

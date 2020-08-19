@@ -11,11 +11,33 @@ import { DesignkitComponent } from './designkit/designkit.component';
 import { ImagesComponent } from './images/images.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { TypographyComponent } from './typography/typography.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ColorLibraryComponent } from './color-library/color-library.component';
+import { CustomColorPaletteComponent } from './custom-color-palette/custom-color-palette.component';
+import { CustomColorPaletteListComponent } from './custom-color-palette-list/custom-color-palette-list.component';
 
 @NgModule({
-  declarations: [PhilosophyComponent, ColorComponent, IllustrationComponent, SelectComponent, IconographyComponent, DesignkitComponent, ImagesComponent, PhotographyComponent, TypographyComponent],
-  imports: [CommonModule, MaterialComponentsModule, HighlightModule, FormsModule],
+  declarations: [
+    PhilosophyComponent,
+    ColorComponent,
+    IllustrationComponent,
+    SelectComponent,
+    IconographyComponent,
+    DesignkitComponent,
+    ImagesComponent,
+    PhotographyComponent,
+    TypographyComponent,
+    ColorLibraryComponent,
+    CustomColorPaletteComponent,
+    CustomColorPaletteListComponent,
+  ],
+  imports: [
+    CommonModule,
+    MaterialComponentsModule,
+    HighlightModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   exports: [MaterialComponentsModule, HighlightModule],
 })
 export class DesignComponentsModule {}

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,9 +30,10 @@ import { ContentModule } from './pages/content/content.module';
     ComponentsModule,
     DesignComponentsModule,
     MaterialComponentsModule,
-    ContentModule
+    ContentModule,
+    ReactiveFormsModule
   ],
-  exports: [ComponentsModule, DesignComponentsModule],
+  exports: [ComponentsModule, DesignComponentsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

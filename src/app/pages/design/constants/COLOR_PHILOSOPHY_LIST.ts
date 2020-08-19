@@ -1,5 +1,16 @@
 export const COLOR_PHILOSOPHY_LIST = {
-  'primary_colors': {
+  overview_colors: {
+    colors: [
+      {code: '#006BB6'},
+      {code: '#FFFFFF'},
+      {code: '#000000'},
+      {code: '#0AAECC'},
+      {code: '#0AC2AC'},
+      {code: '#0A48CC'},
+      {code: '#00C0F3'},
+    ],
+  },
+  primary_colors: {
     title: 'Primary',
     colors: [
       {code: '#006BB6', lable: 'Accessibility Score 4.3 #006BB6'},
@@ -11,7 +22,7 @@ export const COLOR_PHILOSOPHY_LIST = {
       {code: '#46B0FB'},
     ],
   },
-  'text_colors': {
+  text_colors: {
     title: 'Text',
     colors: [
       {code: '#FFFFFF', lable: 'Accessibility Score 4.3 #ffffff'},
@@ -23,7 +34,7 @@ export const COLOR_PHILOSOPHY_LIST = {
       {code: '#C2C2C2'},
     ],
   },
-  'background_colors': {
+  background_colors: {
     title: 'Background',
     colors: [
       {code: '#000000', lable: 'Accessibility Score 4.3 #000000'},
@@ -35,7 +46,7 @@ export const COLOR_PHILOSOPHY_LIST = {
       {code: '#C2C2C2'},
     ],
   },
-  'secondary_colors_one': {
+  secondary_colors_one: {
     title: 'Secondary',
     colors: [
       {code: '#0AAECC', lable: 'Accessibility Score 4.7 #0AAECC'},
@@ -47,7 +58,7 @@ export const COLOR_PHILOSOPHY_LIST = {
       {code: '#1FCFEF'},
     ],
   },
-  'secondary_colors_two': {
+  secondary_colors_two: {
     title: '',
     colors: [
       {code: '#0AC2AC', lable: 'Accessibility Score 4.1 #0AC2AC'},
@@ -59,7 +70,7 @@ export const COLOR_PHILOSOPHY_LIST = {
       {code: '#15E4CB'},
     ],
   },
-  'secondary_colors_three': {
+  secondary_colors_three: {
     title: '',
     colors: [
       {code: '#0A48CC', lable: 'Accessibility Score 4.3 #0A48CC'},
@@ -71,7 +82,7 @@ export const COLOR_PHILOSOPHY_LIST = {
       {code: '#5E92FF'},
     ],
   },
-  'system_colors': {
+  system_colors: {
     title: 'System',
     colors: [
       {code: '#00C0F3'},

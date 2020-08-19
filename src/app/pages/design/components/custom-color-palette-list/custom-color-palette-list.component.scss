@@ -1,0 +1,30 @@
+app-custom-color-palette-list {
+  .mat-expansion-panel-content {
+    font: 400 18px "Calibri";
+  }
+
+  .mat-expansion-panel-header {
+    font: 400 18px "Calibri-bold";
+  }
+  .mat-expansion-panel-header {
+    padding: 0 24px 0 0;
+  }
+
+  .mat-expansion-panel-body {
+    padding: 0;
+  }
+
+  .color-strip-container {
+    width: 150px;
+    height: 30px;
+    padding-right: 10px;
+
+    .individual-color-strip-container {
+      position: relative;
+      float: left;
+      width: 16%;
+      height: 100%;
+      background-color: lightgrey;
+    }
+  }
+}

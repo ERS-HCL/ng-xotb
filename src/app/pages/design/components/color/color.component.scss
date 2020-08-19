@@ -101,32 +101,26 @@ app-color {
               }
             }
           }
-        }
 
-        .color-philosophy-system-list {
-          padding-top: 2rem;
-          clear: both;
+          .color-philosophy-system-list {
+            padding-top: 2rem;
+            clear: both;
 
-          span {
-            padding-right: 1rem;
+            span {
+              padding-right: 1rem;
+            }
+
+            .system-color {
+              display: inline-block;
+              width: 53px;
+              height: 32px;
+              vertical-align: middle;
+              margin-right: 10px;
+            }
           }
 
-          .system-color {
-            display: inline-block;
-            width: 53px;
-            height: 32px;
-            vertical-align: middle;
-            margin-right: 10px;
-          }
-        }
-
-        .color-philosophy-button-section {
-          padding-top: 1.5rem;
-
-          button {
-            background-color: #363537;
-            color: #ffffff;
-            margin-right: 10px;
+          .color-philosophy-button-section {
+            padding-top: 1.5rem;
           }
         }
       }

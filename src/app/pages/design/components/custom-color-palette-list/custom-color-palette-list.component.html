@@ -1,0 +1,12 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <div class="color-strip-container">
+        <div class="individual-color-strip-container"  *ngFor="let color of ovrviewColorList"
+        [ngStyle]="{ backgroundColor: color.code }"></div>
+      </div>
+      <span>Bright & Fresh</span>
+    </mat-expansion-panel-header>
+    <app-custom-color-palette></app-custom-color-palette>
+  </mat-expansion-panel>
+</mat-accordion>
