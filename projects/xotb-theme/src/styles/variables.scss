@@ -1,3 +1,48 @@
+:root {
+  --primary-color: #00bcd4;
+  --primary-dark-5-color: #01aec5;
+  --primary-dark-10-color: #029eb3;
+  --primary-dark-20-color: #018fa1;
+  --primary-dark-30-color: #018192;
+  --primary-dark-40-color: #017585;
+  --text-color: #00bcd4;
+  --text-inverse-color: #ffffff;
+  --border-color: #d2d2d2;
+  --border-dark-40-color: #979595;
+  --background-color: #ffffff;
+  --background-dark-10-color: #e7e5e5;
+}
+
+[data-theme='brightandfresh'] {
+  --primary-color: #016bb6;
+  --primary-dark-5-color: #0160a3;
+  --primary-dark-10-color: #015591;
+  --primary-dark-20-color: #014b80;
+  --primary-dark-30-color: #013f6b;
+  --primary-dark-40-color: #003458;
+  --text-color: #016bb6;
+  --text-inverse-color: #ffffff;
+  --border-color: #d2d2d2;
+  --border-dark-40-color: #979595;
+  --background-color: #ffffff;
+  --background-dark-10-color: #e7e5e5;
+}
+
+[data-theme='skyeye'] {
+  --primary-color: #edab71;
+  --primary-dark-5-color: #dfa16a;
+  --primary-dark-10-color: #d69a66;
+  --primary-dark-20-color: #d69a66;
+  --primary-dark-30-color: #ac7c52;
+  --primary-dark-40-color: #805b3c;
+  --text-color: #edab71;
+  --text-inverse-color: #ffffff;
+  --border-color: #d2d2d2;
+  --border-dark-40-color: #979595;
+  --background-color: #ffffff;
+  --background-dark-10-color: #e7e5e5;
+}
+
 // colors
 $white: #ffffff;
 $green: #4bca81;
@@ -5,14 +50,22 @@ $blue: #00bcd4;
 $red: hsl(2, 58%, 48%);
 $yellow: #ffc107;
 
-$primary-color: #00bcd4;
+$primary-color: var(--primary-color);
+$primary-dark-5-color: var(--primary-dark-5-color);
+$primary-dark-10-color: var(--primary-dark-10-color);
+$primary-dark-15-color: var(--primary-dark-15-color);
+$primary-dark-20-color: var(--primary-dark-20-color);
+$primary-dark-30-color: var(--primary-dark-30-color);
+$primary-dark-40-color: var(--primary-dark-40-color);
+
 $danger-color: $red;
+$text-color: var(--text-color);
+$text-inverse-color: var(--text-inverse-color);
 
-$text-color: #3e3e3c;
-$text-inverse-color: #ffffff;
-
-$border-color: #d2d2d2;
-$background-color: $white;
+$border-color: var(--border-color);
+$border-dark-40-color: var(--border-dark-40-color);
+$background-color: var(--background-color);
+$background-dark-10-color: var(--background-dark-10-color);
 
 $border-darken-amount: 5;
 

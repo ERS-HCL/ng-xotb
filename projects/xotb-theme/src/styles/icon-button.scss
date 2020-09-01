@@ -39,7 +39,7 @@
   border-color: $primary-color;
   color: $text-inverse-color;
   &:hover {
-    background-color: darken($color: $primary-color, $amount: 10);
+    background-color: $primary-dark-10-color;
   }
 }
 

@@ -57,7 +57,7 @@
   height: 0.75rem !important;
   margin-left: 0.25rem;
   display: none;
-  color: darken($color: $primary-color, $amount: 20);
+  color: $primary-dark-20-color;
 }
 .xotb-is-sorted {
   .xotb-is-sortable__icon {

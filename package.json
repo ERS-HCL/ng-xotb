@@ -75,6 +75,7 @@
     "marked": "^0.7.0",
     "ncp": "^2.0.0",
     "ng-packagr": "^5.1.0",
+    "postcss-color-mod-function": "^3.0.3",
     "prettier": "1.18.2",
     "protractor": "~5.4.0",
     "rimraf": "^3.0.0",

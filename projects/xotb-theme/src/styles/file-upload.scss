@@ -3,8 +3,7 @@
 }
 .xotb-file-selector__dropzone {
   padding: 0.125rem;
-  border: 1px dashed
-    darken($color: $primary-color, $amount: $border-darken-amount);
+  border: 1px dashed $primary-dark-5-color;
 }
 
 .xotb-file-selector_files {

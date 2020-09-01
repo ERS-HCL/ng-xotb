@@ -43,7 +43,7 @@
   background-color: $primary-color;
   color: $text-inverse-color;
   &:hover {
-    background-color: darken($color: $primary-color, $amount: 10);
+    background-color: $primary-dark-10-color;
   }
 }
 
@@ -54,10 +54,10 @@
   vertical-align: middle;
   border: 1px solid $primary-color;
   transition: border 0.15s linear;
-  background-color: darken($color: $primary-color, $amount: 10);
+  background-color: $primary-dark-10-color;
   color: $text-inverse-color;
   &:hover {
-    background-color: darken($color: $primary-color, $amount: 20);
+    background-color: $primary-dark-20-color;
   }
   &[disabled] {
     &:hover {
@@ -76,7 +76,7 @@
   transition: border 0.15s linear;
   background-color: $background-color;
   &:hover {
-    background-color: darken($color: $background-color, $amount: 10);
+    background-color: $background-dark-10-color;
   }
   &[disabled] {
     &:hover {

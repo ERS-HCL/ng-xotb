@@ -6,7 +6,7 @@
 .xotb-breadcrumb__item:before {
   content: '\003E';
   position: absolute;
-  color: darken($color: $border-color, $amount: 40);
+  color: $border-dark-40-color;
   left: -0.25rem;
 }
 .xotb-breadcrumb .xotb-list__item:first-child:before,
@@ -22,10 +22,10 @@
 .xotb-breadcrumb__item > a {
   display: block;
   padding: 0 0.5rem;
-  color: darken($color: $primary-color, $amount: 10);
+  color: $primary-dark-10-color;
 }
 .xotb-breadcrumb .xotb-list__item :last-child > a,
 .xotb-breadcrumb__item:last-child > a {
-  color: darken($color: $border-color, $amount: 40);
+  color: $border-dark-40-color;
   cursor: default;
 }

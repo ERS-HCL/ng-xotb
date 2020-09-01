@@ -8,8 +8,7 @@
       visibility: visible;
       opacity: 1;
       height: auto;
-      border: 1px solid
-        darken($color: $primary-color, $amount: $border-darken-amount);
+      border: 1px solid $primary-dark-5-color;
       padding: 1rem;
     }
   }
@@ -20,8 +19,7 @@
   color: $text-inverse-color;
   font-size: 1rem;
   line-height: 1.875rem;
-  border: 1px solid
-    darken($color: $primary-color, $amount: $border-darken-amount);
+  border: 1px solid $primary-dark-5-color;
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
 }
